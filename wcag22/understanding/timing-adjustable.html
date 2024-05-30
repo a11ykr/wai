@@ -133,77 +133,32 @@
                   또한 사용자가 읽거나 이해할 수 있는 속도를 넘어서는 속도로 진행하거나 업데이트되는 콘텐츠도 포함된다. 즉, 애니메이션, 이동 또는 스크롤 콘텐츠는 사용자가 콘텐츠를 읽을 수 있는 능력에 시간 제한을 부여한다.
                </p>
                <p>
-                  이 성공 기준은 일반적으로 정보와 데이터를 조정 가능하거나 최종 사용자가 제어할 수 있는 한 콘텐츠가 반복되거나 다른 콘텐츠와 동기화되는 경우 적용되지 않는다. 이 성공 기준이 적용되지 않는 시간 제한의 예로는 반복되는 텍스트 스크롤, 캡션 및 <a href="https://www.w3.org/WAI/tutorials/carousels/">캐러셀</a>이 있다. 여기에는 시간 제한이 포함되지만 2.2.2 일시 중지, 중지, 숨기기에 지정된 대로 콘텐츠에 대한 액세스 제어 기능이 있으므로 사용자는 콘텐츠를 계속 사용할 수 있습니다.
-                  This success criterion is generally not applicable when the content repeats or is
-                  synchronized with other content, so long as the information and data is adjustable
-                  or otherwise under the control of the end user.  Examples of time limits for which
-                  this success criterion is not applicable include scrolling text that repeats, captioning,
-                  and <a href="http://https://www.w3.org/WAI/tutorials/carousels/">carousels</a>.  These are situations which do include time limits, but the content is still available
-                  to the user because it has controls for accessing it, as specified in <a href="../../guidelines/sc/20/pause-stop-hide.html">2.2.2 Pause, Stop, Hide</a>.
-               </p>
-               <p>In some cases, however, it is not possible to change the time limit (for example,
-                  for an auction or other real-time event) and exceptions are therefore provided for
-                  those cases.
-               </p>
-               <p>Content that operates on a timer does not need to be time adjustable if there is an
-                  alternative that does not rely on a timer. For example, a web application such as
-                  an email client provides notification of new email arriving with a temporary message
-                  (such as a 'toast' message) in the lower right-hand side of the interface, and the
-                  message disappears after 5 seconds. Users are able to identify the arrival of email
-                  through other means, such as viewing the Inbox, so the disappearance of the message
-                  does not set a time limit on the their ability to determine if new mail has arrived.
-                  If the user has no other means of discovering the same information (or performing
-                  the same function), then each message would need to meet this Success Criterion in
-                  order to provide users with sufficient time to access the information.
+                  이 성공 기준은 일반적으로 정보와 데이터를 조정 가능하거나 최종 사용자가 제어할 수 있는 한 콘텐츠가 반복되거나 다른 콘텐츠와 동기화되는 경우 적용되지 않는다. 이 성공 기준이 적용되지 않는 시간 제한의 예로는 반복되는 텍스트 스크롤, 캡션 및 <a href="https://www.w3.org/WAI/tutorials/carousels/">캐러셀</a>이 있다. 여기에는 시간 제한이 포함되지만 <a href="pause-stop-hide">2.2.2 일시정지, 중지, 숨김</a>에 지정된 대로 콘텐츠에 대한 접근 제어 기능이 있으므로 사용자는 콘텐츠를 계속 사용할 수 있다.
                </p>
                <p>
-                  <strong>Notes regarding server time limits</strong>
+                  그러나 시간 제한을 변경할 수 없는 경우(예: 경매 또는 기타 실시간 이벤트)에는 예외가 적용된다.
+               </p>
+               <p>
+                  시간 제한에 의존하지 않는 대안이 있는 경우 타이머에 따라 작동하는 콘텐츠는 시간을 조정할 필요가 없다. 예를 들어, 이메일 클라이언트와 같은 웹 애플리케이션은 인터페이스 오른쪽 하단에 임시 메시지(예: '토스트' 메시지)와 함께 새 이메일이 도착했다는 알림을 제공하며 해당 메시지는 5초 후에 사라진다. 사용자는 받은 편지함 보기 등의 다른 방법을 통해 이메일 도착을 확인할 수 있으므로 메시지가 사라져도 새 메일이 도착했는지 확인하는 데 제한 시간이 없다. 사용자에게 동일한 정보를 검색하거나 동일한 기능을 수행할 수 있는 다른 방법이 없는 경우 사용자가 정보에 접근할 수 있는 충분한 시간을 제공하려면 각 메시지가 이 성공 기준을 충족해야 한다.
+               </p>
+               <p>
+                  <strong>서버 시간 제한에 관한 참고 사항</strong>
                </p>
                <ul>
-                  <li>Timed server redirects can be found below under Common Failures.</li>
-                  <li>Non-timed server redirects (e.g., 3xx response codes) are not applicable because there
-                     is no time limit: they work instantly.
+                  <li>시간이 지정된 서버 리디렉션은 아래의 일반적인 오류에서 찾을 수 있다.</li>
+                  <li>시간 제한이 없는 서버 리디렉션(예: 3xx 응답 코드)은 시간 제한이 없으므로 적용할 수 없다: 즉시 작동한다.</li>
+                  <li>
+                     이 성공 기준은 콘텐츠 자체에 설정된 시간 제한에만 적용된다. 예를 들어 보안 문제를 해결하기 위해 시간 제한이 포함된 경우 해당 콘텐츠에 대한 프레젠테이션 및 상호 작용 경험의 일부로 설계되었으므로 콘텐츠에 의해 설정된 것으로 간주된다. 사용자 에이전트나 인터넷 고유의 요인 등 콘텐츠 외부에서 설정된 시간 제한은 작성자의 통제를 받지 않으며 WCAG 적합성 요구 사항의 적용을 받지 않는다. 웹 서버에 의해 설정된 시간 제한은 저작자/조직의 통제 하에 있어야 하며 적용된다. (성공 기준 <a href="no-timing" class="guideline">2.2.3</a>, <a href="interruptions" class="guideline">2.2.4</a> 및 <a href="re-authenticating" class="guideline">2.2.5</a>도 적용될 수 있다.)
                   </li>
-                  <li>This Success Criterion applies only to time limits that are set by the content itself.
-                     For example, if a time limit is included in order to address security concerns, it
-                     would be considered to have been set by the content because it  is designed to be
-                     part of the presentation and interaction experience for that content. Time limits
-                     set externally to content, such as by the user agent or by factors intrinsic to the
-                     Internet are not under the author's control and not subject to WCAG conformance requirements.
-                     Time limits set by Web servers should be under the author's/organization's control
-                     and are covered. (Success Criteria
-                     <a href="no-timing" class="guideline">2.2.3</a>,
-                     <a href="interruptions" class="guideline">2.2.4</a> and
-                     <a href="re-authenticating" class="guideline">2.2.5</a> may also apply.)
+                  <li>
+                     임상 경험과 기타 지침을 바탕으로 기본값의 10배를 채택하였다. 예를 들어, 사용자가 응답하고 스위치를 누르는 데 15초가 허용된다면 거의 모든 사용자는 스위치를 누르는 데 문제가 있더라도 150초면 충분하다.
                   </li>
-                  <li>Ten times the default was chosen based on clinical experience and other guidelines.
-                     For example, if 15 seconds is allowed for a user to respond and hit a switch, 150
-                     seconds would be sufficient to allow almost all users to hit a switch even if they
-                     had trouble.
+                  <li>
+                     20초 역시 임상 경험과 기타 지침을 바탕으로 한 것이다. 경직이 있는 사용자를 포함하여 거의 모든 사용자에게 '아무 스위치'든 누르는 데 20초면 충분하다. 일부는 실패하지만 일부는 긴 시간 동안 실패할 것이다. 일부 애플리케이션의 경우 임의로 오랜 시간이 소요될 경우 장애인을 포함한 모든 사용자에게 보안 위험을 초래할 수 있으므로 추가 시간을 요청하는 합리적인 기간이 필요하다. 예를 들어, 금융 거래에 사용되는 키오스크나 단말기의 경우 사람들이 확인(signing off)을 하지 않고 자리를 떠나는 경우가 매우 흔하다. 이로 인해 그들은 뒤에서 걸어오는 사람들에게 취약해진다. 요청하기 전에 오랜 기간 동안 활동이 없는 상태를 제공하고 그 사람이 현재 있음을 나타낼 때까지 오랜 기간을 제공하면 터미널이 남용될 수 있다. 활동이 없으면 시스템은 사용자가 거기에 있는지 물어봐야 한다. 그런 다음 사람이 거기에 있다는 표시('아무 키나 누르세요')를 요청한 다음 거의 모든 사람이 응답할 때까지 기다려야 한다. "아무 키나 누르세요"의 경우 20초에 해당한다. 사람이 아직 존재한다고 표시하면 장치는 사용자에게 질문을 하기 전의 정확한 상태로 돌아가야 한다.
                   </li>
-                  <li>20 seconds was also based on clinical experience and other guidelines. 20 seconds
-                     to hit 'any switch' is sufficient for almost all users including those with spasticity.
-                     Some would fail, but some would fail all lengths of time. A reasonable period for
-                     requesting more time is required since an arbitrarily long time can provide security
-                     risks to all users, including those with disabilities, for some applications. For
-                     example, with kiosks or terminals that are used for financial transactions, it is
-                     quite common for people to walk away without signing off. This leaves them vulnerable
-                     to those walking up behind them. Providing a long period of inactivity before asking,
-                     and then providing a long period for the person to indicate that they are present
-                     can leave terminals open for abuse. If there is no activity the system should ask
-                     if the user is there. It should then ask for an indication that a person is there
-                     ('hit any key') and then wait long enough for almost anyone to respond. For "hit any
-                     key," 20 seconds would meet this. If the person indicates that they are still present,
-                     the device should return the user to the exact condition that existed before it asked
-                     the question.
-                  </li>
-                  <li>20 hours was chosen as an upper limit because it is longer than a full waking day.
-                  </li>
+                  <li>20시간은 깨어 있는 하루보다 길기 때문에 상한선으로 선택되었다.</li>
                </ul>
-               <p>In cases where timing is not an intrinsic requirement but giving users control over
-                  timed events would invalidate the outcome, a third party can control the time limits
-                  for the user (for example, granting double time on a test).
-               </p>
+               <p>시간 제한이 본질적인 요구 사항은 아니지만 사용자에게 시간이 지정된 이벤트에 대한 제어 권한을 부여하면 결과가 무효화되는 경우 제3자가 사용자에 대한 제한 시간을 조정할 수 있다(예: 시험에 두 배의 시간 부여).</p>
                <p>See also
                   <a href="no-timing">2.2.3: No Timing</a>.
                </p>
@@ -211,58 +166,37 @@
             <section id="benefits">
                <h2>Benefits</h2>
                <ul>
-                  <li>People with physical disabilities often need more time to react, to type and to complete
-                     activities.  People with low vision need more time to locate things on screen and
-                     to read.   People who are blind and using screen readers may need more time to understand
-                     screen layouts, to find information and to operate controls.  People who have cognitive
-                     or language limitations need more time to read and to understand.  People who are
-                     deaf and communicate in sign language may need more time to read information printed
-                     in text (which may be a second language for some).
+                  <li>
+                     지체 장애가 있는 사람들은 반응하고, 입력하고, 활동을 완료하는 데 더 많은 시간이 필요한 경우가 많다. 시력이 낮은 사람들은 화면에서 사물을 찾고 읽는 데 더 많은 시간이 필요하다. 시각 장애가 있고 화면 낭독기를 사용하는 사람들은 화면 레이아웃을 이해하고 정보를 찾고 컨트롤을 작동하는 데 더 많은 시간이 필요할 수 있다. 인지적 또는 언어적 제한이 있는 사람들은 읽고 이해하는 데 더 많은 시간이 필요하다. 청각 장애가 있고 수어로 의사소통하는 사람들은 텍스트(일부에게는 제2언어일 수 있음)로 인쇄된 정보를 읽는 데 더 많은 시간이 필요할 수 있다.
                   </li>
-                  <li>In circumstances where a sign-language interpreter may be relating audio content to
-                     a user who is deaf, control over time limits is also important.
+                  <li>
+                     수어 통역사가 청각 장애가 있는 사용자에게 오디오 콘텐츠를 연결하는 상황에서는 제한 시간을 조정하는 ​​것도 중요하다.
                   </li>
-                  <li>People with reading disabilities, cognitive limitations, and learning disabilities
-                     who may need more time to read or comprehend information can have additional time
-                     to read the information by pausing the content.
+                  <li>
+                     정보를 읽거나 이해하는 데 더 많은 시간이 필요한 읽기 장애, 인지 장애, 학습 장애가 있는 사용자는 콘텐츠를 일시 중지하여 정보를 읽을 수 있는 추가 시간을 가질 수 있다.
                   </li>
                </ul>
             </section>
             <section id="examples">
                <h2>Examples</h2>
                <ul>
-                  <li>A Web site uses a client side time limit to help protect users who may step away from
-                     their computer.   After a period of inactivity the Web page asks if the user needs
-                     more time.  If it doesn't get a response – it times out.
+                  <li>
+                     웹 사이트는 클라이언트측 시간 제한을 사용하여 컴퓨터에서 자리를 비울 수 있는 사용자를 보호한다. 일정 기간 동안 활동이 없으면 웹 페이지는 사용자에게 시간이 더 필요한지 묻는다. 응답을 받지 못하면 시간이 초과된다.
                   </li>
-                  <li>A Web page has a field that automatically updates with the latest headlines in a rotating
-                     fashion. There is an interactive control that allows the user to extend the length
-                     of time between each update to as much as ten times the default. The control can be
-                     operated with either a mouse or a keyboard.
+                  <li>
+                     웹 페이지에는 순환 방식으로 최신 헤드라인으로 자동 업데이트되는 필드가 있다. 사용자가 각 업데이트 사이의 시간을 기본값의 10배까지 연장할 수 있는 대화형 컨트롤이 있다. 컨트롤은 마우스나 키보드로 작동할 수 있다.
                   </li>
-                  <li>A Web page includes an animation which includes text that appears and disappears throughout.
-                     In some cases, the text is scrolling across the screen and in others, it is only displayed
-                     for a short time before it fades into the background. The page includes a pause button
-                     so that users who have trouble reading the text before it disappears can read it.
+                  <li>
+                     웹 페이지에는 전체적으로 나타나고 사라지는 텍스트가 포함된 애니메이션이 포함되어 있다. 어떤 경우에는 텍스트가 화면을 가로질러 스크롤되고 다른 경우에는 배경으로 사라지기 전에 짧은 시간 동안만 표시된다. 페이지에는 텍스트가 사라지기 전에 읽기 어려운 사용자가 읽을 수 있도록 일시 중지 버튼이 포함되어 있다.
                   </li>
-                  <li>In an auction, there is a time limit on the amount of time a user has to submit a
-                     bid. Since the time limit applies to all users who want to bid on a particular item,
-                     it would be unfair to extend the time limit for any one particular user. Therefore,
-                     a time limit is required for this type of activity and no extension, adjustment, or
-                     deactivation of the time limit is required by this Success Criterion.
+                  <li>
+                     경매에는 사용자가 입찰을 제출해야 하는 시간에 대한 시간 제한이 있다. 시간 제한은 특정 품목에 입찰하려는 모든 사용자에게 적용되므로 특정 사용자에 대해 시간 제한을 연장하는 것은 불공평하다. 따라서 이러한 유형의 활동에는 시간 제한이 필요하며 이 적합 기준에서는 시간 제한의 연장, 조정 또는 비활성화가 필요하지 않다.
                   </li>
-                  <li>An on-line ticket-purchasing site gives the user two minutes to confirm a purchase
-                     before the seats are returned to the general pool. Because tickets on such sites can
-                     sell out quickly, holding a ticket longer than that may invalidate the nature of the
-                     site, so this is a case in which the timing is essential and cannot be extended without
-                     invalidating the activity. However, the site does move as much of the process out
-                     of the time-critical period as possible, for instance allowing users to provide necessary
-                     information like name, payment method, etc., before entering the time-critical stage.
+                  <li>
+                     온라인 티켓 구매 사이트에서는 좌석이 일반 수영장으로 반환되기 전에 사용자에게 구매를 확인하는 데 2분의 시간을 준다. 이러한 사이트의 티켓은 빨리 매진될 수 있으므로 그 이상 티켓을 보유하면 사이트의 성격이 무효화될 수 있으므로 타이밍이 필수적인 경우이며 활동을 무효화하지 않고는 연장할 수 없다. 그러나 사이트는 시간이 중요한 단계에 들어가기 전에 사용자가 이름, 지불 방법 등과 같은 필요한 정보를 제공할 수 있도록 허용하는 등 가능한 한 많은 작업을 시간이 중요한 기간 외에 처리하도록 이동한다.
                   </li>
-                  <li>A ticket-purchasing site allows the user two minutes to confirm purchase of selected
-                     seats, but warns the user when their time is almost out and allows the user to extend
-                     this time limit some number of times with a simple action such as clicking a "Extend
-                     time limit" button.
+                  <li>
+                     티켓 구매 사이트에서는 사용자가 선택한 좌석의 구매를 확인하는 데 2분을 허용하지만 시간이 거의 다 되면 사용자에게 경고하고 "시간 연장하기" 버튼을 클릭하는 등의 간단한 동작으로 이 시간 제한을 여러 번 연장할 수 있다.
                   </li>
                </ul>
             </section>
