@@ -228,724 +228,466 @@
                                 이상이어야 한다.
                             </figcaption>
                         </figure>
-                        <p>Note that different Non-text Contrast requirements may apply depending on whether
-                            the focus indicator
-                            is offset from, inset into, or against the edge of the component. See the <a
-                                href="https://www.w3.org/TR/WCAG22/#relationship-with-non-text-contrast">Relationship
-                                with Non-text Contrast</a> section
-                            below.
+                        <p>
+                            초점 표시기가 구성 요소의 가장 자리로부터 떨어졌는지, 삽입되었는지 또는 반대인지에 따라 다른 텍스트가 아닌 콘텐츠의 명도대비 요구 사항이 적용될 수 있다. 아래의 <a
+                                href="https://www.w3.org/TR/WCAG22/#relationship-with-non-text-contrast">텍스트가 아닌 콘텐츠의 명도대비 섹션과의 관계</a>를 참조하라.
                         </p>
                     </section>
                     <section id="area-other-indicator-shapes">
-                        <h4>Other indicator shapes</h4>
-                        <p>This Success Criterion does not require that focus indicators be solid outlines. Other
-                            shapes may be
-                            used so long as they meet the minimum area requirement.
-                        </p>
-                        <p>The minimum area of the focus indicator for a control is the area of a 2 CSS pixel
-                            thick perimeter of
-                            the control (or its minimum bounding box) in the control's unfocused state. For example,
-                            if a
-                            control is a rectangle 90px wide and 30px tall, the area of a 2 CSS pixel thick perimeter
-                            is
-                            difference between the areas of:
+                        <h4>기타 표시기 모양</h4>
+                        <p>이 성공 기준에서는 초점 표시가 실선 윤곽선일 것을 요구하지 않는다. 최소 영역 요구 사항을 충족하는 한 다른 모양을 사용할 수도 있다.</p>
+                        <p>
+                            컨트롤에 대한 초점 표시기의 최소 영역은 컨트롤의 초점이 맞지 않은 상태에서 컨트롤의 둘레(또는 최소 경계 상자) 두께 2 CSS 픽셀의 영역이다. 예를 들어 컨트롤이 너비 90px, 높이 30px의
+                            직사각형인 경우 2 CSS 픽셀 두께의 둘레 영역은 다음 영역 간의 차이이다.
                         </p>
                         <ul>
-                            <li>A 92px by 32px rectangle (1px larger on all sides), and</li>
-                            <li>A 88px by 28px rectangle (1px smaller on all sides)</li>
+                            <li>92px x 32px 직사각형(모든 측면에서 1px 더 큼) 및</li>
+                            <li>88px x 28px 직사각형(모든 면에서 1px 더 작음)</li>
                         </ul>
-                        <p>This results in a minimum area of (92px * 32px) - (88px * 28px) = 480px<sup>2</sup>.
-                        </p>
-                        <p>Some general formulas for 2 CSS pixel thick perimeters of common shapes are:</p>
+                        <p>결과적으로 최소 영역은 (92px * 32px) - (88px * 28px) = 480px<sup>2</sup>이다.</p>
+                        <p>일반적인 모양의 2 CSS 픽셀 두께 둘레에 대한 몇 가지 일반 공식은 다음과 같다.</p>
                         <dl>
-                            <dt>Rectangle with width <em>w</em> and height <em>h</em></dt>
+                            <dt>너비가 <em>w</em>이고 높이가 <em>h</em>인 직사각형</dt>
                             <dd>4<em>h</em> + 4<em>w</em></dd>
-                            <dt>Circle with radius <em>r</em></dt>
+                            <dt>반지름이 <em>r</em>인 원</dt>
                             <dd>4𝜋<em>r</em></dd>
-                            <dt>Rounded rectangle with width <em>w</em>, height <em>h</em>, and border radius <em>r</em>
-                            </dt>
+                            <dt>너비가 <em>w</em>, 높이가 <em>h</em>, 테두리 반경이 <em>r</em>인 둥근 직사각형</dt>
                             <dd>4<em>h</em> + 4<em>w</em> - (16 - 4𝜋)<em>r</em></dd>
                             </dl>
                         <div class="note">
                             <p class="note-title marker">Note</p>
-                            <p>If you need to use complex mathematics to work out if a focus indicator is large enough,
-                                it is probably a sign that you should use a larger indicator instead. The bigger the
-                                visible change
-                                when an item receives focus, the easier it is for someone to see.
+                            <p>
+                                초점 표시기가 충분히 큰지 확인하기 위해 복잡한 수학을 사용해야 하는 경우 이는 아마도 대신 더 큰 표시기를 사용해야 한다는 신호일 것이다. 항목이 초점을 받을 때 눈에 보이는 변화가 클수록 다른 사람이 더
+                                쉽게 볼 수 있다.
                             </p>
                         </div>
-                        <p>The following 2 examples use a 90px wide by 30px tall button, with a minimum area
-                            requirement of
-                            480px<sup>2</sup>:
+                        <p>
+                            다음 2가지 예에서는 최소 영역 요구 사항이 480px<sup>2</sup>인 90px 너비 x 30px 높이 버튼을 사용한다.
                         </p>
                         <figure id="focus-indicator-custom-shapes-inset">
                             <img src="img/focus-indicator-custom-shapes-inset.png"
-                                alt="Three 90 by 30 pixel buttons. The middle button has a focus indicator which is a 3px thick outline inset by 3px inside the button" />
-                            <figcaption>Figure 5 Passes: the inner outline is inset slightly from the outer edge of the
-                                component,
-                                but
-                                compensates for this by being 3px thick. It has an area of 612px<sup>2</sup>, which
-                                exceeds the
-                                480px<sup>2</sup> minimum.
+                                alt="90x30픽셀 버튼 3개. 가운데 버튼에는 버튼 내부에 3px 두께의 3px 윤곽선이 삽입된 초점 표시기가 있다." />
+                            <figcaption>
+                                그림 5 패스: 내부 윤곽선은 구성 요소의 외부 가장자리에서 약간 삽입되지만 3px 두께로 이를 보완한다. 면적은 612px<sup>2</sup>로 최소 480px<sup>2</sup>를 초과한다.
                             </figcaption>
                             </figure>
                         <figure id="focus-indicator-custom-shapes-side-highlights">
                             <img src="img/focus-indicator-custom-shapes-side-highlights.png"
-                                alt="Three 90 by 30 pixel buttons. The middle button has a focus indicator which is two rectangles inside the button, one on either side" />
-                            <figcaption>Figure 6 Passes: the indicator rectangles on either side of the focused button
-                                are each 9px
-                                wide
-                                by 28px tall. In total, they are 504px<sup>2</sup>, which just barely meets the
-                                480px<sup>2</sup> minimum.
+                                alt="90x30픽셀 버튼 3개. 가운데 버튼에는 버튼 내부 양쪽에 하나씩 두 개의 직사각형인 초점 표시기가 있다." />
+                            <figcaption>
+                                그림 6 패스: 초점이 맞춰진 버튼 양쪽에 있는 표시기 직사각형의 크기는 각각 너비 9픽셀, 높이 28픽셀이다. 전체적으로 504px<sup>2</sup>로 최소 480px<sup>2</sup>를 겨우 충족하는 수준이다.
                                 </figcaption>
-                                </figure>
+                            </figure>
                         <div class="note">
                             <p class="note-title marker">Note</p>
-                            <p>Prefer using focus indicator techniques that scale with both the width and height
-                                of the
-                                focused control. Otherwise, if controls change size across different variations of
-                                a page (for
-                                example, in a responsive design), the indicator might meet the area requirement in
-                                some variations
-                                but not others. For example, in the above figure, if the width of the two highlight
-                                rectangles did
-                                not scale as the button grew wider, it would stop meeting the minimum area requirement
-                                if the button
-                                needed to grow any wider to accomodate a longer button label.
+                            <p>
+                                초점 컨트롤의 너비와 높이에 따라 크기가 조정되는 초점 표시기 기술을 사용하는 것이 좋다. 그렇지 않고 페이지의 다양한 변형(예: 반응형 디자인)에서 컨트롤의 크기가 변경되면 표시기가 일부 변형에서는 영역
+                                요구 사항을 충족하지만 다른 변형에서는 충족하지 못할 수 있다. 예를 들어, 위 그림에서 버튼이 넓어짐에 따라 두 개의 강조 표시 직사각형의 너비가 조정되지 않는 경우 더 긴 버튼 레이블을 수용하기 위해
+                                버튼이 더 넓어져야 한다면 최소 영역 요구 사항을 충족하지 못하게 된다.
                             </p>
                         </div>
-                        <p>Another way of achieving the area requirement is to alter the appearance of the entire
-                            component, for
-                            instance by changing its color – provided that the new color has a contrast ratio
-                            of at least 3:1
-                            against the original color. This can be effective in a set of closely placed buttons.
-                            The following
-                            example demonstrates this with 5 rating stars; the center star is filled in with a
-                            darker color to
-                            indicate focus. However, it is much more difficult to detect such a focus indicator
-                            when components
-                            are not near each other and so cannot be easily compared. For users using magnification,
-                            even
-                            components relatively close together may be difficult to compare, so it is not considered
-                            a best
-                            practice.
+                        <p>
+                            영역 요구 사항을 충족하는 또 다른 방법은 색상을 변경하는 등 전체 구성 요소의 모양을 변경하는 것이다. 단, 새 색상은 원래 색상에 대해 최소 3:1의 명암비를 가져야 한다. 이는 밀접하게 배치된 버튼
+                            세트에서 효과적일 수 있다. 다음 예에서는 별점 5개를 사용하여 이를 보여준다. 중심 별은 초점을 나타 내기 위해 더 어두운 색상으로 채워진다. 그러나 구성 요소가 서로 가까이 있지 않아 쉽게 비교할 수 없는
+                            경우 이러한 초점 표시기를 감지하는 것이 훨씬 더 어렵다. 확대를 사용하는 사용자의 경우 상대적으로 가까운 구성 요소라도 비교하기 어려울 수 있으므로 모범 사례로 간주되지 않는다.
                         </p>
                         <figure id="focus-indicator-whole-star">
                             <img src="img/focus-indicator-whole-star.svg"
-                                alt="3 of 5 stars are selected with the whole third star altered in color to indicate focus" />
-                            <figcaption>Figure 7 Passes: a color change applies to the whole third star to indicate
-                                focus.</figcaption>
-                            </figure>
-                            </section>
-                            <section id="area-inline-links">
-                                <h4>Inline links</h4>
-                        <p>If an inline link is broken over multiple lines, some methods of creating a focus
-                            indicator create
-                            different results by browsers. CSS <code>outline</code> separately surrounds each part of a
-                            link
-                            that breaks across multiple lines. It is by far the most common CSS technique for
-                            focus indication,
-                            and produces a result that satisfies the minimum bounding box definition since each
-                            part is solidly
-                            bound. CSS <code>border</code> will split the perimeter across the parts of the link, which
-                            results
-                            in an unenclosed border for each line of the link. The minimum bounding box definition
-                            states that
-                            link focus can be assessed as if the link was all on one line, so a 2px thick border
-                            is also
-                            considered to meet the minimum area requirement. Therefore, where the contrast requirements
-                            are met,
-                            each of these methods can produce a sufficient focus indicator.
+                                alt="별 5개 중 3개가 선택되었으며 세 번째 별 전체는 초점을 나타내기 위해 색상이 변경되었다." />
+                            <figcaption>그림 7 통과: 초점을 나타내기 위해 세 번째 별 전체에 색상 변경이 적용된다.</figcaption>
+                        </figure>
+                    </section>
+                    <section id="area-inline-links">
+                        <h4>인라인 링크</h4>
+                        <p>
+                            인라인 링크가 여러 줄에 걸쳐 끊어진 경우 초점 표시기를 만드는 일부 방법은 브라우저별로 다른 결과를 생성한다. CSS <code>outline</code>은 여러 줄에 걸쳐 있는 링크의 각 부분을 개별적으로
+                            둘러싼다. 이는 초점 표시를
+                            위한 가장 일반적인 CSS 기술이며, 각 부분이 견고하게 바인딩되어 있으므로 최소 경계 상자 정의를 만족하는 결과를 생성한다. CSS <code>border</code>는 링크 부분에 걸쳐 경계를 분할하므로
+                            링크의 각 줄에 대해 닫히지
+                            않은 테두리가 생성된다. 최소 경계 상자 정의에 따르면 링크가 모두 한 줄에 있는 것처럼 링크 포커스를 평가할 수 있으므로 2px 두께의 테두리도 최소 영역 요구 사항을 충족하는 것으로 간주됩니다. 따라서
+                            대비 요구 사항이 충족되는 경우 이러한 각 방법을 사용하면 충분한 초점 표시기를 생성할 수 있다.
                         </p>
                         <figure id="focus-indicator-inline-link-outline">
                             <img src="img/focus-inline-link-outline.png"
-                                alt="A paragraph of text containing a link broken over two lines. The red focus indicator is a complete rectangle around each part of the link." />
-                            <figcaption>Figure 8 Passes: the CSS <code>outline</code> property solidly bounds each part
-                                of the link
-                                completely, so it meets the definition of a perimeter.
+                                alt="두 줄로 나누어진 링크를 포함하는 텍스트 단락. 빨간색 초점 표시기는 링크의 각 부분을 둘러싸는 완전한 직사각형이다." />
+                            <figcaption>
+                                그림 8 통과: CSS <code>outline</code> 속성이 링크의 각 부분을 완전히 단단히 묶어 경계 정의를 충족한다.
                             </figcaption>
                             </figure>
                         <figure id="focus-indicator-inline-link">
                             <img src="img/focus-inline-link.png"
-                                alt="A paragraph of text containing a link broken over two lines. The red focus indicator has a gap on the right of one part of the link, and on the left of the other part of the link." />
-                            <figcaption>Figure 9 Passes: Although the CSS <code>border</code> on a multi-line link does
-                                not enclose the
-                                separate parts of the link, the minimum bounding box definition allows it to be assessed
-                                as if
-                                it was on a single line, so it also qualifies as a perimeter.
+                                alt="두 줄로 나누어진 링크를 포함하는 텍스트 단락. 빨간색 초점 표시기는 링크의 한 부분 오른쪽과 링크의 다른 부분 왼쪽에 간격이 있다." />
+                            <figcaption>
+                                그림 9 통과: 여러 줄 링크의 CSS <code>border</code>가 링크의 개별 부분을 둘러싸지는 않지만 최소 경계 상자 정의를 통해 마치 한 줄에 있는 것처럼 평가할 수 있으므로 경계로도 적합하다.
                             </figcaption>
-                            </figure>
-                            </section>
-                            </section>
+                        </figure>
+                        </section>
+                        </section>
                 <section id="change-of-contrast">
-                    <h3>Change of contrast</h3>
-                    <p>The second part of the Success Criterion's indicator requirements states that an area
-                        of the indicator:
-                    </p>
+                    <h3>대비의 변화</h3>
+                    <p>적합 기준 지표 요구 사항의 두 번째 부분에는 지표 영역이 다음과 같이 명시되어 있다.</p>
                     <blockquote>
                         <ul>
-                            <li>has a contrast ratio of at least 3:1 between the same pixels in the focused and
-                                unfocused
-                                states
-                            </li>
+                            <li>초점을 받은 상태와 받지 않은 상태의 동일한 픽셀 간 명도대비율이 최소 3:1 이상이어야 한다.</li>
                             </ul>
                             </blockquote>
-                    <p>This requirement measures the change of contrast between the same pixels in different
-                        states. This is
-                        different from the Text Contrast and Non-text Contrast Success Criteria, which measure
-                        the contrast
-                        between different adjacent pixels in a single state at a time.
+                    <p>
+                        이 요구 사항은 서로 다른 상태의 동일한 픽셀 간의 대비 변화를 측정한다. 이는 한 번에 단일 상태에서 서로 다른 인접한 픽셀 간의 대비를 측정하는 텍스트 대비 및 텍스트가 아닌 콘텐츠의 명도대비 성공 기준과
+                        다르다.
                     </p>
-                    <p>3:1 is the <strong>minimum</strong> allowable change-of-contrast ratio, but the greater the
-                        change of
-                        contrast between states, the easier it is for users to see the focus indicator. Authors
-                        are encouraged
-                        to make the change-of-contrast ratio as great as possible.
+                    <p>
+                        3:1은 허용되는 <strong>최소</strong> 대비 변경 비율이지만 상태 간의 대비 변경이 클수록 사용자가 초점 표시를 더 쉽게 볼 수 있다. 저작자는 대비 변화 비율을 최대한 크게 만드는 것이 좋다.
                     </p>
-                    <p>The following illustration shows a <strong>minimally</strong> contrasting focus indicator, where
-                        some of
-                        the white pixels making up the page background have been altered to a mid-grey that
-                        has a 3:1 contrast
-                        ratio with the original white. Authors are encouraged to exceed the minimum focus
-                        appearance. For
-                        instance, the dark blue lines in figures 2 and 3 are much more visible.
+                    <p>
+                        다음 그림은 페이지 배경을 구성하는 흰색 픽셀 중 일부가 원래 흰색과 3:1 대비 비율을 갖는 중간 회색으로 변경된 <strong>최소</strong> 대비 초점 표시기를 보여준다. 저작자는 최소 초점 형태를
+                        초과하는 것이 좋다. 예를 들어, 그림 2와 3의 진한 파란색 선이 훨씬 더 잘 보인다.
                     </p>
                     <figure id="focus-indicator-star-with-light-focus">
                         <img src="img/focus-indicator-star-with-light-focus.svg"
-                            alt="Two orange-yellow five-pointed stars, one with a mid-gray focus rectangle" />
-                        <figcaption>Figure 10 Passes: Two buttons in the shape of a star, with the second surrounded by
-                            a focus
-                            indicator
-                            whose pixels contrast 3:1 between focused (light grey) and unfocused (white) states.
+                            alt="주황색-노란색 별 2개, 하나는 중간 회색 직사각형 초점이 있다" />
+                        <figcaption>
+                            그림 10 패스: 별 모양의 버튼 2개, 두 번째 버튼은 초점이 맞춰진 상태(밝은 회색)와 초점이 맞지 않은 상태(흰색) 사이의 픽셀 대비가 3:1인 초점 표시기로 둘러싸여 있다.
                         </figcaption>
                         </figure>
-                    <p>When a component changes to include a focus indicator, that change can be measured
-                        as a change of color
-                        contrast. For example, if a yellow outline is added to a button on a blue background,
-                        the change of
-                        color is from blue to yellow. This change can be measured whether the focus indicator
-                        is on the
-                        background around the component, or the background within the component.
+                    <p>
+                        초점 표시기를 포함하도록 구성 요소가 변경되면 해당 변경 사항은 색상 대비의 변경으로 측정될 수 있다. 예를 들어, 파란색 배경의 버튼에 노란색 윤곽선을 추가하면 색상이 파란색에서 노란색으로 변경된다. 이러한
+                        변화는 포커스 표시기가 구성 요소 주변의 배경에 있는지, 아니면 구성 요소 내의 배경에 있는지 측정할 수 있다.
                     </p>
                     <figure id="focus-indicator-innerline-2">
                         <img src="img/focus-indicator-innerline.png"
-                            alt="Three dark blue buttons on a white background. The middle button has a yellow inner border." width="284" />
-                        <figcaption>Figure 11 Passes: adding a yellow outline to a link is a change of color from blue
-                            to yellow.
-                            That
-                            change has a contrast ratio of 12:1.
+                            alt="흰색 배경에 3개의 진한 파란색 버튼. 가운데 버튼에는 노란색 내부 테두리가 있다." width="284" />
+                        <figcaption>
+                            그림 11 통과: 링크에 노란색 윤곽선을 추가하면 색상이 파란색에서 노란색으로 변경된다. 해당 변경 사항의 명암비는 12:1이다.
                         </figcaption>
                         </figure>
-                    <p>If a control receiving focus changes its background (fill color) to a color that contrasts
-                        less than 3:1
-                        with the original background, that would not pass the change of contrast.
+                    <p>
+                        초점을 받는 컨트롤이 배경(채우기 색상)을 원래 배경과 3:1 미만의 대비를 이루는 색상으로 변경하면 대비 변경이 통과되지 않는다.
                     </p>
                     <figure id="focus-indicator-background">
                         <img src="img/focus-indicator-background.png"
-                            alt="Three black buttons with a dark background. The middle button has a dark grey background." width="250" />
-                        <figcaption>Figure 12 Fails: the second link has a dark-grey (#555) which <strong>fails</strong>
-                            this Success
-                            Criterion because the change from black-background to dark-grey background does not
-                            meet 3:1.
+                            alt="어두운 배경의 검은색 버튼 3개. 가운데 버튼의 배경은 어두운 회색이다." width="250" />
+                        <figcaption>
+                            그림 12 실패: 두 번째 링크는 진한 회색(#555) 배경을 가지고 있어 이 성공 기준을 충족하지 못한다. 검은색 배경에서 진한 회색 배경으로 변경된 것이 3:1 대비 요건을 만족하지 않기 때문이다.
                         </figcaption>
                     </figure>
-                    <p>If the background change is sufficient, it is a method of passing the criterion.</p>
+                    <p>배경 변화가 충분하면 기준을 통과하는 방식이다.</p>
                     <figure id="focus-indicator-background-passing">
                         <img src="img/focus-indicator-background-passing.png"
-                            alt="Three black buttons with a dark border and two have a dark background. The middle button has a white background."
+                            alt="테두리가 어두운 검은색 버튼 3개 중 배경이 어두운 버튼 2개가 있다. 가운데 버튼의 배경은 흰색이다."
                             width="250" />
-                        <figcaption>Figure 13 Passes: the second link has a white background (#fff) which
-                            <strong>passes</strong> this
-                            Success Criterion because the change from black-background to white-background meets
-                            3:1.
+                        <figcaption>
+                            그림 13 통과: 두 번째 링크에는 검정색 배경에서 흰색 배경(#fff)으로의 변경이 3:1을 충족하므로 이 성공 기준을 <strong>통과</strong>한다.
                         </figcaption>
                     </figure>
                     <section id="change-of-contrast-partial">
-                        <h4>Partially contrasting indicators</h4>
-                        <p>It is not necessary for the <em>entire</em> focus indicator to have a 3:1 change of contrast.
-                            It is
-                            sufficient for just a part of the indicator to meet the change of contrast requirement,
-                            so long as
-                            the contrasting part of the indicator meets the minimum area requirement.
+                        <h4>부분적으로 대조되는 표시기</h4>
+                        <p>
+                            <em>전체</em> 초점 표시가 3:1 대비 변경을 가질 필요는 없다. 표시기의 대비 부분이 최소 영역 요구 사항을 충족하는 한 표시기의 일부만 대비 요구 사항 변경을 충족하는 것으로 충분하다.
                         </p>
                         <figure id="focus-indicator-two-color-thick">
                             <img src="img/focus-indicator-two-color-thick.png"
-                                alt="A button whose focus indicator is two nested outlines: an inner 2px thick light gray outline with low contrast against the background, and an outer 2px thick black outline with high contrast" />
-                            <figcaption>Figure 14 Passes: The black part of the indicator meets 3:1 contrast with the
-                                white background,
-                                but the gray part does not. The black part is 2px thick, so it meets the minimum area
-                                requirement on its own and the gray part can be ignored.
-                                </figcaption>
-                                </figure>
+                                alt="초점 표시기가 두 개의 중첩 윤곽선인 버튼: 배경과 대비가 낮은 내부 2px 두께의 밝은 회색 윤곽선과 고대비의 외부 2px 두께 검정색 윤곽선" />
+                            <figcaption>
+                                그림 14 통과: 표시기의 검은색 부분은 흰색 배경과 3:1 대비를 충족하지만 회색 부분은 그렇지 않다. 검은색 부분은 두께가 2px이므로 그 자체로 최소 면적 요구 사항을 충족하여 회색 부분은 무시해도 된다.
+                            </figcaption>
+                        </figure>
                         <figure id="focus-indicator-two-color-thick">
                             <img src="img/focus-indicator-two-color-thin.png"
-                                alt="A button whose focus indicator is two nested outlines: an inner 1px thick light gray outline with low contrast against the background, and an outer 1px thick black outline with high contrast" />
-                            <figcaption>Figure 15 Fails: The indicator as a whole is 2px thick, but the part of it that
-                                has sufficient
-                                change-of-contrast is only 1px thick. The part of the indicator with sufficient
-                                change-of-contrast does not meet the minimum area requirement.
-                                </figcaption>
-                                </figure>
-                        <p>When calculating whether a focus indicator meets the minimum area requirement, only
-                            the part of the
-                            indicator which meets the change-of-contrast requirement should be included in the
-                            calculation.
+                                alt="초점 표시기가 두 개의 중첩 윤곽선인 버튼: 배경과 대비가 낮은 내부 1px 두께의 밝은 회색 윤곽선과 고대비의 외부 1px 두께 검정색 윤곽선" />
+                            <figcaption>
+                                그림 15 실패: 표시기 전체의 두께는 2px이지만 대비 변화가 충분한 부분의 두께는 1px에 불과하다. 대비 변화가 충분한 표시 부분은 최소 면적 요구 사항을 충족하지 않는다.
+                            </figcaption>
+                        </figure>
+                        <p>
+                            초점 표시가 최소 영역 요구 사항을 충족하는지 여부를 계산할 때 대비 변경 요구 사항을 충족하는 표시 부분만 계산에 포함되어야 한다.
                         </p>
                         </section>
                     <section id="change-of-contrast-gradients">
-                        <h4>Gradients</h4>
-                        <p>If a focus indicator has a gradient, the principle is to measure the contrast of the
-                            changed area,
-                            and ignore any part of the gradient which has less than a 3:1 change-of-contrast ratio.
+                        <h4>그라디언트</h4>
+                        <p>
+                            초점 표시기에 그라디언트가 있는 경우 원칙은 변경된 영역의 대비를 측정하고 대비 변경 비율이 3:1 미만인 그라디언트 부분을 무시하는 것이다.
                         </p>
                         <figure id="focus-indicator-box-shadow">
-                            <img src="img/focus-indicator-box-shadow.png"
-                                alt="Three buttons, the middle with a heavy drop-shadow indicating focus." />
-                            <figcaption>Figure 16 When a gradient is used on a focus indicator, the measure of surface
-                                area should only
-                                include the area that has changed enough to meet the 3:1 contrast ratio.
+                            <img src="img/focus-indicator-box-shadow.png" alt="버튼 3개, 가운데에는 초점을 나타내는 진한 그림자가 있다." />
+                            <figcaption>
+                                그림 16 초점 표시기에 그라디언트를 사용하는 경우 표면적 측정에는 3:1 명암비를 충족할 만큼 충분히 변경된 영역만 포함되어야 한다.
                             </figcaption>
                             </figure>
-                        <p>If you eliminate the area which has less than 3:1 change-of-contrast, you can calculate
-                            the area of
-                            the remaining parts of the indicator to determine whether the indicator meets the
-                            minimum area
-                            requirement.
+                        <p>
+                            대비 변화율이 3:1 미만인 영역을 제거하면 표시기의 나머지 부분의 면적을 계산하여 표시기가 최소 영역 요구 사항을 충족하는지 확인할 수 있다.
                         </p>
                         <figure id="focus-indicator-box-shadow-only">
                             <img src="img/focus-indicator-box-shadow-only.png"
-                                alt="The middle button with the drop-shadow included, but the subtle grey areas removed to only show the contrasting area." />
-                            <figcaption>Figure 17 Passes: the same focused button with the non-contrasting areas
-                                removed. The contrasting
-                                area is 6px thick along most of the bottom edge and 3-4px thick on the left and right
-                                edges,
-                                which is enough to meet the minimum area requirement.
+                                alt="그림자가 포함된 가운데 버튼이 있지만 대비되는 영역만 표시하기 위해 미묘한 회색 영역이 제거되었다." />
+                            <figcaption>
+                                그림 17 통과: 대비되지 않는 영역이 제거된 동일한 초점 버튼. 대비 영역은 대부분의 아래쪽 가장자리를 따라 6px 두께이고 왼쪽 및 오른쪽 가장자리에서는 3-4px 두께로 최소 영역 요구 사항을 충족하기에 충분하다.
                             </figcaption>
-                            </figure>
+                        </figure>
                         <div class="note">
                             <p class="note-title marker">Note</p>
-                            <p>Some of the examples in this document are screen-captured images of elements. Due
-                                to
-                                loss of resolution in these images, the actual pixel color may not match the original.
-                                As such, they
-                                are intended to be used for illustrative purposes, and should not be inspected on
-                                a pixel-by-pixel
-                                basis for sufficient contrast.
+                            <p>
+                                이 문서의 일부 예는 요소의 화면 캡처 이미지이다. 이러한 이미지의 해상도 손실로 인해 실제 픽셀 색상이 원본과 일치하지 않을 수 있다. 따라서 이는 설명 목적으로 사용하기 위한 것이며 충분한 대비를 위해
+                                픽셀 단위로 검사해서는 안 된다.
                             </p>
                         </div>
-                        <p>Some designs have pages with a non-solid background image covering the whole (or part)
-                            of the page or
-                            make use of parallax scrolling effects which result in a near-infinite number of color
-                            combinations
-                            if a page is scrolled and/or changes are made to the viewport size.
+                        <p>
+                            일부 디자인에서는 전체 페이지나 페이지 일부에 단색이 아닌 배경 이미지를 사용하거나, 페이지를 스크롤하거나 뷰포트 크기를 변경했을 때 시차 스크롤(parallax scroll) 효과로 인해 무한에 가까운 색상
+                            조합이 생길 수 있다.
                         </p>
-                        <p>If the contrast of background colors that change are close enough to need to be tested
-                            for each
-                            combination then they would likely not meet the user need of people with low vision
-                            in certain
-                            scroll combinations and would likely fail in certain combinations as well. In these
-                            cases it would
-                            be an easy solution to use a <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C40">two-color
-                                focus indicator</a> or some other mechanism to indicate focus such as a solid box with a
-                                border
-                                to guarantee there is sufficient contrast across variations of background images or
-                                background
-                                gradients.
-                                </p>
-                                <p>It is possible to use visual patterns such as strips switching places to disguise
-                                    a change of focus
-                                    indicator. However, this is not considered a visible indicator.
-                                </p>
-                                </section>
-                                </section>
+                        <p>
+                            변경되는 배경색의 대비가 각 조합에 대해 테스트해야 할 만큼 가까운 경우 특정 스크롤 조합에서 시력이 낮은 사용자의 요구 사항을 충족하지 못할 가능성이 높으며 특정 조합에서도 실패할 가능성이 높다. 이러한
+                            경우에는 <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C40">2색 초점 표시기</a> 또는 테두리가 있는 단색 상자와 같은 초점을 표시하는 다른 메커니즘을
+                            사용하여 다양한 배경 이미지 또는 배경 그라데이션에 걸쳐 충분한 대비를 보장하는 쉬운 해결책이 될 것이다.
+                        </p>
+                        <p>
+                            초점 표시기 변화를 숨기기 위해 대체되는 스트라이프와 같은 시각적 패턴을 사용할 수 있다. 그러나 이는 가시적인 표시기로 간주하지 않는다.
+                        </p>
+                        </section>
+                        </section>
                 <section id="relationship-with-non-text-contrast">
-                    <h3>Relationship with Non-text Contrast</h3>
-                    <p>Focus indicators are visual information required to identify a state of a user interface
-                        component. That
-                        means that they are subject to <a href="non-text-contrast" class="sc">1.4.11 Non-text
-                            Contrast</a>, in
-                        addition to 2.4.13 Focus Appearance.
+                    <h3>텍스트가 아닌 콘텐츠의 명도대비와의 관계</h3>
+                    <p>
+                        초점 표시기는 사용자 인터페이스 구성 요소의 상태를 식별하는 데 필요한 시각적 정보이다. 즉, 2.4.13 초점 형태 외에도 <a href="non-text-contrast" class="sc">1.4.11
+                            텍스트가 아닌 콘텐츠의 명도대비</a>가 적용된다.
                     </p>
-                    <p>In combination with <a href="focus-visible">2.4.7 Focus Visible</a>, <a href="non-text-contrast"
-                            class="sc">1.4.11 Non-text Contrast</a> requires that the visual focus indicator for a
-                        component
-                        must have sufficient contrast against the adjacent colors when the component is focused,
-                        except where
-                        the appearance of the component is determined by the user agent and not modified by
-                        the author.
+                    <p>
+                        <a href="focus-visible">2.4.7 초점 시각화</a>와 <a href="non-text-contrast" class="sc">1.4.11 텍스트가 아닌 콘텐츠의 명도대비</a>의 조합에서
+                        구성 요소의 시각적 초점 표시가 구성 요소에 초점을 맞출 때 인접한 색상에 대해 충분한 대비를 가져야 한다. 단, 구성 요소의 모양이 저작자가 수정하지 않고 사용자 에이전트 구성 요소에 의해 결정되는 경우는
+                        제외된다.
                     </p>
-                    <p>The difference between the contrast requirements in Focus Appearance and Non-text
-                        Contrast is:
-                    </p>
+                    <p>초점 형태와 텍스트가 아닌 콘텐츠의 명도대비 요구 사항 간의 차이점은 다음과 같다.</p>
                     <ul>
-                        <li>Focus Appearance requires that focus indicators have a <em>change of contrast</em> between
-                            focused
-                            and non-focused states.
+                        <li>
+                            초점 모양을 사용하려면 초점 표시기에 초점이 맞춰진 상태와 초점이 맞춰지지 않은 상태 사이의 <em>대비가 변경</em>되어야 한다.
                         </li>
-                        <li>Non-text Contrast requires that focus indicators have <em>adjacent contrast</em> between the
-                            indicator (in the focused state) and adjacent non-indicator colors.
-                            </li>
-                            </ul>
+                        <li>
+                            텍스트가 아닌 콘텐츠의 명도대비를 사용하려면 초점 표시기가 표시기(초점 상태)와 인접한 비표시기 색상 사이에 <em>인접 대비</em>를 가져야 합니다.
+                        </li>
+                        </ul>
                     <figure id="non-text-contrast-fail-focus-appearance-pass">
                         <img src="img/focus-indicator-good-change-bad-adjacent.png"
-                            alt="A light blue button with a 3px thick border. The border is black in the unfocused state and light gray in the focused state." />
-                        <figcaption>Figure 18 This example passes Focus Appearance but fails Non-text Contrast; there is
-                            insufficient
-                            <em>adjacent contrast</em> between the focus indicator and the adjacent colors.
+                            alt="3px 두께의 테두리가 있는 연한 파란색 버튼. 초점이 맞지 않은 상태에서는 테두리가 검은색이고 초점이 맞춰진 상태에서는 밝은 회색이다." />
+                        <figcaption>
+                            그림 18 이 예는 초점 형태를 통과했지만 텍스트가 아닌 콘텐츠의 명도대비에는 실패했다. 초점 표시기와 인접 색상 사이의 <em>adjacent contrast</em>가 부족하다.
                         </figcaption>
                         </figure>
                     <figure id="non-text-contrast-pass-focus-appearance-fail">
                         <img src="img/focus-indicator-good-adjacent-bad-change.png"
-                            alt="A light blue button with a 3px thick border. The border is black in the unfocused state and dark gray in the focused state." />
-                        <figcaption>Figure 19 This example passes Non-text Contrast but fails Focus Appearance; there is
-                            insufficient
-                            <em>change of contrast</em> between the focused and unfocused states.
+                            alt="3px 두께의 테두리가 있는 연한 파란색 버튼. 초점이 맞지 않은 상태에서는 테두리가 검은색이고 초점이 맞춰진 상태에서는 어두운 회색이다." />
+                        <figcaption>
+                            그림 19 이 예는 텍스트가 아닌 콘텐츠의 명도대비를 통과했지만 초점 형태에서 실패했다. 초점이 맞춰진 상태와 초점이 맞춰지지 않은 상태 사이의 <em>대비 변화</em>가 충분하지 않다.
                         </figcaption>
                     </figure>
-                    <p>Additionally, Non-text Contrast does not establish any size requirement and has slightly
-                        different rules
-                        for when exceptions are allowed.
+                    <p>
+                        또한 텍스트가 아닌 콘텐츠의 명도대비는 크기 요구 사항을 설정하지 않으며 예외가 허용되는 경우에 대한 규칙이 약간 다르다.
                     </p>
-                    <p>See the Relationship with Focus Visible section of <a
-                            href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">Understanding
-                            1.4.11
-                            Non-text Contrast</a> for more details and examples.
+                    <p>
+                        자세한 내용과 예는 <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">1.4.11 텍스트가 아닌 콘텐츠의 명도대비
+                            이해</a>의 초점 표시와의 관계 섹션을 참조하라.
                     </p>
                 </section>
                 <section id="keyboard-focus">
-                    <h3>Component keyboard focus</h3>
-                    <p>The preamble to this Success Criterion is "When a user interface component has keyboard
-                        focus..." The
-                        <em>keyboard focus</em> is the point of interaction for someone using a keyboard. For
-                        environments with
-                        a keyboard-operable interface, the keyboard focus can be moved around the interface
-                        in order to interact
-                        with different components. Whichever component is being interacted with has focus.
+                    <h3>구성 요소 키보드 초점</h3>
+                    <p>
+                        이 성공 기준의 서문은 "사용자 인터페이스 구성 요소에 키보드 초점이 있는 경우..."이다. <em>키보드 초점</em>은 키보드를 사용하는 사람의 상호 작용 지점이다. 키보드로 작동 가능한 인터페이스가 있는
+                        환경의 경우 키보드 초점을 인터페이스 주위로 이동하여 다양한 구성 요소와 상호 작용할 수 있다. 상호작용하는 구성요소에는 초점이 있다.
                     </p>
-                    <p>WCAG defines <em>user interface component</em> as "a part of the content that is perceived by
-                        users as a
-                        single control for a distinct function." Because different users may perceive controls
-                        differently,
-                        there is a potential for some variation when interpreting what constitutes both a
-                        <em>single
-                            control</em> and a <em>distinct function</em>. This is particularly the case when something
-                        visually
-                        presents in a way that may differ from how it is programmatically created under the
-                        covers. Where there
-                        is not a native HTML component upon which to base designs, there can be great variations
-                        in how the
-                        components and their focus indicators are portrayed. Further, some components have
-                        sub-components that
-                        can take focus, such as the menu items on a menu.
+                    <p>
+                        WCAG는 <em>사용자 인터페이스 구성 요소</em>를 "사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부"로 정의한다. 사용자마다 컨트롤을 다르게 인식할 수 있기 때문에 <em>단일
+                            컨트롤</em>과 <em>구분된 기능</em>이 무엇인지 해석할 때 다소 차이가 있을 수 있다. 이는 특히 시각적으로 표현되는 방식과 프로그래밍 방식으로 만들어진 방식이 다를 때 더욱 그렇다. 기본
+                        HTML 컴포넌트를 기반으로 디자인하지 않은 경우, 구성요소와 초점 표시기가 표현되는 방식에 큰 차이가 있을 수 있다. 나아가 일부 구성요소에는 메뉴 항목과 같이 포커스를 받을 수 있는 하위 구성요소가 있다.
                     </p>
-                    <p>Nonetheless, consistent results from different testers were obtained for this Success
-                        Criterion by using
-                        the focus indicator itself as the gauge of what constitutes the component being interacted
-                        with. For
-                        complex components, the three typical focus indicators are as follows:
+                    <p>
+                        그럼에도 불구하고 초점 표시기 자체를 상호 작용하는 구성 요소를 구성하는 척도로 사용하여 이 성공 기준에 대해 다양한 테스터로부터 일관된 결과를 얻었다. 복잡한 구성요소의 경우 세 가지 일반적인 초점 표시기는
+                        다음과 같다.
                     </p>
                     <ul>
-                        <li>Focus indicator around only the whole component</li>
-                        <li>Focus indicators around both the component and subcomponent</li>
-                        <li>Focus indicator around only the subcomponent</li>
+                        <li>전체 구성요소에만 초점 표시기 적용</li>
+                        <li>구성요소와 하위 구성요소 모두에 초점 표시기 적용</li>
+                        <li>하위 구성요소에만 초점 표시기 적용</li>
                     </ul>
-                    <p>Each of these will be discussed, using a tablist as a familiar complex component.</p>
-                    <h3>Focus indicator around only the whole component</h3>
+                    <p>친숙한 복합 구성 요소인 탭 목록을 사용하여 이들 각각에 대해 설명한다.</p>
+                    <h3>전체 구성요소에만 초점 표시기 적용</h3>
                     <figure id="component-complex-whole">
                         <img src="img/component-complex-whole.png"
-                            alt="Three tab buttons shown with a dark blue rectangle around all three tab buttons." />
-                        <figcaption>Figure 20 A tablist with a focus indicator around only the whole.</figcaption>
-                        </figure>
-                    <p>When the focus indicator is shown only around the whole tablist, the user is guided
-                        to considering the
-                        tablist as a single user component. The tab items within it are visually distinguished
-                        between selected
-                        and unselected states (and visual indicators of selection state must meet the criteria
-                        given in <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">1.4.11
-                            Non-text
-                            Contrast</a>).
+                            alt="세 개의 탭 버튼 주위에 진한 파란색 직사각형이 표시된 세 개의 탭 버튼이 있다." />
+                        <figcaption>그림 20 전체에만 초점 표시기가 있는 탭 목록.</figcaption>
+                    </figure>
+                    <p>
+                        초점 표시기가 전체 탭 목록에만 표시되면 사용자는 탭 목록을 단일 사용자 구성 요소로 간주하도록 안내받는다. 그 안의 탭 항목은 선택된 상태와 선택되지 않은 상태를 시각적으로 구분한다(그리고 선택 상태의
+                        시각적 표시는 <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">1.4.11 텍스트가 아닌 콘텐츠의 명도대비</a>에
+                        제공된 기준을 충족해야 한다).
                     </p>
-                    <p>Having a focus indicator <em>only</em> around the whole is possible where there is no need to
-                        have a
-                        selected sub-component while another sub-component has focus. For a tablist which
-                        synchronizes its tab
-                        panel content with whatever tab is active, only one tab item can be selected at a
-                        time, and since
-                        whatever tab is selected is considered active, a separate focus indicator is redundant.
+                    <p>
+                        다른 하위 구성 요소에 초점이 있는 동안 하위 구성 요소를 선택할 필요가 없는 경우 전체 주위에<em>만</em> 초점 표시기를 갖는 것이 가능하다. 탭 패널 내용을 활성화된 탭과 동기화하는 탭 목록의 경우
+                        한 번에 하나의 탭 항목만 선택할 수 있으며 선택된 탭은 활성 상태로 간주되므로 별도의 초점 표시기가 중복된다.
                     </p>
-                    <p>Result: the group focus indicator must meet the requirements of this Success Criterion.</p>
-                    <p>A <a href="https://codesandbox.io/s/practical-cori-nl4pld?file=/index.html">radio button
-                            group</a> and a
-                        <a href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-rating.html">star-rating
-                            widget</a>, which each use only a whole-component focus indicator, provide working examples
-                            of
-                            different complex components that pass the primary requirements of this Success Criterion.
-                            In the star
-                            ratings example, users can increment the rating by 1/2 stars. Not only is a focus
-                            indicator for each 1/2
-                            star unnecessary, but it would actually be difficult to achieve without making the
-                            interaction
-                            confusing.
-                            </p>
-                    <h3>Focus indicators around both the component and subcomponent</h3>
+                    <p>결과: 그룹 초점 지표는 이 성공 기준의 요구 사항을 충족해야 한다.</p>
+                    <p>
+                        각각 전체 구성 요소 초점 표시기만 사용하는 <a href="https://codesandbox.io/s/practical-cori-nl4pld?file=/index.html">라디오 버튼 그룹</a>과 <a
+                            href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-rating.html">별점 위젯</a>은 이 적합 기준의 기본 요구 사항을
+                        통과하는 다양한 복잡한 구성 요소의 작업 예를 제공한다. 별점 예에서 사용자는 별표 1/2개씩 평점을 올릴 수 있다. 각 별 1/2개에 대한 초점 표시가 불필요할 뿐만 아니라 실제로 상호 작용을 혼란스럽게
+                        만들지 않고는 달성하기 어려울 수 있다.
+                    </p>
+                    <p>(역자 주: 원문 내용이 예제와 일부 다름. 업데이트 전으로 추정)</p>
+                    <h3>구성요소와 하위 구성요소 모두에 초점 표시기 적용</h3>
                     <figure id="component-complex-both">
                         <img src="img/component-complex-both.png"
-                            alt="Three tab buttons shown with a dark blue rectangle around all three tab buttons, the first tab button also has a dark outline as well as a blue bar indicating it is selected." />
+                            alt="탭 버튼 3개 모두 주위에 진한 파란색 직사각형으로 표시된 탭 버튼 3개, 첫 번째 탭 버튼에도 어두운 윤곽선과 선택되었음을 나타내는 파란색 막대가 있다." />
                         <br />
                         <img src="img/component-complex-both-unselected.png"
-                            alt="The same tab list showing except the first tab is selected, but the second has the focus outline." />
-                        <figcaption>Figure 21 The same tablist in two states. In the first, focus is around both the
-                            tablist and
-                            the
-                            currently selected tab; in the second, focus is around both the tablist and an unselected
-                            tab.
+                            alt="첫 번째 탭을 제외하고 동일한 탭 목록이 선택되어 있지만 두 번째 탭에는 초점 윤곽선이 있다." />
+                        <figcaption>
+                            그림 21 두 가지 상태의 동일한 탭 목록. 첫 번째에서는 초점이 탭 목록과 현재 선택된 탭 주위에 있다. 두 번째에서는 포커스가 탭 목록과 선택되지 않은 탭 주위에 있다.
                         </figcaption>
-                        </figure>
-                    <p>For a tablist which does not keep its tab panel content synchronized with whatever
-                        tab is selected, there
-                        needs to be a focus indicator for the tab item subcomponent. This is because the tab
-                        item with focus may
-                        be different than the selected item.
+                    </figure>
+                    <p>
+                        탭 패널 내용이 선택된 탭과 동기화된 상태로 유지되지 않는 탭 목록의 경우 탭 항목 하위 구성 요소에 대한 포커스 표시기가 있어야 한다. 포커스가 있는 탭 항목이 선택한 항목과 다를 수 있기 때문이다.
                     </p>
-                    <p>The user can navigate to the tablist, which in this implementation has a focus rectangle
-                        around the whole
-                        tablist as well as one around a tab item (conventionally the item that is currently
-                        selected). The focus
-                        around the whole is helpful in cueing a keyboard user that this is a complex component
-                        that has its own
-                        interaction. The user can then move focus between the unselected and selected tab
-                        items -- each of which
-                        in turn has its own focus indicator -- before activating one, which then makes it
-                        selected as well as
-                        focused, and updates the tab panel to match.
+                    <p>
+                        사용자는 탭 목록으로 이동할 수 있다. 이 구현에서는 전체 탭 목록 주위에 초점 사각형이 있고 탭 항목(일반적으로 현재 선택된 항목) 주위에도 초점 사각형이 있다. 전체에 초점을 맞추면 키보드 사용자에게
+                        이것이 자체 상호 작용이 있는 복잡한 구성 요소라는 신호를 보내는 데 도움이 된다. 그런 다음 사용자는 하나를 활성화하기 전에 선택되지 않은 탭 항목과 선택된 탭 항목(각각에는 자체 초점 표시기가 있음)
+                        사이에서 초점을 이동할 수 있다. 그런 다음 항목을 선택하고 초점을 맞추고 일치하도록 탭 패널을 업데이트한다.
                     </p>
-                    <p>In this scenario, either the group focus indicator or the sub-component indicator
-                        must meet the
-                        requirements of this Success Criterion. To avoid being overly prescriptive, the Success
-                        Criterion allows
-                        authors to choose which makes the most sense. Generally, if a sub-component focus
-                        is necessary, it
-                        should be assessed instead of the group indicator.
+                    <p>
+                        이 시나리오에서는 그룹 초점 표시기 또는 하위 구성 요소 표시기가 이 성공 기준의 요구 사항을 충족해야 한다. 지나치게 규정적인 것을 피하기 위해 성공 기준을 통해 저작자는 가장 적합한 것을 선택할 수 있다.
+                        일반적으로 하위 구성요소에 중점을 두는 것이 필요한 경우 그룹 지표 대신 평가해야 한다.
                     </p>
-                    <p>Result: the focus indicator for the tab item meets the requirements of this Success
-                        Criterion. The
-                        tablist focus indicator does not need to meet the requirements.
+                    <p>
+                        결과: 탭 항목의 초점 표시기가 이 성공 기준의 요구 사항을 충족한다. 탭 목록 초점 표시기는 요구 사항을 충족할 필요가 없다.
                     </p>
-                    <p>A <a href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-color-viewer.html">slider
-                            to pick
-                            colors</a> provides a working example of a different complex component that predominantly
-                        shows
-                        focus for the subcomponent. In this case, the thumb slider sub-component has a focus
-                        indicator of
-                        sufficient size and contrast to pass the sufficient area calculation. There is also
-                        a subtle focus
-                        around the whole slider component, but it does not need to be assessed to pass this
-                        Success Criterion.
+                    <p>
+                        <a href="https://www.w3.org/WAI/ARIA/apg/example-index/slider/slider-color-viewer.html">색상을 선택하는 슬라이더</a>는 주로 하위 구성
+                        요소에 대한 초점을 표시하는 다양한 복잡한 구성 요소의 작업 예를 제공한다. 이 경우 슬라이더 조작(핸들) 하위 구성 요소에는 영역 계산을 통과하기에 충분한 크기와 대비의 초점 표시기가 있다. 전체 슬라이더
+                        구성 요소에도 미묘한 초점이 있지만 이 성공 기준을 통과하기 위해 평가할 필요는 없다.
                     </p>
-                    <h3>Focus indicator around only the subcomponent</h3>
+                    <h3>하위 구성요소에만 초점 표시기 적용</h3>
                     <figure id="component-complex-sub">
-                        <img src="img/component-complex-sub.png" alt="Three tab buttons shown and the first button has a dark outline." />
-                        <figcaption>Figure 22 The same tabs as in the prior set, but the focus indicator around the
-                            whole is removed.
+                        <img src="img/component-complex-sub.png" alt="3개의 탭 버튼이 표시되어 있으며 첫 번째 버튼에는 어두운 윤곽선이 있다." />
+                        <figcaption>
+                            그림 22 이전 세트와 동일한 탭이지만 전체 구성요소 주위의 초점 표시기가 제거되었다.
                         </figcaption>
-                        </figure>
-                    <p>The same unsynchronized tablist can also be implemented as something which only shows
-                        focus on the tab
-                        items and not on the whole. The behaviour is the same as in the prior example, but
-                        there is never a
-                        focus indicator placed around the tablist. This interaction is acceptable, but it
-                        is not best practice
-                        since it demands more understanding from the user with less information. For example,
-                        some visual cues
-                        for the tablist and tab items (and tab panel) may not be clear. As well, keyboard
-                        users may not
-                        initially understand the expected keyboard interaction.
+                    </figure>
+                    <p>
+                        동일한 비동기화 탭 목록은 전체가 아닌 탭 항목에만 초점을 표시하는 것으로 구현될 수도 있다. 동작은 이전 예제와 동일하지만 탭 목록 주위에 초점 표시기가 배치되지 않는다. 이러한 상호 작용은 허용되지만 더
+                        적은 정보로 사용자의 더 많은 이해를 요구하므로 모범 사례는 아니다. 예를 들어, 탭 목록과 탭 항목(및 탭 패널)에 대한 일부 시각적 신호가 명확하지 않을 수 있다. 또한 키보드 사용자는 처음에는 예상되는
+                        키보드 상호 작용을 이해하지 못할 수도 있다.
                     </p>
-                    <p>Result: the focus indicator for the tab item must meet the requirements of this Success
-                        Criterion,
-                        judging focus with both selected and unselected tab items.
+                    <p>
+                        결과: 탭 항목에 대한 초점 표시기는 이 성공 기준의 요구 사항을 충족해야 하며 선택된 탭 항목과 선택되지 않은 탭 항목 모두의 초점을 판단해야 한다.
                     </p>
-                    <p>A <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role#example">
-                            functional example of sub-component-only tab focus</a> has an indicator that is large enough
-                            (at
-                            least four times the shortest side) with sufficient contrast to pass the focus area
-                            language of this
-                            Success Criterion.
-                            </p>
-                            <h3>Where something with focus is not a user interface component</h3>
-                            <p>Some pages contain very large editing regions, such as web implementations of word
-                                processors and code
-                                editors. Unlike a <code>textarea</code> element, which is a user interface component, these
-                                large
-                                editing regions do not typically meet the definition of <a
-                            href="https://w3c.github.io/wcag/guidelines/22/#dfn-user-interface-components">user
-                            interface
-                            components</a>; they are not "perceived by users as a single control for a distinct
-                        function."
-                        Providing focus indicators around such editing regions may still be beneficial to
-                        some; however, where
-                        the region is not perceived as a single control, it is not covered by this Success
-                        Criterion. The web
-                        page will still need to provide a insertion point (caret indicator) in such editing
-                        regions in order to
-                        meet the requirements of <a
-                            href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">2.4.7
-                            Focus Visible</a>.
+                    <p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role#example">하위 구성 요소 전용 탭 초점의
+                            기능적 예</a>에는 이 성공 기준의 초점 영역 요구 사항을 통과하기에 충분한 대비와 함께 충분히 큰(가장 짧은 쪽의 4배 이상) 표시기가 있다.
                     </p>
-                    <p>Some non-operable elements can take focus (such as a heading element that is the target
-                        of a skip link).
-                        However, the preamble of this Success Criterion refers to user interface components;
-                        it is only when the
-                        element with focus is operable by keyboard that this Success Criterion applies.
+                    <h3>초점을 받은 항목이 사용자 인터페이스 구성요소가 아닌 경우</h3>
+                    <p>
+                        일부 페이지에는 워드 프로세서 및 코드 편집기의 웹 구현과 같은 매우 큰 편집 영역이 포함되어 있다. <a
+                            href="https://w3c.github.io/wcag/guidelines/22/#dfn-user-interface-components">사용자 인터페이스 구성 요소</a>인
+                        <code>textarea</code> 요소와 달리 이러한 큰 편집 영역은 일반적으로 사용자 인터페이스 구성 요소의 정의를 충족하지 않는다. 이는 "사용자가 고유한 기능에 대한 단일 컨트롤로 인식"하지
+                        않는다. 이러한 편집 영역 주위에 초점 표시기를 제공하는 것이 일부에게는 여전히 도움이 될 수 있다. 그러나 해당 영역이 단일 통제로 인식되지 않는 경우에는 이 성공 기준이 적용되지 않는다. 웹 페이지는 <a
+                            href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">2.4.7 초점 시각화</a>의 요구 사항을 충족하기 위해 이러한 편집
+                        영역에 삽입 지점(캐럿 표시기)을 제공해야 한다.
+                    </p>
+                    <p>
+                        작동할 수 없는 일부 요소(예: 건너뛰기 링크의 대상인 제목 요소)가 포커스를 받을 수 있다. 그러나 이 성공 기준의 전문은 사용자 인터페이스 구성 요소를 나타낸다. 이 성공 기준이 적용되는 것은 초점이 있는
+                        요소가 키보드로 운용 가능한 경우에만 적용된다.
                     </p>
                 </section>
                 <section id="exceptions">
-                    <h3>Exceptions</h3>
-                    <p>There are two situations where the focus appearance does not need to be assessed:</p>
+                    <h3>예외</h3>
+                    <p>초점 형태를 평가할 필요가 없는 두 가지 상황이 있다.</p>
                     <ul>
-                        <li>the focus indicator cannot be adjusted by the author</li>
-                        <li>the author has not modified the effects of the user agent default</li>
+                        <li>저작자가 초점 표시기를 조정할 수 없는 경우</li>
+                        <li>저작자가 사용자 에이전트 기본값의 효과를 수정하지 않은 경우</li>
                     </ul>
                     <section id="exception-cannot-adjust">
-                        <h4>First exception: the focus indicator cannot be adjusted by the author</h4>
+                        <h4>첫 번째 예외: 저작자가 초점 표시기를 조정할 수 없는 경우</h4>
                         <blockquote>
-                            <p>The focus indicator is determined by the user agent and cannot be adjusted by the
-                                author
-                            </p>
+                            <p>포커스 표시기는 사용자 에이전트에 의해 결정되며 작성자가 조정할 수 없다.</p>
                             </blockquote>
-                        <p>Some components or technologies may not allow the author to adjust the focus indicator.
-                            This is the
-                            case with HTML <code>select</code> elements (both single and multi-select), where the visual
-                            treatments for selection and focus cannot be adjusted by the author. In this case
-                            the Success
-                            Criterion does not apply.
-                            </p>
-                            <figure id="country-select">
+                        <p>
+                            일부 구성 요소나 기술은 저작자가 초점 표시를 조정하는 것을 허용하지 않을 수 있다. 이는 선택 및 초점에 대한 시각적 처리를 저작자가 조정할 수 없는 HTML <code>select</code> 요소(단일
+                            및 다중 선택 모두)의 경우이다. 이 경우 성공 기준이 적용되지 않는다.
+                        </p>
+                        <figure id="country-select">
                             <img src="img/focus-indicator-select.png"
-                                alt="A country select element with Afghanistan selected and Albani with focus" />
-                            <figcaption>Figure 23 Passes: The user agent's default <code>select</code> element
-                                presentation cannot be
-                                modified by the author, so it passes regardless of the quality of the focus indicator
+                                alt="아프가니스탄이 선택되고 알바니아에 초점을 맞춘 국가 선택 요소" />
+                            <figcaption>
+                                그림 23 통과: 사용자 에이전트의 기본 <code>select</code> 요소 표시는 저작자가 수정할 수 없으므로 포커스 표시기의 품질에 관계없이 통과된다.
                             </figcaption>
-                            </figure>
+                        </figure>
                     </section>
                     <section id="exception-default">
-                        <h4>Second exception: the default indicator and background are not modified</h4>
+                        <h4>두 번째 예외: 사용자 에이전트 기본값의 효과를 수정하지 않은 경우</h4>
                         <blockquote>
-                            <p>The focus indicator and the indicator's background color are not modified by the author
-                            </p>
+                            <p>초점 표시와 표시의 배경색은 저작자가 수정하지 않는다.</p>
                             </blockquote>
-                        <p>If the focus indicator and the background behind the focus indicator are not modified
-                            by the author,
-                            the Success Criterion does not apply.
+                        <p>
+                            저작자가 초점 표시기 및 초점 표시 뒤의 배경을 수정하지 않은 경우 성공 기준이 적용되지 않는다.
                         </p>
-                        <p>The intent of this exception is to reduce burden on authors by allowing them to rely
-                            on the default
-                            indicators provided by user agents (browsers). If all user agents provided good focus
-                            indicators,
-                            authors would be able to concentrate efforts on other accessibility considerations.
-                            Unfortunately,
-                            browser default focus indicators vary by component, browser, and across devices and
-                            operating
-                            systems, and the default focus indicators in some browsers can be difficult to see
-                            (such as a 1px
-                            dotted outline). For this reason, most authors override browser defaults in order
-                            to overcome these
-                            deficiencies and create a more uniform user experience, regardless of browser.
+                        <p>
+                            이 예외의 목적은 저작자가 사용자 에이전트(브라우저)가 제공하는 기본 표시기에 의존할 수 있도록 하여 저작자의 부담을 줄이는 것이다. 모든 사용자 에이전트가 좋은 초점 표시기를 제공한다면 저작자는 다른 접근성
+                            고려 사항에 노력을 집중할 수 있다. 불행하게도 브라우저 기본 초점 표시기는 구성 요소, 브라우저, 장치 및 운영 체제에 따라 다르며 일부 브라우저의 기본 초점 표시기는 보기 어려울 수 있다(예: 1px 점선
+                            윤곽선). 이러한 이유로 대부분의 저작자는 이러한 결함을 극복하고 브라우저에 관계없이 보다 균일한 사용자 경험을 만들기 위해 브라우저 기본값을 재정의한다.
                         </p>
-                        <p>Some browser makers are improving their default focus indicators to make them more
-                            visible. As more
-                            browsers adopt defaults that meet the primary bullets of this Success Criterion, authors
-                            will be
-                            able to achieve improved focus indicators without customization.
+                        <p>
+                            일부 브라우저 제조업체는 기본 초점 표시기를 개선하여 더 잘 보이도록 하고 있다. 더 많은 브라우저가 이 성공 기준의 주요 항목을 충족하는 기본값을 채택함에 따라 작성자는 사용자 정의 없이 향상된 초점
+                            표시기를 얻을 수 있다.
                         </p>
-                        <h4>Modifying the focus indicator background</h4>
-                        <p>Browser default focus indicators can be made <em>more</em> difficult to see if the author
-                            modifies
-                            the pixels directly adjacent to the indicator (commonly referred to as its background),
-                            such as by
-                            positioning a component on top of an image or gradient background, or altering the
-                            page's default
-                            white background color, for instance using a blue background in combination with a
-                            browser's blue
-                            default indicator. For this reason, where the author alters the pixels directly adjacent
-                            to the
-                            default focus indicator, the user agent exception does not apply, and the author will
-                            need to verify
-                            they meet the size and contrast requirements of this Success Criterion.
+                        <h4>초점 표시기 배경 수정</h4>
+                        <p>
+                            브라우저 기본 포커스 표시기는 저작자가 표시기 바로 옆의 픽셀을 수정하면 <em>더</em> 확인하기 어려워질 수 있다(일반적으로 배경이라고 함). 예를 들어 구성요소를 이미지나 그라데이션 배경 위에
+                            위치시키거나, 페이지의 기본 흰색 배경 색상을 변경하는 경우이다. 특히 브라우저의 기본 파란색 표시기와 파란색 배경을 함께 사용하면 이런 문제가 발생한다. 이런 이유로 저작자가 기본 초점 표시기 바로 옆의
+                            픽셀을 변경한 경우에는 사용자 에이전트 예외가 적용되지 않으며, 저작자는 이 성공 기준의 크기와 대비 요구사항을 충족하는지 확인해야 한다.
                         </p>
                         <div class="note">
                             <p class="note-title marker">Note</p>
-                            <p>Altering the <code>body</code> element's <code>background-color</code> attribute
-                                <em>is</em> one way of altering the pixels directly adjacent to the indicator in most
-                                implementations. However, specifying a value of white (<code>#FFFFFF</code>) does not
-                                nullify this
-                                exception since, as established in the third note of the <a
-                                    href="https://www.w3.org/TR/WCAG22/#dfn-contrast-ratio">contrast ratio
-                                    definition</a>, the
-                                default ("unspecified") color is assumed to be white.
+                            <p>
+                                <code>body</code> 요소의 <code>background-color</code> 속성을 변경하는 것은 대부분의 구현에서 표시기에 바로 인접한 픽셀을 변경하는 한 가지 방법<em>이다</em>.
+                                그러나 흰색(<code>#FFFFFF</code>) 값을 지정해도 이 예외가 무효화되지는 않는다. 왜냐하면 <a
+                                    href="https://www.w3.org/TR/WCAG22/#dfn-contrast-ratio">명암비 정의</a>의 세 번째 참고 사항에 설정된 대로 기본("지정되지 않음") 색상은 흰색으로
+                                가정되기 때문이다.
                             </p>
                         </div>
-                        <p>As well, if the browser provides an indicator <em>within</em> a component by default, then
-                            authors
-                            can potentially reduce the visibility by changing the component color (which in such
-                            a scenario is
-                            the background color for the focus indicator). For example, if the default indicator
-                            on a button
-                            uses a colored inner border, authors can negatively affect the focus appearance by
-                            making the button
-                            or its unfocused border color a similar-luminosity color. For this reason, this user
-                            agent exception
-                            can only be met if the author both does not modify the default focus indicator <em>and</em>
-                            does not
-                            modify its background.
+                        <p>
+                            또한 브라우저가 기본적으로 구성 요소 내에 표시기를 제공하는 경우 저작자는 구성 요소 색상(이러한 시나리오에서는 초점 표시기의 배경색)을 변경하여 가시성을 잠재적으로 줄일 수 있다. 예를 들어, 버튼의 기본 표시기가 컬러 내부 테두리를 사용하는 경우 저작자는 버튼이나 초점이 맞춰지지 않은 테두리 색상을 유사 휘도 색상으로 만들어 초점 모양에 부정적인 영향을 미칠 수 있다. 이러한 이유로 이 사용자 에이전트 예외는 저작자가 기본 초점 표시기와 배경을 수정하지 않는 경우에만 충족될 수 있다.
                         </p>
                         <figure id="focus-indicator-browser-defaults-modified-background">
                             <img src="img/focus-indicator-browser-defaults-modified-background.png"
-                                alt="A button with an author-customized blue border which looks very similar to the blue border used by a user agent default focus indicator" />
-                            <figcaption>Figure 24 Fails: The middle button is focused using a browser's default focus
-                                indicator, but
-                                it is
-                                very difficult to tell which button is focused because the custom blue border on the
-                                unfocused
-                                button uses a similar color.
+                                alt="사용자 에이전트 기본 초점 표시기에 사용되는 파란색 테두리와 매우 유사하게 보이는 저작자가 사용자 정의한 파란색 테두리가 있는 버튼" />
+                            <figcaption>
+                                그림 24 실패: 브라우저의 기본 초점 표시기를 사용하여 가운데 버튼에 초점이 맞춰져 있지만 초점이 맞지 않은 버튼의 사용자 정의 파란색 테두리가 비슷한 색상을 사용하기 때문에 어느 버튼에 초점이 맞춰져 있는지 구분하기가 매우 어렵다.
                             </figcaption>
-                            </figure>
-                            </section>
-                            </section>
-                            </section>
+                        </figure>
+                    </section>
+                </section>
+            </section>
             <section id="benefits">
                 <h2>Benefits</h2>
                 <ul>
-                    <li>This Success Criterion helps anyone who relies on the keyboard to operate the page,
-                        by letting them
-                        visually determine the component on which keyboard operations will interact at any
-                        point in time.
+                    <li>
+                        이 성공 기준은 키보드 작업이 상호 작용할 구성 요소를 항상 시각적으로 결정함으로써 키보드를 사용하여 페이지를 작업하는 모든 사람에게 도움이 된다.
                     </li>
-                    <li>People with attention limitations, short term memory limitations, or limitations in
-                        executive processes
-                        benefit by being able to discover where the focus is located.
+                    <li>
+                        주의력 결핍, 단기 기억 제한 또는 실행 프로세스 제한이 있는 사람들은 초점이 어디에 있는지 발견할 수 있으므로 이점을 얻을 수 있다.
                     </li>
                     </ul>
             </section>
             <section id="examples">
                 <h2>Examples</h2>
                 <ul>
-                    <li>When links receive focus, an outline is displayed around the link that contrasts with
-                        the background
-                        adjacent to the link.
+                    <li>
+                        링크에 초점이 맞춰지면 링크에 인접한 배경과 대조되는 윤곽선이 링크 주변에 표시된다.
                     </li>
-                    <li>When buttons receive focus, an outline is displayed within the button (around the
-                        text) that contrasts
-                        with the button's background.
+                    <li>
+                        버튼에 초점이 맞춰지면 버튼 배경과 대조되는 윤곽선이 버튼 내부(텍스트 주변)에 표시된다.
                     </li>
-                    <li>When text fields receive focus, an outline is displayed around the field, indicating
-                        that the input has
-                        focus.
+                    <li>
+                        텍스트 필드가 초점을 받으면 필드 주위에 윤곽선이 표시되어 입력에 초점이 있음을 나타낸다.
                     </li>
-                    <li>When radio buttons receive focus, an outline is displayed around the control, indicating
-                        that the input
-                        has focus.
+                    <li>
+                        라디오 버튼이 초점을 받으면 컨트롤 주위에 윤곽선이 표시되어 입력에 초점이 있음을 나타냅니다.
                     </li>
                     </ul>
             </section>
