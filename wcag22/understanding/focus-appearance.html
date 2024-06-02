@@ -91,7 +91,7 @@
                 <header class="box-h  box-h-icon">Success Criterion (SC) </header>
                 <div class="box-i">
                     <p>
-                        키보드 <a href="#dfn-focus-indicator">초점 지시자(focus indicator)</a>가 보이는 경우, 이 영역은 다음 모든 조건을 충족해야 한다:
+                        키보드 <a href="#dfn-focus-indicator">초점 표시기(focus indicator)</a>가 보이는 경우, 이 영역은 다음 모든 조건을 충족해야 한다:
                     </p>
                     <ul>
                         <li>
@@ -104,10 +104,10 @@
                     <p>예외:</p>
                     <ul>
                         <li>
-                            초점 지시자가 <a href="#dfn-user-agent">사용자 에이전트</a>에 의해 결정되어 저작자가 조정할 수 없는 경우
+                            초점 표시기가 <a href="#dfn-user-agent">사용자 에이전트</a>에 의해 결정되어 저작자가 조정할 수 없는 경우
                             </li>
                         <li>
-                            초점 지시자와 그 배경색이 저작자에 의해 수정되지 않은 경우
+                            초점 표시기와 그 배경색이 저작자에 의해 수정되지 않은 경우
                         </li>
                         </ul>
                     <div class="note">
@@ -120,7 +120,7 @@
                     </div>
                     <div class="note">
                         <p class="note-title marker">Note</p>
-                        <p>초점 지시자가 나타날 수 있는 하위 구성요소의 예로는 열린 드롭다운 메뉴의 메뉴 항목이나 그리드의 초점 가능한 셀 등이 있다.</p>
+                        <p>초점 표시기가 나타날 수 있는 하위 구성요소의 예로는 열린 드롭다운 메뉴의 메뉴 항목이나 그리드의 초점 가능한 셀 등이 있다.</p>
                     </div>
                     <div class="note">
                         <p class="note-title marker">Note</p>
@@ -145,122 +145,89 @@
             <section id="intent">
                 <h2>Intent</h2>
                 <p>
-                    이 성공 기준의 목적은 키보드 초점 표시기가 명확하게 보이고 식별 가능하도록 하는 것이다. 초점 모양은 <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">2.4.7 초점 시각화</a> 및 <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">1.4.11 텍스트가 아닌 콘텐츠의 명도대비</a>와 밀접한 관련이 있다. 초점 시각화에서는 구성 요소에 키보드 초점이 있는 동안 시각적 초점 지시자가 있어야 합니다. 초점 형태는 최소 수준의 가시성을 정의한다. 텍스트가 아닌 콘텐츠의 명도대비에서는 구성 요소가 각 상태의 배경과 적절한 대비를 요구하는 반면 초점 형태는 초점 지시자 자체의 충분한 대비를 요구한다.
+                    이 성공 기준의 목적은 키보드 초점 표시기가 명확하게 보이고 식별 가능하도록 하는 것이다. 초점 모양은 <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">2.4.7 초점 시각화</a> 및 <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">1.4.11 텍스트가 아닌 콘텐츠의 명도대비</a>와 밀접한 관련이 있다. 초점 시각화에서는 구성 요소에 키보드 초점이 있는 동안 시각적 초점 표시기가 있어야 합니다. 초점 형태는 최소 수준의 가시성을 정의한다. 텍스트가 아닌 콘텐츠의 명도대비에서는 구성 요소가 각 상태의 배경과 적절한 대비를 요구하는 반면 초점 형태는 초점 표시기 자체의 충분한 대비를 요구한다.
                 </p>
                 <p>
                     키보드나 <a href="https://www.w3.org/TR/WCAG22/#dfn-keyboard-interface">키보드 인터페이스</a>를 활용하는 장치(예: 스위치 또는 음성 입력)를 사용하는 이동 장애가 있는 시각 장애인의 경우 현재 초점 위치를 아는 것이 매우 중요하다. 가시적 초점은 키보드에 의존하는 저시력 사용자의 요구 사항도 충족해야 한다.
                 </p>
                 <p>
-                    키보드 초점 지시자는 다양한 형태를 취할 수 있다. 이 성공 기준은 초점이 맞춰진 사용자 인터페이스 구성 요소 주위에 실선 윤곽선의 사용을 권장하지만 최소한 그 정도 크기의 다른 유형의 지표도 허용한다.
+                    키보드 초점 표시기는 다양한 형태를 취할 수 있다. 이 성공 기준은 초점이 맞춰진 사용자 인터페이스 구성 요소 주위에 실선 윤곽선의 사용을 권장하지만 최소한 그 정도 크기의 다른 유형의 지표도 허용한다.
                 </p>
                 <p>
                     이 이해 문서는 최소 영역 요구 사항, 색상 대비 요구 사항을 자세히 설명하고 마지막으로 일부 사용자 에이전트 예외 사항을 나열한다.
                 </p>
                 <section id="minimum-area">
-                    <h3>Minimum area</h3>
-                    <p>The first part of the Success Criterion specifies a minimum area for the focus indicator:</p>
+                    <h3>최소 영역</h3>
+                    <p>성공 기준의 첫 번째 부분은 초점 표시기의 최소 영역을 지정한다.</p>
                     <blockquote>
                         <ul>
-                            <li>is at least as large as the area of a 2 <a href="#dfn-css-pixel">CSS pixel</a> thick <a
-                                    href="#dfn-perimeter">perimeter</a> of the unfocused
-                                component or sub-component
+                            <li>
+                                초점을 받지 않은 구성 요소 또는 하위 구성요소의 <a href="#dfn-perimeter">외곽</a> 두께를 2 <a href="#dfn-css-pixel">CSS 픽셀</a> 이상으로 설정헤애 한다.
                             </li>
-                            </ul>
-                            </blockquote>
-                    <p>This only specifies a minimum area for the focus indicator. It does not require that
-                        the focus indicator
-                        literally be a 2 CSS pixel thick outline, only that the indicator be at least that
-                        large.
+                        </ul>
+                        </blockquote>
+                    <p>
+                        이는 초점 표시기의 최소 영역만 지정한다. 초점 표시기가 문자 그대로 2 CSS 픽셀 두께의 윤곽선일 필요는 없으며 지시자는 최소한 그만큼 커야 한다.
                     </p>
-                    <p>However, the simplest way to meet the size requirement is to use a focus indicator
-                        which <em>is</em> a
-                        solid 2 CSS pixel thick perimeter.
+                    <p>
+                        그러나 크기 요구 사항을 충족하는 가장 간단한 방법은 실선인 2 CSS 픽셀 외곽 두께의 초점 표시기를 사용하는 것이다.
                     </p>
                     <div class="note">
                         <p class="note-title marker">Note</p>
-                        <p>A <a href="#dfn-css-pixel">CSS pixel</a> is what developers use in CSS declarations like
-                            “width: 200px”. It is
-                            device-independent and not to be confused with device pixels which vary depending
-                            on the physical pixel
-                            density. <br />
-                            The rest of this document notates CSS pixels as “px”.
-                            </p>
+                        <p>
+                            <a href="#dfn-css-pixel">CSS pixel</a>은 개발자가 "width: 200px"와 같은 CSS 선언에 사용하는 것이다. 이는 장치 독립적이며 물리적 픽셀 밀도에 따라 달라지는 장치
+                            픽셀과 혼동하지 않아야 한다. 이 문서의 나머지 부분에서는 CSS 픽셀을 "px"로 표기한다.
+                        </p>
                     </div>
                     <section id="area-solid-outline">
-                        <h4>Using a solid outline</h4>
-                        <p>The easiest and most common way to meet this requirement is to use a solid outline
-                            around the
-                            component. The outline must be at least 2px thick. The following illustration shows
-                            a
-                            <strong>minimally</strong> thick focus indicator, where a 2px thick band of white pixels
-                            making up
-                            the page background around an example button have been altered to black.
+                        <h4>실선인 윤곽선 사용</h4>
+                        <p>
+                            이 요구 사항을 충족하는 가장 쉽고 가장 일반적인 방법은 구성 요소 주위에 실선 윤곽선을 사용하는 것이다. 윤곽선의 두께는 최소 2px 이상이어야 한다. 다음 그림은 <strong>최소</strong> 두께의
+                            초점 표시기를 보여준다.
+                            예제 버튼 주변의 페이지 배경을 구성하는 2px 두께의 흰색 픽셀 띠가 검은색으로 변경되었다.
                         </p>
                         <figure id="focus-indicator-basic">
                             <img src="img/focus-indicator-basic.png"
-                                alt="2 blue buttons with a dark 2 pixel thick offset focus rectangle around the second" />
-                            <figcaption>Figure 1 Passes: The focus indicator is a solid 2px thick outline.</figcaption>
+                                alt="두 개의 주위에 어두운 2픽셀 두께의 오프셋 초점 직사각형이 있는 파란색 버튼 2개" />
+                            <figcaption>그림 1 통과: 초점 표시기는 2px 두께의 실선 윤곽선이다.</figcaption>
                             </figure>
-                        <p>For non-rectangular components, the "perimeter" definition allows authors to use either
-                            of the
-                            following types of outline:
+                        <p>
+                            직사각형이 아닌 구성 요소의 경우 "외곽" 정의를 통해 작성자는 다음 유형의 윤곽선 중 하나를 사용할 수 있다.
                         </p>
                         <ul>
-                            <li>a line which solidly encloses a shape, or</li>
-                            <li>a line which solidly encloses the <a href="#dfn-minimum-bounding-box">minimum bounding
-                                    box</a> of a shape
-                            </li>
+                            <li>모양을 견고하게 둘러싸는 선, 또는</li>
+                            <li>도형의 <a href="#dfn-minimum-bounding-box">최소 경계 상자(minimum bounding box)</a>를 견고히 둘러싸는 선</li>
                             </ul>
-                        <p>For example, a star-shaped button may use either a focus indicator that follows the
-                            shape of the star
-                            or a focus indicator that follows the bounding box of the star. In the following examples,
-                            the same
-                            three stars have already been selected, and focus is on the third star. The first
-                            example uses a
-                            focus indicator which matches the star shape of the focused star. The second uses
-                            a rectangular
-                            indicator.
+                        <p>
+                            예를 들어 별 모양 버튼은 별 모양을 따르는 초점 표시기나 별의 경계 상자를 따르는 초점 표시기를 사용할 수 있다. 다음 예에서는 동일한 별 세 개가 이미 선택되어 있으며 세 번째 별에 초점이 맞춰져 있다.
+                            첫 번째 예에서는 초점이 맞춰진 별의 별 모양과 일치하는 초점 표시기를 사용한다. 두 번째는 직사각형 표시기를 사용한다.
                         </p>
                         <figure id="focus-outline-solid">
                             <img src="img/focus-indicator-solid-outline.svg"
-                                alt="Three of 5 stars are selected with a solid-line focus indicator in the shape of a star outlining the third" />
-                            <figcaption>Figure 2 Passes: a solid outline indicator surrounds the third of five stars.
-                            </figcaption>
-                            </figure>
+                                alt="별 5개 중 3개는 세 번째 별의 윤곽을 그리는 별 모양의 실선 초점 표시로 선택된다." />
+                            <figcaption>그림 2 통과: 실선 윤곽선 표시가 별 5개 중 세 번째를 둘러싼다.</figcaption>
+                        </figure>
                         <figure id="focus-border-solid">
                             <img src="img/focus-indicator-solid-border.svg"
-                                alt="3 of 5 stars are selected with a solid-line rectangular focus indicator around the third" />
-                            <figcaption>Figure 3 Passes: a solidly bound focus rectangle encloses the third of five
-                                stars.</figcaption>
+                                alt="별 5개 중 3개가 선택되었으며 세 번째 별 주위에는 실선 직사각형 초점 표시가 있다." />
+                            <figcaption>그림 3 통과: 단단히 묶인 초점 직사각형이 별 5개 중 세 번째를 둘러싸고 있다.</figcaption>
                             </figure>
-                        <p>Offsetting indicators slightly from the focused component, as in the examples above,
-                            is not required
-                            to meet the minimum area requirement of the success criterion, but it can help make
-                            indicators more
-                            visible. In CSS, the <code>outline</code> and <code>outline-offset</code> properties are
-                            commonly
-                            used to achieve this.
+                        <p>
+                            위의 예에서처럼 초점이 맞춰진 구성 요소에서 지시자를 약간 떨어지게 배치하는 것은 성공 기준의 최소 영역 요구 사항을 충족하는 데 필요하지 않지만 표시기를 더 잘 보이게 하는 데 도움이 될 수 있다.
+                            CSS에서는 이를 달성하기 위해 <code>outline</code> 및 <code>outline-offset</code> 속성이 일반적으로 사용된다.
                         </p>
-                        <p>The smallest possible 2 CSS pixel thick indicator that is still a "perimeter" is a
-                            solid line that
-                            appears inside the component against the component's outer edge, for example by using
-                            a CSS
-                            <code>border</code> property. Indicators that are inset further within the component (not
-                            directly
-                            against the component's outer edge) need to be thicker than 2 CSS pixels to meet the
-                            minimum size
-                            requirement.
+                        <p>
+                            여전히 "외곽"인 가능한 가장 작은 2 CSS 픽셀 두께 지시자는 예를 들어 CSS <code>border</code> 속성을 사용하여 구성 요소의 외부 가장자리에 대해 구성 요소 내부에 나타나는 실선이다.
+                            구성 요소 외부 가장자리에 직접 삽입되지 않고 구성 요소 내에 추가로 삽입되는 표시기는 최소 크기 요구 사항을 충족하려면 2 CSS 픽셀보다 두꺼워야 한다.
                         </p>
                         <figure id="focus-offsets">
                             <img src="img/focus-indicator-offset-types.png"
-                                alt="a button along with 4 examples of different 2px solid focus indicators for it: offset outside the component, an outline around the boundary of the component, a border inside the boundary of the component, and inset inside the component" />
-                            <figcaption>Figure 4 All four of these example focus indicators are 2px solid lines. The
-                                "outset", "outline",
-                                and "border" indicators pass. The "inset" indicator does not meet the minimum area
-                                requirement
-                                and fails; it would need to be at least 3px thick to pass.
+                                alt="버튼과 함께 2px 실선 포커스 표시기의 4가지 다른 예시: 구성 요소 바깥쪽에서 띄워진, 구성 요소 경계를 따라 있는 아웃라인, 구성 요소 경계 안쪽에 있는 테두리, 구성 요소 안쪽으로 들어간 인셋" />
+                            <figcaption>
+                                그림 4 이러한 예제 초점 표시기 4개는 모두 2px 실선이다. ""outset", "outline", "border" 지시자는 성공 기준을 통과한다. "inset" 표시기가 최소 영역 요구 사항을 충족하지 않아 실패이다. 통과하려면 두께가 3px
+                                이상이어야 한다.
                             </figcaption>
-                            </figure>
+                        </figure>
                         <p>Note that different Non-text Contrast requirements may apply depending on whether
                             the focus indicator
                             is offset from, inset into, or against the edge of the component. See the <a
