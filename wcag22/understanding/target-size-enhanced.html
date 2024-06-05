@@ -105,13 +105,9 @@
                <dt>인라인</dt>
                <dd>타겟이 텍스트의 문장이나 블록 안에 있는 경우</dd>
                <dt>사용자 에이전트 컨트롤</dt>
-               <dd>The size of the target is determined by the user agent and is not modified by the
-                  author;
-               </dd>
-               <dt>Essential</dt>
-               <dd>A particular presentation of the target is <a href="#dfn-essential">essential</a> to the
-                  information being conveyed.
-               </dd>
+               <dd>타겟 크기가 사용자 에이전트에 의해 결정되고 개발자에 의해 수정되지 않은 경우</dd>
+               <dt>필수적인</dt>
+               <dd>타겟이의 표현(presentation)이 전달해야 할 정보에 <a href="#dfn-essential">필수적인</a> 경우</dd>
             </dl>
             </div>
             </aside>
@@ -120,64 +116,49 @@
          <h2>In Brief</h2>
          <dl>
             <dt>Goal</dt>
-            <dd>Controls can be operated more easily, especially on touch screens.</dd>
+            <dd>특히 터치 스크린에서는 컨트롤을 더 쉽게 조작할 수 있다.</dd>
             <dt>What to do</dt>
-            <dd>Make custom targets at least 44 by 44 pixels.</dd>
+            <dd>사용자 정의 타겟을 최소 44 &times; 44 픽셀로 만들어야 한다.</dd>
             <dt>Why it's important</dt>
-            <dd>Some people cannot tap small objects.</dd>
+            <dd>어떤 사람들은 작은 물체를 탭할 수 없다.</dd>
          </dl>
       </section>
       <section id="intent">
          <h2>Intent</h2>
-         <p>The intent of this success criterion is to help users who may have trouble activating
-            a small target because of hand tremors, limited dexterity or other reasons. If the
-            target is too small, it may be difficult to aim at the target. Mice and similar pointing
-            devices can be hard to use for these users, and a larger target will help them greatly
-            in having positive outcomes on the web page.
+         <p>
+            이 성공 기준의 목적은 손 떨림, 제한된 민첩성 또는 기타 이유로 인해 작은 타겟을 활성화하는 데 어려움을 겪을 수 있는 사용자를 돕는 것이다.  타겟이 너무 작으면 표적을 겨냥하기 어려울 수 있다. 이런 사용자는 마우스 및 유사한 포인팅 장치를 사용하기 어려울 수 있으며, 더 큰 타겟은 웹 페이지에서 긍정적인 결과를 얻는 데 큰 도움이 될 것이다.
          </p>
-         <p>Touch is particularly problematic as it is an input mechanism with coarse precision.
-            Users lack the same level of fine control as on inputs such as a mouse or stylus.
-            A finger is larger than a mouse pointer, and generally obstructs the user's view of
-            the precise location on the screen that is being touched/activated.
+         <p>
+            터치는 정밀도가 낮은 입력 메커니즘이므로 특히 문제가 된다. 사용자에게는 마우스나 스타일러스와 같은 입력 장치와 동일한 수준의 미세한 제어 기능이 부족하다. 손가락은 마우스 포인터보다 크기 때문에 일반적으로 터치/활성화되는 화면의 정확한 위치를 사용자가 보는 데 방해가 된다.
          </p>
-         <p>The issue can be further complicated for responsive/mobile sites which need to accommodate
-            different types of fine and coarse inputs (e.g. a site that can be accessed both on
-            a traditional desktop/laptop with a mouse, as well as on a tablet or mobile phone
-            with a touch screen).
+         <p>
+            다양한 유형의 정밀하고 거친 입력을 수용해야 하는 반응형/모바일 사이트(예: 마우스를 사용하여 기존 데스크톱/노트북은 물론 터치스크린이 있는 태블릿이나 휴대폰에서 모두 접속할 수 있는 사이트)의 경우 문제가 더욱 복잡해질 수 있다.
          </p>
-         <p>While this criterion defines a minimum target size, it is recommended that larger
-            sizes are used to reduce the possibility of unintentional actions. This is particularly
-            relevant if any of the following are true:
+         <p>
+            이 기준은 최소 타겟 크기를 정의하지만 의도하지 않은 작업의 가능성을 줄이기 위해 더 큰 크기를 사용하는 것이 좋다. 이는 다음 중 하나라도 해당되는 경우 특히 관계가 있다.
          </p>
          <ul>
-            <li>the control is used frequently;</li>
-            <li>the result of the interaction cannot be easily undone;</li>
-            <li>the control is positioned where it will be difficult to reach, or is near the edge
-               of the screen;
-            </li>
-            <li>the control is part of a sequential task.</li>
+            <li>자주 사용되는 컨트롤인 경우</li>
+            <li>쉽게 되돌릴 수 없는 상호 작용의 결과를 내는 경우</li>
+            <li>컨트롤이 접근하기 어려운 위치에 있거나 화면 가장자리에 가까운 경우</li>
+            <li>컨트롤은 순차적 작업의 일부인 경우</li>
          </ul>
          </section>
          <section id="benefits">
          <h2>Benefits</h2>
          <ul>
-            <li>Users who use a mobile device where touch screen is the primary mode of interaction</li>
-            <li>Users with mobility impairments, such as hand tremors</li>
-            <li>Users who find fine motor movements difficult</li>
-            <li>Users who access a device using one hand</li>
-            <li>Users with large fingers, or who are operating the device with only a part of their
-               finger or knuckle
-            </li>
-            <li>Users who have low vision may better see the target</li>
+            <li>터치 스크린이 주요 상호 작용 모드인 모바일 장치를 사용하는 사용자</li>
+            <li>손떨림 등 운동 장애가 있는 사용자</li>
+            <li>미세한 움직임이 어려운 사용자</li>
+            <li>한 손으로 기기에 접근하는 사용자</li>
+            <li>손가락이 크거나, 손가락이나 관절의 일부만을 사용하여 기기를 조작하는 사용자</li>
+            <li>저시력 사용자는 대상을 더 잘 볼 수 있다</li>
          </ul>
          </section>
          <section id="examples">
          <h2>Examples</h2>
          <ul>
-            <li><strong>Example 1: Buttons</strong><br />
-               Three buttons are on-screen and the target area of each button is 44 by 44
-               CSS pixels.
-               </li>
+            <li><strong>예 1: 버튼</strong><br />세 개의 버튼이 화면에 표시되며 각 버튼의 대상 영역은 44 &times; 44 CSS 픽셀이다.</li>
          </ul>
       </section>
       <section id="resources">
