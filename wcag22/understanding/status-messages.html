@@ -149,172 +149,116 @@
                   <ul>
                      <li>
                         사용자가 검색 버튼을 누르면 페이지 콘텐츠가 업데이트되어 검색 결과가 포함되며 검색 버튼 아래 섹션에 표시된다. 콘텐츠 변경에는 이 새 콘텐츠 상단 근처에 "5개의 결과가 반환되었습니다"라는 메시지도 포함된다. 이 텍스트에는 상태 메시지에 대한 적절한 역할이 부여된다. 화면 낭독기에서 "5개의 결과가 반환되었습니다"라고 알린다.
-                        After a user presses a Search button, the page content is updated to include the results
-                        of the search, which are displayed in a section below the Search button. The change
-                        to content also includes the message "5 results returned" near the top of this new
-                        content. This text is given an appropriate role for a status message. A screen reader
-                        announces, "Five results returned".
                      </li>
-                     <li>After a user presses an Add to Shopping Cart button, a section of content near the
-                        Shopping Cart icon adds the text "5 items". A screen reader announces "Five items"
-                        or "Shopping cart, five items".
+                     <li>
+                        사용자가 장바구니에 추가 버튼을 누르면 장바구니 아이콘 근처의 콘텐츠 섹션에 "5개 항목"이라는 텍스트가 추가된다. 화면 낭독기가 "5개 항목" 또는 "장바구니, 5개 항목"을 알린다.
                      </li>
-                     <li>After a user enters incorrect text in an input called Postal Code, a message appears
-                        above the input reading "Invalid entry". The screen reader announces, "Invalid entry"
-                        or "Postal code, invalid entry".
+                     <li>
+                        사용자가 우편 번호라는 입력에 잘못된 텍스트를 입력하면 입력 위에 "잘못된 항목"이라는 메시지가 나타난다. 화면 낭독기에서 "잘못된 항목" 또는 "우편번호, 잘못된 항목"이라고 알린다.
                      </li>
-                     <li>After a user activates a process, an icon symbolizing 'busy' appears on the screen.
-                        The screen reader announces "application busy".
+                     <li>
+                        사용자가 프로세스를 활성화하면 '바쁨'을 상징하는 아이콘이 화면에 나타난다. 화면 낭독기에서 "애플리케이션 사용 중"이라고 알린다.
                      </li>
-                     <li>An application displays a progressbar to indicate the status of an upgrade. The element
-                        is assigned a suitable role. The screen reader provides intermittent announcements
-                        of the progress.
+                     <li>
+                        애플리케이션은 업그레이드 상태를 나타내는 진행 표시줄을 표시한다. 요소에 적절한 역할이 할당된다. 화면 낭독기는 진행 상황을 간헐적으로 알려준다.
                      </li>
-                     <li>After a user submits a form, text is added to the existing form which reads, "Your
-                        form was successfully submitted." The screen reader announces the same message.
+                     <li>
+                        사용자가 양식을 제출하면 기존 양식에 "양식이 성공적으로 제출되었습니다."라는 텍스트가 추가된다. 화면 낭독기에서 동일한 메시지를 알린다.
                      </li>
-                     <li>After a user unsuccessfully fills in a form because some of the data is in the incorrect
-                        format, text is added to the existing form which reads "5 errors on page". The screen
-                        reader announces the same message.
+                     <li>
+                        일부 데이터 형식이 잘못되어 사용자가 양식을 채우지 못한 경우 기존 양식에 "페이지에 5개 오류"라는 텍스트가 추가된다. 화면 낭독기에서 동일한 메시지를 알린다.
                      </li>
-                     <li>After a user puts a photo in an album in an online photo app, a <a
-                        href="https://material.io/design/components/snackbars.html#">snackbar </a> displays the message
-                        "Saved in 'Wedding' album", which is also read by a screen reader.
+                     <li>
+                        사용자가 온라인 사진 앱의 앨범에 사진을 넣으면 <a href="https://material.io/design/components/snackbars.html#">스낵바</a>(역자 주: 화면 하단에 앱 프로세스에 대한 간략한 메시지를 제공하는 UI)에 '웨딩' 앨범에 저장되었습니다'라는 메시지가 표시되고 화면 낭독기에서도 이를 읽는다.
                      </li>
                   </ul>
                </section>
                <section class="example" id="examples-of-status-messages-that-do-not-add-new-text-to-the-screen">
-                  <h3>Examples of Status Messages that Do Not Add New Text to the Screen</h3>
-                  <p>This Success Criterion was intentionally worded to apply primarily when visible text
-                     is added to (or becomes visible on) the page. The reason for this is that where new
-                     text is displayed, it is intended to be visible to all users. By providing a programmatic
-                     means of ensuring the text is also surfaced through assistive technologies, the Success
-                     Criterion provides the same information to users who cannot or may not see it. However,
-                     not all changes to content involve the addition of text to the screen. The following
-                     are all considerations relevant to this Success Criterion:
+                  <h3>화면에 새 텍스트를 추가하지 않는 상태 메시지의 예제</h3>
+                  <p>
+                     이 성공 기준은 눈에 보이는 텍스트가 페이지에 추가되거나 페이지에 표시될 때 주로 적용되도록 의도적으로 작성되었다. 그 이유는 새 텍스트가 표시되는 경우 모든 사용자가 볼 수 있도록 의도되었기 때문이다. 성공 기준은 텍스트가 보조 기술을 통해 표시되도록 하는 프로그래밍 방식의 수단을 제공함으로써 텍스트를 볼 수 없거나 볼 수 없는 사용자에게 동일한 정보를 제공한다. 그러나 모든 콘텐츠 변경이 화면에 텍스트 추가를 포함하는 것은 아니다. 다음은 이 성공 기준과 관련된 모든 고려 사항이다.
                   </p>
                   <ul>
-                     <li>Non-displayed text specific to AT users;</li>
-                     <li>Modification of status text;</li>
-                     <li>Removal of status text; and</li>
-                     <li>Non-textual status content, such as images.</li>
+                     <li>AT 사용자에게만 표시되지 않는 텍스트</li>
+                     <li>상태 텍스트 수정</li>
+                     <li>상태 텍스트 제거</li>
+                     <li>이미지와 같이 텍스트가 아닌 상태 콘텐츠</li>
                   </ul>
                   <section id="non-displayed-text-specific-to-at-users">
-                     <h4>Non-displayed text specific to AT users</h4>
-                     <p>There may be cases where the addition of visible text does not by itself convey sufficient
-                        information to the user of assistive technology. For example, the proximity of new
-                        content to other pieces of information on the screen may provide a visual context
-                        that is lacking in the text alone.
+                     <h4>AT 사용자에게만 표시되지 않는 텍스트</h4>
+                     <p>
+                        보이는 텍스트를 추가하는 것만으로는 보조 기술 사용자에게 충분한 정보를 전달하지 못하는 경우가 있을 수 있다. 예를 들어, 새로운 콘텐츠가 화면의 다른 정보에 근접하면 텍스트만으로는 부족한 시각적 맥락을 제공할 수 있다.
                      </p>
-                     <p>In such cases, authors may wish to designate additional content for inclusion in the
-                        status message, including non-displayed text which can be provided to the assistive
-                        technologies, for added context. Important considerations regarding the appropriate
-                        use of such techniques are further discussed in the Sufficient Techniques.
+                     <p>
+                        이러한 경우 작성자는 추가 컨텍스트를 위해 보조 기술에 제공될 수 있는 표시되지 않는 텍스트를 포함하여 상태 메시지에 포함할 추가 콘텐츠를 지정할 수 있다. 이러한 기술의 적절한 사용에 관한 중요한 고려 사항은 충분 기법에서 자세히 논의된다.
                      </p>
                   </section>
                   <section id="modification-of-status-text">
-                     <h4>Modification of status text</h4>
-                     <p>If a status message persists on the page, modifications to this text are usually equivalent
-                        to a new status message. An example would be a shopping cart which updates text from
-                        reading "0 items" to "3 items". Typical methods of writing such changes in the page
-                        content result in the entire modified text string being considered a new change, and
-                        thus read by assistive technologies. However, where only the number in this string
-                        was coded as an updated chunk of content, the resulting experience for screen reader
-                        users could be to only hear "three", which may not be sufficient information to provide
-                        context for the user. In such situations, marking the entire "3 items" string as the
-                        status text would normally be a better solution. See Sufficient Techniques for more
-                        discussion, including the use of <code>aria-atomic</code>. In this case it would also be a courtesy
-                        to add offscreen text such as "in shopping
-                        cart" to the message.
+                     <h4>상태 텍스트 수정</h4>
+                     <p>
+                        상태 메시지가 페이지에 지속되는 경우 이 텍스트를 수정하는 것은 일반적으로 새 상태 메시지와 동일하다. 예를 들어 텍스트를 "0개 항목"에서 "3개 항목"으로 업데이트하는 장바구니가 있다. 페이지 콘텐츠에 이러한 변경 사항을 작성하는 일반적인 방법은 수정된 전체 텍스트 문자열이 새로운 변경 사항으로 간주되어 보조 기술로 읽혀지는 결과를 낳는다. 그러나 이 문자열의 숫자만 업데이트된 콘텐츠 덩어리로 코딩된 경우 화면 낭독기 사용자의 결과는 "3"만 듣게 될 수 있으며 이는 사용자에게 컨텍스트를 제공하기에 충분한 정보가 아닐 수 있다. 이러한 상황에서는 전체 "3개 항목" 문자열을 상태 텍스트로 표시하는 것이 일반적으로 더
+                        나은 솔루션이다. <code>aria-atomic</code>의 사용을 포함한 자세한 내용은 충분 기법을 참조하라. 이 경우 메시지에 "장바구니에 있음"과 같은 오프스크린 텍스트를 추가하는 것도 사례이다.
                      </p>
                   </section>
                   <section id="removal-of-status-text">
-                     <h4>Removal of status text</h4>
-                     <p>In situations where status text is entirely removed, its absence may itself convey
-                        information about the status. The most obvious example of this is where a message
-                        is displayed that the system is "busy" or "waiting". For a sighted user, when this
-                        text disappears, it is normally an indication that the state is now available. However
-                        non-sighted users would be unaware of this change, unless the end of the waiting state
-                        results in a change of context for the user. Where updating the visible message (e.g.,
-                        to "system available") is not feasible, the use of a non-visible status message, such
-                        as "system available", ensures equivalent status information is provided. See Sufficient
-                        Techniques for more discussion.
+                     <h4>상태 텍스트 제거</h4>
+                     <p>
+                        상태 텍스트가 완전히 제거된 상황에서는 해당 텍스트가 없으면 그 자체로 상태에 대한 정보가 전달될 수 있다. 이에 대한 가장 확실한 예는 시스템이 "사용 중"이거나 "대기 중"이라는 메시지가 표시되는 경우이다. 시력이 있는 사용자의 경우 이 텍스트가 사라지면 일반적으로 현재 상태를 사용할 수 있음을 나타낸다. 그러나 시각 장애가 있는 사용자는 대기 상태가 종료되어 사용자의 상황이 변경되지 않는 한 이 변경 사항을 인식하지 못한다. 표시되는 메시지(예: "시스템 사용 가능")를 업데이트하는 것이 불가능할 경우 "시스템 사용 가능"과 같은 비가시적 상태 메시지를 사용하면 동등한 상태 정보가 제공된다. 자세한 내용은 충분 기법을
+                        참조하라.
                      </p>
                   </section>
                   <section id="non-textual-status-content">
-                     <h4>Non-textual status content</h4>
-                     <p>Changes in content are not restricted to text changes. Where an icon or sound indicates
-                        a status message, this information will be surfaced by the screen reader through a
-                        combination of two things: 1) existing WCAG requirements governing text alternatives
-                        (under SC 1.1.1 Non-Text Content), and 2) the requirement of this current Success
-                        Criterion to supply an appropriate role.
+                     <h4>텍스트가 아닌 상태 콘텐츠</h4>
+                     <p>
+                        콘텐츠 변경은 텍스트 변경에만 국한되지 않는다. 아이콘이나 사운드가 상태 메시지를 나타내는 경우 이 정보는 1) 텍스트 대안을 관리하는 기존 WCAG 요구 사항(SC 1.1.1 텍스트가 아닌 콘텐츠에 따라)과 2) 적절한 역할을 제공하기 위한 현재 성공 기준의 요구 사항 두 가지의 조합을 통해 화면 낭독기에 표시된다.
                      </p>
                   </section>
                </section>
                <section class="example" id="excepted-examples">
-                  <h3>Examples of Changes That Are Not Status Messages</h3>
-                  <p>The following examples identify situations where no additional author action is necessary.
-                     All cases are excepted from this Success Criterion since they do not meet the definition
-                     of "status messages."
+                  <h3>상태 메시지가 아닌 변경 사항의 예제</h3>
+                  <p>
+                     다음 예에서는 추가적인 저작자의 작업이 필요하지 않은 상황을 식별한다. 모든 사례는 "상태 메시지"의 정의를 충족하지 않으므로 이 성공 기준에서 제외된다.
                   </p>
                   <ul>
                      <li>
-                        <p>An author displays an error message in a dialog.</p>
-                        <p>Since the dialog takes focus, it is defined as a change of context and does not meet
-                           the definition of a status message. As a result of taking focus, the new change of
-                           context is already announced by the screen reader, and thus does not need to be included
-                           in the scope of this Success Criterion.
+                        <p>저작자가 대화 상자에 오류 메시지를 표시한다.</p>
+                        <p>
+                           대화 상자에 초점이 맞춰져 있으므로 컨텍스트 변경으로 정의되며 상태 메시지의 정의를 충족하지 않는다. 초점을 맞춘 결과 새로운 맥락 변경이 이미 화면 낭독기에 의해 표시되었으므로 이 성공 기준의 범위에 포함될 필요가 없다.
                         </p>
                      </li>
                      <li>
-                        <p>Content is exposed or hidden when a user interacts with a user interface component,
-                           for example expanding components such as a menu, select, accordion or tree, or selecting
-                           a different tab item in a tablist.
+                        <p>
+                           사용자가 메뉴, 선택, 아코디언 또는 트리와 같은 구성 요소를 확장하거나 탭 목록에서 다른 탭 항목을 선택하는 등 사용자 인터페이스 구성 요소와 상호 작용할 때 콘텐츠가 노출되거나 숨겨진다.
                         </p>
-                        <p>None of the resulting changes to content meet the definition of status messages. Further,
-                           all components that meet the definition of a user interface component already have
-                           requirements specified under <a href="name-role-value" class="sc">4.1.2 Name, Role, Value</a>,
-                           including the need to make notifications of changes to values and states available
-                           to user agents, including assistive technologies. As a result, changes in state, such
-                           as "expanded" or "collapsed," would be announced by the screen reader, and thus the
-                           user would be alerted to the 'addition' or 'removal' of content. As such, such content
-                           does not need to be addressed by this Success Criterion.
+                        <p>
+                           콘텐츠에 대한 결과 변경 사항은 상태 메시지의 정의를 충족하지 않는다. 또한 사용자 인터페이스 구성 요소의 정의를 충족하는 모든 구성 요소에는 이미 <a href="name-role-value" class="sc">4.1.2 이름, 역할, 값</a>에 지정된 요구 사항이 있으며, 여기에는 보조 기술을 포함하여 사용자 에이전트가 사용할 수 있는 값 및 상태의 변경 사항에 대한 알림을 제공해야 하는 필요성이 포함된다. 결과적으로 "확장됨" 또는 "축소됨"과 같은 상태 변화가 화면 낭독기에 의해 알려지므로 사용자에게 콘텐츠의 '추가' 또는 '제거'에 대한 경고가 표시된다. 따라서 그러한 콘텐츠는 이 성공 기준으로 처리될 필요가 없다.
                         </p>
                      </li>
                      <li>
-                        <p>After a user completes a survey question which indicates they are unhappy, a series
-                           of new questions are added to the page about customer satisfaction.
+                        <p>
+                           사용자가 불만족을 나타내는 설문조사 질문을 완료하면 고객 만족도에 대한 일련의 새로운 질문이 페이지에 추가된다.
                         </p>
-                        <p>The new inputs do not meet the definition of status message. They do not "provide
-                           information to the user on the success or results of an action, on the waiting state
-                           of an application, on the progress of a process or on the existence of errors," and
-                           so are not required to meet this Success Criterion.
+                        <p>
+                           새 입력이 상태 메시지의 정의를 충족하지 않는다. "작업의 성공 또는 결과, 애플리케이션의 대기 상태, 프로세스 진행 상황 또는 오류 존재에 대한 정보를 사용자에게 제공"하지 않으므로 이 성공 기준을 충족할 필요가 없다.
                         </p>
                         <div class="note">
                            <p class="note-title marker">Note</p>
-                           <p>Creating a status message about these questions being added, or notifying the user
-                              in advance that content changes may take place based on the user's response, are best
-                              practices but are not requirements in this scenario.
+                           <p>
+                              추가되는 질문에 대한 상태 메시지를 생성하거나 사용자의 응답에 따라 콘텐츠 변경이 발생할 수 있음을 사용자에게 미리 알리는 것이 모범 사례이지만 이 시나리오의 요구 사항은 아니다.
                            </p>
                         </div>
                      </li>
                   </ul>
                </section>
                <section class="example" id="other-uses-of-live-regions-or-alerts">
-                  <h3>Other uses of live regions or alerts</h3>
-                  <p>Live regions and alerts can be usefully applied in many situations where a change
-                     of content takes place which does not constitute a status message, as defined in this
-                     Success Criterion. However, there is a risk of making an application too "chatty"
-                     for a screen reader user. User testing should be carried out to ensure the appropriate
-                     level of feedback is achieved. The Advisory Techniques provide examples of how alerts
-                     or live regions can enhance the user experience.
+                  <h3>라이브 영역 또는 경고의 기타 용도</h3>
+                  <p>
+                     라이브 영역 및 경고는 이 성공 기준에 정의된 대로 상태 메시지를 구성하지 않는 콘텐츠 변경이 발생하는 여러 상황에 유용하게 적용될 수 있다. 그러나 화면 낭독기 사용자가 애플리케이션을 너무 "수다스럽게" 만들 위험이 있다. 적절한 수준의 피드백이 달성되었는지 확인하기 위해 사용자 테스트를 수행해야 한다. 조언 기법은 경고 또는 라이브 영역이 사용자 경험을 향상시킬 수 있는 방법에 대한 예를 제공한다.
                   </p>
                   <div class="note">
                      <p class="note-title marker">Note</p>
-                     <p>The purpose of this success criterion is not to force authors to generate new status
-                        messages. Its intent is to ensure that when status messages <em>are</em> displayed, they are
-                        programmatically identified in a way that allows assistive technologies
-                        to present them to the user.
+                     <p>
+                        이 성공 기준의 목적은 작성자에게 새로운 상태 메시지를 생성하도록 강요하는 것이 아니다. 그 목적은 상태 메시지가 표시될 때 보조 기술이 사용자에게 상태 메시지를 표시할 수 있도록 프로그래밍 방식으로 판별되도록 <em>하는 것이다</em>.
                      </p>
                   </div>
                </section>
