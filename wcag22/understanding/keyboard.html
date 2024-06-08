@@ -3,11 +3,11 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.1.1: Keyboard | WAI | W3C</title>
+      <title>성공 기준 이해  2.1.1: Keyboard | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
-   <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
+   <body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
             <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding Docs</a></div>
             <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://www.w3.org/WAI/WCAG22/Understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
@@ -56,10 +56,10 @@
                <header class="box-h ">Page Contents</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
+                     <li><a href="#brief">요약</a></li>
+                     <li><a href="#intent">의도</a></li>
+                     <li><a href="#benefits">이점</a></li>
+                     <li><a href="#examples">예제</a></li>
                      <li><a href="#techniques">Techniques</a></li>
                      <li><a href="#key-terms">Key Terms</a></li>
                      <li><a href="#test-rules">Test Rules</a></li>
@@ -72,35 +72,35 @@
                   				<a href="https://w3.org/TR/WCAG22#keyboard">SC 2.1.1</a>:</span>Keyboard (Level A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">성공 기준 (SC) </header>
                <div class="box-i">
                   <p>
                      개별 키 입력에 특정 타이밍이 요구되지 않는 <a href="#dfn-keyboard-interface">키보드 인터페이스</a>를 통해 모든 콘텐츠의 <a href="#dfn-functionality">기능</a>을 이용할 수 있어야 한다. 단, 콘텐츠의 기본 기능에 끝점(endpoints) 뿐만 아니라 사용자의 이동 경로 입력이 필요한 경우는 예외로 한다.
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>이 예외는 기본 기능과 관련되지만, 입력 기법은 아니다. 예를 들어, 필기로 텍스트를 입력한다면, 입력 기법은 경로 의존적인 입력이 필요하지만, 기본 기능인 텍스트 입력은 경로 의존적인 입력을 필요로 하지 않는다.</p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>이 성공기준은 키보드 조작 외에 마우스 입력이나 다른 입력 방법을 제공하는 것을 금지하지 않으며, 금지해서도 안된다.</p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>요약</h2>
                <dl>
-                  <dt>Goal</dt>
+                  <dt>목표</dt>
                   <dd>자유로운 움직임(freehand)을 제외한 모든 작업은 키보드로 수행할 수 있다.</dd>
-                  <dt>What to do</dt>
+                  <dt>할 일</dt>
                   <dd>포인터 동작에 동일한 키보드 기능이 있는지 확인하라.</dd>
-                  <dt>Why it's important</dt>
+                  <dt>중요성</dt>
                   <dd>시각 장애인과 일부 지체 장애가 있는 사람들을 포함하여 많은 사람들이 키보드 인터페이스에 의존한다.</dd>
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
+               <h2>의도</h2>
                <p>
                   이 성공 기준의 목적은 가능한 경우 키보드나 키보드 인터페이스를 통해 콘텐츠를 작동할 수 있도록 하는 것이다(대체 키보드를 사용할 수 있음). 키보드나 대체 키보드를 통해 콘텐츠를 조작할 수 있는 경우 시력이 없는 사람(눈과 손을 함께 이용하는 것이 필수적인 마우스 등의 장치를 사용할 수 없는 사람)뿐만 아니라 대체 키보드나 키보드 에뮬레이터 같은 대체 입력 장치를 사용해야 하는 사람도 조작할 수 있다. 키보드 에뮬레이터에는 음성 입력 소프트웨어, 호흡 대응(sip-and-puff) 소프트웨어, 화면 키보드, 스캐닝 소프트웨어 및 다양한 보조 기술과 대체 키보드가 포함된다. 시력이 낮은 사람도 포인터를 추적하는 데 어려움을 겪을 수 있으며 키보드로 소프트웨어를 제어할 수 있는 경우 소프트웨어 사용이 훨씬 쉬워지거나 가능해진다.
                </p>
@@ -120,7 +120,7 @@
                   사용자 입력 기능의 설계에서는 운영 체제 키보드 접근성 기능이 사용될 수 있다는 점을 고려한다고 가정한다. 예를 들어 수식키(modifier key, 역자 주: 함께 누를 때 다른 키의 일반 동작을 일시적으로 수정하는 키보드의 특수키. shift, alt, ctrl 등) 고정이 켜져 있을 수 있다. 콘텐츠는 고정키 기능과 충돌하여 예상치 못한 결과를 생성하는 이벤트를 보내지 않고 이러한 환경에서 계속 작동한다.
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">참고</p>
                   <div>
                      <p>
                         플랫폼과 사용자 에이전트에는 일반적으로 키보드 인터페이스로 웹 콘텐츠나 애플리케이션을 제어하는 방법에 대한 규칙이 있다. 콘텐츠가 플랫폼/사용자 에이전트 규칙을 따르지 않으면 사용자가 다양한 상호 작용 방법을 배워야 하므로 사용하기 어려울 수 있다. <em>모범 사례</em>로서 콘텐츠는 플랫폼/사용자 에이전트 규칙을 따라야 한다. 그러나 이러한 규칙에서 벗어나더라도 이 성공 기준의 규범적 요구 사항을 충족하지 <em>못</em>한다.
@@ -131,7 +131,7 @@
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">참고</p>
                   <div>
                      <p>
                         이 성공 기준에서는 마우스나 터치 스크린을 사용하여 활성화할 수 있는 모든 시각적 컨트롤이 키보드를 사용하여 초점을 맞추고 실행 가능해야 한다고 요구하지 않는다. 규범적인 요구 사항은 키보드 인터페이스 사용자가 동일하거나 비교할 수 있는 작업을 수행하고 콘텐츠를 조작할 수 있는 방법이 있어야 한다는 것이다. 일반적으로 이를 달성하는 가장 쉬운 방법은 가능한 모든 입력 장치에서 작동할 수 있는 컨트롤을 제공하는 것이다. 그러나 웹 애플리케이션이 키보드 인터페이스 사용자를 위한 별도의 작동 모드를 구현하는 경우 성공 기준을 실패하지 <strong>않</strong>는다.
@@ -140,7 +140,7 @@
                </div>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>이점</h2>
                <ul>
                   <li>시각 장애가 있는 사람(마우스 등 눈과 손이 함께 필요한 장치를 사용할 수 없는 사람)</li>
                   <li>저시력인 사람(화면에서 포인터 표시를 찾거나 추적하는 데 어려움이 있는 사람)</li>
@@ -148,7 +148,7 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>예제</h2>
                <dl>
                   <dt>예제 1: 그리기 프로그램</dt>
                   <dd>그리기 프로그램을 사용하면 사용자는 키보드에서 개체를 생성, 크기 조정, 위치 지정 및 회전할 수 있다.</dd>
@@ -167,14 +167,11 @@
                </dl>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>기법</h2>
+               <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>충분 기법</h3>
                   <ul>
                      <li>
                         <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G202">G202: Ensuring keyboard control for all functionality</a>
@@ -216,10 +213,8 @@
                   </ul>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>조언 기법</h3>
+                  <p>준수를 위해 필수는 아니지만 콘텐츠에 더 쉽게 접근할 수 있도록 다음과 같은 추가 기법을 고려해야 한다. 모든 기법을 사용할 수 없거나 모든 상황에서 효과적인 것은 아니다.
                   </p>
                   <ul>
                      <li>Using XHTML role, state, and value attributes if repurposing static elements as interactive
@@ -229,7 +224,7 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
+                  <h3>오류</h3>
                   <p>The following are common mistakes that are considered failures of this Success Criterion
                      by the WCAG Working Group.
                   </p>
@@ -265,7 +260,7 @@
                      <definition xmlns="">
                         <p xmlns="http://www.w3.org/1999/xhtml">interface used by software to obtain keystroke input</p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <div>
                               <p>A keyboard interface allows users to provide keystroke input to programs even if the
                                  native technology does not contain a keyboard.
@@ -281,7 +276,7 @@
                            </div>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Operation of the application (or parts of the application) through a keyboard-operated
                               mouse emulator, such as MouseKeys, does not qualify as operation through a keyboard
                               interface because operation of the program is through its pointing device interface,

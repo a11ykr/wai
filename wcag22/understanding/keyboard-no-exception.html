@@ -3,11 +3,11 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.1.3: Keyboard (No Exception) | WAI | W3C</title>
+      <title>성공 기준 이해  2.1.3: Keyboard (No Exception) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
-   <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
+   <body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
             <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding Docs</a></div>
             <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://www.w3.org/WAI/WCAG22/Understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
@@ -59,9 +59,9 @@
                <header class="box-h ">Page Contents</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
+                     <li><a href="#brief">요약</a></li>
+                     <li><a href="#intent">의도</a></li>
+                     <li><a href="#benefits">이점</a></li>
                      <li><a href="#techniques">Techniques</a></li>
                      <li><a href="#key-terms">Key Terms</a></li>
                      <li><a href="#test-rules">Test Rules</a></li>
@@ -74,7 +74,7 @@
                   				<a href="https://w3.org/TR/WCAG22#keyboard-no-exception">SC 2.1.3</a>:</span>Keyboard (No Exception) (Level AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">성공 기준 (SC) </header>
                <div class="box-i">
                   <p>
                      콘텐츠의 모든 <a href="#dfn-functionality">기능</a>은 개별 키 입력에 대해 특정 시점(timing)을 요구하지 않는 <a href="#dfn-keyboard-interface">키보드 인터페이스</a>를 통해 운용 가능해야 한다.
@@ -83,23 +83,23 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>요약</h2>
                <dl>
-                  <dt>Goal</dt>
+                  <dt>목표</dt>
                   <dd>키보드로 모든 것이 가능하다.</dd>
-                  <dt>What to do</dt>
+                  <dt>할 일</dt>
                   <dd>모든 포인터 동작에 동일한 키보드 기능이 있는지 확인하라.</dd>
-                  <dt>Why it's important</dt>
+                  <dt>중요성</dt>
                   <dd>키보드 인터페이스만 사용할 수 있는 사람이 모든 것을 할 수 있어야 한다.</dd>
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
+               <h2>의도</h2>
                <p>
                   이 성공 기준의 목적은 <strong>모든</strong> 콘텐츠를 키보드에서 작동할 수 있도록 하는 것이다. 이는 예외가 허용되지 않는다는 점을 제외하면 성공 기준 2.1.1과 동일하다. 이는 기본 기능이 끝점(2.1.1의 요구 사항에서 제외)뿐 아니라 사용자의 이동 경로에 따라 달라지는 입력을 요구하는 콘텐츠에 키보드 접근이 가능해야 한다는 의미는 아니다. 오히려 이는 경로 종속 입력을 사용하는 콘텐츠가 이 성공 기준을 준수할 수 없으므로 레벨 AAA의 지침 2.1을 충족할 수 없음을 의미한다.
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">참고</p>
                   <div>
                      <p>
                         플랫폼과 사용자 에이전트에는 일반적으로 키보드 인터페이스로 웹 콘텐츠나 애플리케이션을 제어하는 방법에 대한 규칙이 있다. 콘텐츠가 플랫폼/사용자 에이전트 규칙을 따르지 않으면 사용자가 다양한 상호 작용 방법을 배워야 하므로 사용하기 어려울 수 있다. <em>모범 사례</em>로서 콘텐츠는 플랫폼/사용자 에이전트 규칙을 따라야 한다. 그러나 이러한 규칙에서 벗어나더라도 이 성공 기준의 규범적 요구 사항을 충족하지 <em>못</em>한다.
@@ -110,7 +110,7 @@
                   </div>
                </div>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">참고</p>
                   <div>
                      <p>
                         이 성공 기준에서는 포인터(예: 마우스 또는 터치 스크린 입력)를 사용하여 활성화할 수 있는 모든 시각적 컨트롤이 키보드를 사용하여 초점을 맞추고 실행 가능해야 한다고 요구하지 않는다. 규범적인 요구 사항은 키보드 인터페이스 사용자가 동일하거나 비교할 수 있는 작업을 수행하고 콘텐츠를 조작할 수 있는 방법이 있어야 한다는 것이다. 일반적으로 이를 달성하는 가장 쉬운 방법은 가능한 모든 입력 장치에서 작동할 수 있는 컨트롤을 제공하는 것이다. 그러나 웹 애플리케이션이 키보드 인터페이스 사용자를 위한 별도의 작동 모드를 구현한다면 이 성공 기준을 위반하지 <strong>않</strong>는다.
@@ -119,11 +119,8 @@
                </div>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>기법</h2>
+               <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
                </p>
             </section>
             <section id="key-terms">
@@ -144,7 +141,7 @@
                      <definition xmlns="">
                         <p xmlns="http://www.w3.org/1999/xhtml">interface used by software to obtain keystroke input</p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <div>
                               <p>A keyboard interface allows users to provide keystroke input to programs even if the
                                  native technology does not contain a keyboard.
@@ -160,7 +157,7 @@
                            </div>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Operation of the application (or parts of the application) through a keyboard-operated
                               mouse emulator, such as MouseKeys, does not qualify as operation through a keyboard
                               interface because operation of the program is through its pointing device interface,

@@ -3,11 +3,11 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  1.4.10: Reflow | WAI | W3C</title>
+      <title>성공 기준 이해  1.4.10: Reflow | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
-   <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
+   <body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
             <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding Docs</a></div>
             <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://www.w3.org/WAI/WCAG22/Understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
@@ -59,11 +59,11 @@
                <header class="box-h ">Page Contents</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
+                     <li><a href="#brief">요약</a></li>
+                     <li><a href="#intent">의도</a></li>
+                     <li><a href="#benefits">이점</a></li>
+                     <li><a href="#examples">예제</a></li>
+                     <li><a href="#resources">관련 자료</a></li>
                      <li><a href="#techniques">Techniques</a></li>
                      <li><a href="#key-terms">Key Terms</a></li>
                      <li><a href="#test-rules">Test Rules</a></li>
@@ -76,7 +76,7 @@
                   				<a href="https://w3.org/TR/WCAG22#reflow">SC 1.4.10</a>:</span>Reflow (Level AA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">성공 기준 (SC) </header>
                <div class="box-i">
                   <p>콘텐츠는 정보나 기능의 손실 없이, 그리고 다음의 경우에 대하여 2차원으로 스크롤할 필요 없이 제공되어야 한다.</p>
                   <ul>
@@ -85,29 +85,29 @@
                   </ul>
                   <p>사용상 또는 의미상 2차원적인 레이아웃이 필요한 콘텐츠는 예외로 한다.</p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>320 CSS 픽셀은 400% 확대에서 1280 CSS 픽셀의 시작 뷰포트(viewport) 너비와 같다. 가로 방향으로 스크롤링하도록 설계된 웹 콘텐츠(예: 세로 텍스트)의 경우, 256 CSS 픽셀은 400% 확대에서 1024px 시작 뷰포트 높이와 같다.</p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>2차원 레이아웃이 필요한 콘텐츠의 예로는 이미지, 지도, 다이어그램, 비디오, 게임, 프레젠테이션, 데이터 테이블, 그리고 콘텐츠를 조작하는 동안 보기(view) 탭에서 도구모음(toolbar)을 유지할 필요가 있는 인터페이스 등이 있다.</p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>요약</h2>
                <dl>
-                  <dt>Goal</dt>
+                  <dt>목표</dt>
                   <dd>줄 길이를 늘리지 않고도 내용을 확대할 수 있다.</dd>
-                  <dt>What to do</dt>
+                  <dt>할 일</dt>
                   <dd>뷰포트 내에서 텍스트 줄이 재정렬되도록 한다.</dd>
-                  <dt>Why it's important</dt>
+                  <dt>중요성</dt>
                   <dd>더 큰 텍스트가 필요한 사람들은 긴 줄을 읽기 위해 스크롤해야 한다면 어려움을 겪는다.</dd>
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
+               <h2>의도</h2>
                <p>
                   이 성공 기준의 목적은 텍스트를 확대하여 단일 열에서 읽어야 하는 저시력 사용자를 지원하는 것이다. 브라우저 확대/축소를 사용하여 콘텐츠 크기를 400%로 조정하면 재정렬 된다. 즉, 한 열에 표시되므로 두 방향 이상으로 스크롤할 필요가 없다.
                </p>
@@ -197,13 +197,13 @@
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>이점</h2>
                <ul>
                   <li>이 성공 기준은 여러 방향으로 스크롤할 필요 없이 콘텐츠를 원활하게 읽을 수 있도록 하여 텍스트 확대가 필요한 저시력 사용자에게 도움이 된다.</li>
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>예제</h2>
                <ul>
                   <li>
                      <strong>반응형 디자인의 단일 열 보기</strong>
@@ -224,8 +224,8 @@
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>관련 자료</h2>
+               <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
                <ul>
                   <li><a href="http://web.archive.org/web/20220121073555/http://nosetothepage.org/Fitz/2dScroll.html">Operational Overhead Caused by Horizontal Scrolling Text</a> by Wayne Dick, 2017. The study shows the impact of horizontal scrolling on reading
                      effort
@@ -239,14 +239,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>기법</h2>
+               <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>충분 기법</h3>
                   <ul>
                      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C32">C32: Using media queries and grid CSS to reflow columns</a></li>
                      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C31">C31: Using CSS Flexbox to reflow content</a></li>
@@ -259,10 +256,8 @@
                   </ul>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>조언 기법</h3>
+                  <p>준수를 위해 필수는 아니지만 콘텐츠에 더 쉽게 접근할 수 있도록 다음과 같은 추가 기법을 고려해야 한다. 모든 기법을 사용할 수 없거나 모든 상황에서 효과적인 것은 아니다.
                   </p>
                   <ul>
                      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C34">C34: Using media queries to un-fixing sticky headers / footers</a></li>
@@ -273,7 +268,7 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
+                  <h3>오류</h3>
                   <p>The following are common mistakes that are considered failures of this Success Criterion
                      by the WCAG Working Group.
                   </p>

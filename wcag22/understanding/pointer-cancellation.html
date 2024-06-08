@@ -4,11 +4,11 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>Understanding Success Criterion 2.5.2: Pointer Cancellation | WAI | W3C</title>
+   <title>성공 기준 이해 2.5.2: Pointer Cancellation | WAI | W3C</title>
    <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
    <link rel="stylesheet" href="base.css" />
    </head>
-<body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a>
+<body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a>
    <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
          <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding
@@ -76,10 +76,10 @@
             <header class="box-h ">Page Contents</header>
             <div class="box-i">
                <ul>
-                  <li><a href="#brief">In Brief</a></li>
-                  <li><a href="#intent">Intent</a></li>
-                  <li><a href="#benefits">Benefits</a></li>
-                  <li><a href="#examples">Examples</a></li>
+                  <li><a href="#brief">요약</a></li>
+                  <li><a href="#intent">의도</a></li>
+                  <li><a href="#benefits">이점</a></li>
+                  <li><a href="#examples">예제</a></li>
                   <li><a href="#techniques">Techniques</a></li>
                   <li><a href="#key-terms">Key Terms</a></li>
                   </ul>
@@ -92,7 +92,7 @@
             A)
          </h1>
          <aside class="box">
-            <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+            <header class="box-h  box-h-icon">성공 기준 (SC) </header>
             <div class="box-i">
                <p>
                   <a href="#dfn-single-pointer">단일 포인터</a>로 조작 가능한 <a href="#dfn-functionality">기능</a>은 다음 중 한 가지 이상을 준수해야 한다.
@@ -109,29 +109,29 @@
                   <dd>다운 이벤트에서 기능을 완료하는 것이 <a href="#dfn-essential">필수적</a>이다.</dd>
                   </dl>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>키보드 또는 숫자 키패드 키 누르기를 에뮬레이션하는 기능은 필수적인 것으로 간주된다.</p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>이 성공기준은 포인터 동작으로 실행되는 웹 콘텐츠에 적용된다. (즉, 사용자 에이전트 또는 보조 기술을 작동하는 데 필요한 동작에는 적용되지 않는다.)</p>
                   </div>
                </div>
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>요약</h2>
                <dl>
-                  <dt>Goal</dt>
+                  <dt>목표</dt>
                   <dd>마우스나 터치로 인한 우발적인 컨트롤 실행을 줄인다.</dd>
-                  <dt>What to do</dt>
+                  <dt>할 일</dt>
                   <dd>포인터 취소를 예측 가능하고 일관성있게 만든다.</dd>
-                  <dt>Why it's important</dt>
+                  <dt>중요성</dt>
                   <dd>누구든지 의도하지 않은 일로부터 쉽게 회복할 수 있도록 한다.</dd>
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
+               <h2>의도</h2>
                <p>
                   이 성공 기준의 목적은 사용자가 우발적이거나 잘못된 포인터 입력을 더 쉽게 방지할 수 있도록 하는 것이다. 다양한 장애가 있는 사용자가 실수로 터치 또는 마우스 이벤트를 시작하여 원치 않는 결과를 초래할 수
                   있다. 다음 각 하위 섹션은 이 적합 기준의 핵심 항목과 대략적으로 일치하며 사용자가 포인터 작업을 취소할 수 있는 방법을 간략하게 설명한다.
@@ -209,7 +209,7 @@
                </section>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>이점</h2>
                <ul>
                   <li>모든 사용자가 잘못된 대상을 누른 후 쉽게 복구할 수 있다.</li>
                   <li>
@@ -220,7 +220,7 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>예제</h2>
                <ul>
                   <li>입력으로 단일 탭 또는 길게 누르기가 있는 인터페이스 요소의 경우 해당 요소 내에서 손가락을 떼면 해당 이벤트가 실행된다.</li>
                   <li>
@@ -230,7 +230,7 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
+               <h2>기법</h2>
                <p>Each numbered item in this section represents a technique or combination of techniques
                   that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
                   it is not necessary to use these particular techniques. For information on using other
@@ -238,7 +238,7 @@
                      Criteria</a>, particularly the "Other Techniques" section.
                   </p>
                   <section id="sufficient">
-                     <h3>Sufficient Techniques</h3>
+                     <h3>충분 기법</h3>
                      <ul>
                         <li><a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G210">G210: Ensuring
                               that drag-and-drop actions can be cancelled</a></li>
@@ -250,7 +250,7 @@
                         </ul>
                         </section>
                         <section id="failure">
-                           <h3>Failures</h3>
+                           <h3>오류</h3>
                            <p>The following are common mistakes that are considered failures of this Success Criterion
                               by the WCAG Working Group.
                            </p>
@@ -274,7 +274,7 @@
                                        of users with disabilities that go beyond those offered by mainstream user agents
                                     </p>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                       <p class="note-title marker">Note</p>
+                                       <p class="note-title marker">참고</p>
                                        <p>Functionality provided by assistive technology includes alternative presentations
                                           (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
                                           voice), additional navigation or orientation mechanisms, and content transformations
@@ -282,13 +282,13 @@
                                        </p>
                                     </div>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                       <p class="note-title marker">Note</p>
+                                       <p class="note-title marker">참고</p>
                                        <p>Assistive technologies often communicate data and messages with mainstream user agents
                                           by using and monitoring APIs.
                                        </p>
                                     </div>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                       <p class="note-title marker">Note</p>
+                                       <p class="note-title marker">참고</p>
                                        <p>The distinction between mainstream user agents and assistive technologies is not absolute.
                                           Many mainstream user agents provide some features to assist individuals with disabilities.
                                           The basic difference is that mainstream user agents target broad and diverse audiences
@@ -372,14 +372,14 @@
                                                 <a href="#dfn-process">process</a> or technique for achieving a result
                                              </p>
                                              <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                <p class="note-title marker">Note</p>
+                                                <p class="note-title marker">참고</p>
                                                 <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied
                                                       upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including
                                                    <a href="#dfn-assistive-technology">assistive technologies</a>.
                                                 </p>
                                              </div>
                                              <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                <p class="note-title marker">Note</p>
+                                                <p class="note-title marker">참고</p>
                                                 <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
                                              </div>
                                           </definition>
@@ -420,7 +420,7 @@
                                                 mouse, single finger on a touch screen, or stylus.
                                              </p>
                                              <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                <p class="note-title marker">Note</p>
+                                                <p class="note-title marker">참고</p>
                                                 <p>In contrast to single pointer inputs, multipoint interactions involve the use of two
                                                    or more pointers at the same time – such as two finger interactions on a touchscreen,
                                                    or the simultaneous use of a mouse and stylus.
@@ -436,13 +436,13 @@
                                                 executed by <a href="#dfn-user-agent">user agents</a>
                                              </p>
                                              <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                <p class="note-title marker">Note</p>
+                                                <p class="note-title marker">참고</p>
                                                 <p>As used in these guidelines "Web Technology" and the word "technology" (when used
                                                    alone) both refer to Web Content Technologies.
                                                 </p>
                                              </div>
                                              <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                <p class="note-title marker">Note</p>
+                                                <p class="note-title marker">참고</p>
                                                 <p>Web content technologies may include markup languages, data formats, or programming
                                                    languages that authors may use alone or in combination to create end-user experiences
                                                    that range from static Web pages to synchronized media presentations to dynamic Web

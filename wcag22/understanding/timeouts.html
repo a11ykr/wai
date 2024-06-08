@@ -3,11 +3,11 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.2.6: Timeouts | WAI | W3C</title>
+      <title>성공 기준 이해  2.2.6: Timeouts | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
-   <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
+   <body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
             <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding Docs</a></div>
             <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://www.w3.org/WAI/WCAG22/Understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
@@ -56,11 +56,11 @@
                <header class="box-h ">Page Contents</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
+                     <li><a href="#brief">요약</a></li>
+                     <li><a href="#intent">의도</a></li>
+                     <li><a href="#benefits">이점</a></li>
+                     <li><a href="#examples">예제</a></li>
+                     <li><a href="#resources">관련 자료</a></li>
                      <li><a href="#techniques">Techniques</a></li>
                      <li><a href="#key-terms">Key Terms</a></li>
                   </ul>
@@ -72,13 +72,13 @@
                   				<a href="https://w3.org/TR/WCAG22#timeouts">SC 2.2.6</a>:</span>Timeouts (Level AAA)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">성공 기준 (SC) </header>
                <div class="box-i">
                   <p>
                      사용자가 아무런 활동을 하지 않은 상황에서도 데이터가 20시간 이상 보존되지 않는 한, 사용자에게 데이터의 손실을 초래할 수 있는 <a href="#dfn-user-inactivity">사용자 비활동 상태</a>에 대해 알려주어야 한다.
                   </p>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>
                         개인정보 보호 규정에 따라 사용자 인증과 사용자 데이터를 보존하기 전에 명시적인 사용자 동의가 필요할 수 있다. 사용자가 미성년자인 경우, 대부분의 관할 지역이나 국가, 지역에서는 명시적 동의를 구하지 않을 수 있다. 이 성공 기준을 충족시키기 위한 방안으로 데이터 보존을 고려할 때는 개인정보 보호 전문가와 법률 자문을 구하는 것이 바람직하다.
                      </p>
@@ -87,18 +87,18 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>요약</h2>
                <dl>
-                  <dt>Goal</dt>
+                  <dt>목표</dt>
                   <dd>알 수 없는 시간 초과로 인해 사용자가 데이터를 잃지 않는다.</dd>
                   <dt>저작자 작업</dt>
                   <dd>정보가 손실되기 전까지 세션이 비활성 상태로 유지될 수 있는 시간을 사용자에게 알려준다.</dd>
-                  <dt>Why it's important</dt>
+                  <dt>중요성</dt>
                   <dd>장애가 있는 사람은 작업을 완료하는 데 더 많은 시간이 필요할 수 있다.</dd>
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
+               <h2>의도</h2>
                <p>
                   이 성공 기준의 목적은 시간 초과가 사용될 때 페이지 시간 초과 및 데이터 손실을 초래하는 비활성 기간을 사용자가 알 수 있도록 하는 것이다. 시간 제한 이벤트를 사용하면 인지 장애가 있는 사용자에게 심각한 장벽이 될 수 있다. 이러한 사용자는 콘텐츠를 읽거나 온라인 양식 작성과 같은 기능을 수행하는 데 더 많은 시간이 필요할 수 있기 때문이다.
                </p>
@@ -117,7 +117,7 @@
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>이점</h2>
                <p>이 성공 기준은 비활동에 관련된 시간 초과에 대한 알림을 받도록 하여 사용자에게 도움이 된다.</p>
                <p>
                   사용자가 작업에 허용된 시간을 알면 필요한 휴식을 취하고 다시 시작할 필요 없이 작업을 재개할 수 있는지 알 수 있다. 이를 통해 많은 사용자는 다른 방법으로는 할 수 없었던 작업을 온라인으로 완료할 수 있다. 시간 초과가 필요한 상황이 발생하면 작업 시작 시 시간 초과를 생성하는 비활동 기간에 대한 경고가 사용자에게 표시된다. 그런 다음 사용자는 주어진 시간 내에 이 작업을 관리할 수 있는지 여부 또는 절차를 시작하기 전에 자료를 준비해야 하는지 여부를 결정할 수 있다. 이렇게 하면 시간 초과로 인해 작업을 잃게 되는 좌절감을 줄일 수 있다.
@@ -131,7 +131,7 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>예제</h2>
                <ul>
                   <li>
                      전자상거래 웹사이트에서 구매시, 사용자가 입력한 정보는 20시간 이상 저장된다. 이렇게 하면 잠시 일을 중단해야 하는 경우에도 돌아와서 구매를 계속할 수 있는 가능성이 높아진다.
@@ -145,22 +145,19 @@
                </ul>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>관련 자료</h2>
+               <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
                <ul>
                   <li><a href="https://rawgit.com/w3c/coga/master/gap-analysis/table.html">User Needs Table 3: Entering data, error prevention &amp; recovery</a></li>
                   <li><a href="https://www.ssa.gov/accessibility/bpl/bps/forms/timeout/default.htm">SSA Best Practices Library: Timeouts</a></li>
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>기법</h2>
+               <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>충분 기법</h3>
                   <ul>
                      <li>Setting a session timeout to occur following at least 20 hours of inactivity.</li>
                      <li>Store user data for more than 20 hours.</li>

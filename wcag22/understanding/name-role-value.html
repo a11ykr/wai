@@ -3,11 +3,11 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>Understanding Success Criterion 4.1.2: Name, Role, Value | WAI | W3C</title>
+   <title>성공 기준 이해 4.1.2: Name, Role, Value | WAI | W3C</title>
    <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
    <link rel="stylesheet" href="base.css" />
 </head>
-<body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a>
+<body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a>
    <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
          <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding
@@ -79,12 +79,12 @@
       <div class="box-i">
          <nav aria-label="page contents" class="navtoc">
             <ul>
-               <li><a href="#brief">In Brief</a></li>
+               <li><a href="#brief">요약</a></li>
                <li><a href="#success-criterion">Success Criterion</a></li>
-               <li><a href="#intent">Intent</a></li>
-               <li><a href="#benefits">Benefits</a></li>
-               <li><a href="#examples">Examples</a></li>
-               <li><a href="#resources">Related Resources</a></li>
+               <li><a href="#intent">의도</a></li>
+               <li><a href="#benefits">이점</a></li>
+               <li><a href="#examples">예제</a></li>
+               <li><a href="#resources">관련 자료</a></li>
                <li><a href="#techniques">Techniques</a></li>
                <li><a href="#key-terms">Key Terms</a></li>
                <li><a href="#test-rules">Test Rules</a></li>
@@ -97,13 +97,13 @@
          <a href="https://w3.org/TR/WCAG22#name-role-value">SC 4.1.2</a>:</span>Name, Role, Value (Level A)
       </h1>
       <aside class="box">
-         <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+         <header class="box-h  box-h-icon">성공 기준 (SC) </header>
          <div class="box-i">
             <p>
                모든 <a href="#dfn-user-interface-component">사용자 인터페이스 구성요소</a>(서식 요소, 링크, 스크립트에 의해 생성된 요소를 포함하되, 이에 국한되지 않음)의 경우, <a href="#dfn-name">이름</a>과 <a href="#dfn-role">역할</a>은 <a href="#dfn-programmatically-determined">프로그래밍 방식으로 판별</a>되어야 한다. 사용자에 의해서 설정될 수 있는
                상태(states), 속성(properties) 및 값(values)은 <a href="#dfn-programmatically-set">프로그래밍 방식으로 설정</a>될 수 있어야 한다. 이러한 항목의 변경사항은, <a href="#dfn-assistive-technology">보조 기술</a>을 포함하여, <a href="#dfn-user-agent">사용자 에이전트</a>에 제공되어야 한다.
             <div class="note">
-               <p class="note-title marker">Note</p>
+               <p class="note-title marker">참고</p>
                <p>
                   이 성공기준은 주로 사용자 인터페이스 구성요소를 개발하거나 스크립팅하는 웹 개발자를 위한 것이다. 예를 들어, 표준 HTML 컨트롤은 명세서에 따라 사용되었을 때, 이미 이 성공기준을 준수한 것이다.
                </p>
@@ -111,19 +111,19 @@
          </div>
       </aside>
       <section id="brief">
-         <h2>In Brief</h2>
+         <h2>요약</h2>
          <dl>
-            <dt>Goal</dt>
+            <dt>목표</dt>
             <dd>보조 기술을 사용하는 사람들은 모든 구성 요소를 이해한다.</dd>
-            <dt>What to do</dt>
+            <dt>할 일</dt>
             <dd>구성요소에 올바른 이름, 역할, 상태 및 값을 지정해야 한다.</dd>
-            <dt>Why it's important</dt>
+            <dt>중요성</dt>
             <dd>보조 기술은 코드가 올바르게 작성된 경우에만 제대로 작동한다.</dd>
          </dl>
       </section>
             <div class="excol-all"></div>
             <section id="intent">
-               <h2>Intent</h2>
+               <h2>의도</h2>
                <p>
                   이 성공 기준의 목적은 보조 기술(AT: Assistive Technologies)이 콘텐츠의 사용자 인터페이스 컨트롤 상태에 대한 적절한 정보를 수집하고, 활성화(또는 설정)하고, 최신 상태를 유지할 수 있도록 하는 것이다.
                </p>
@@ -140,7 +140,7 @@
                   사용자 인터페이스 컨트롤의 특히 중요한 상태는 초점을 받는지 여부이다. 컨트롤의 초점 상태는 프로그래밍 방식으로 판별될 수 있으며 초점 변경에 대한 알림은 사용자 에이전트 및 보조 기술로 전송된다. 사용자 인터페이스 제어 상태의 다른 예로는 체크박스나 라디오 버튼이 선택되었는지 여부, 축소 가능한 트리 구조 보기나 아코디언이 확장되거나 축소되었는지 여부 등이 있다.
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">참고</p>
                   <div>
                      <p>
                         성공 기준 4.1.2에서는 모든 사용자 인터페이스 구성 요소에 대해 프로그래밍 방식으로 판별할 수 있는 이름이 필요하다. 이름은 표시될 수도 있고 보이지 않을 수도 있다. 이름이 표시되어야 하는 경우가 있는데, 이 경우 레이블로 식별된다. 자세한 내용은 용어집의 이름 및 레이블 정의를 참조하라.
@@ -149,7 +149,7 @@
                </div>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>이점</h2>
                <ul>
                   <li>
                      모든 사용자 인터페이스 구성 요소에 역할, 상태 및 값 정보를 제공하면 장애인이 사용하는 화면 낭독기, 화면 확대기, 음성 인식 소프트웨어 등 보조 기술과의 호환성이 가능해진다.
@@ -157,15 +157,15 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>예제</h2>
                <dl>
                   <dt>접근성 API</dt>
                   <dd>Java 애플릿은 해당 언어로 정의된 접근성 API를 사용한다.</dd>
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>관련 자료</h2>
+               <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
                <ul>
                   <li>
                      <a href="https://www.w3.org/WAI/PF/roadmap/">Dynamic Accessible Web Content Roadmap</a>
@@ -180,15 +180,11 @@
                   </ul>
                </section>
                <section id="techniques">
-                  <h2>Techniques</h2>
-                  <p>Each numbered item in this section represents a technique or combination of techniques
-                     that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                     it is not necessary to use these particular techniques. For information on using other
-                     techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success
-                        Criteria</a>, particularly the "Other Techniques" section.
+                  <h2>기법</h2>
+                  <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
                      </p>
                      <section id="sufficient">
-                        <h3>Sufficient Techniques</h3>
+                        <h3>충분 기법</h3>
                         <p>Select the situation below that matches your content. Each situation includes techniques
                            or combinations of techniques that are known and documented to be sufficient for that
                            situation.
@@ -308,7 +304,7 @@
                                                                         </section>
                                                                      </section>
                                                                      <section id="failure">
-                                                                        <h3>Failures</h3>
+                                                                        <h3>오류</h3>
                                                                         <p>The following are common mistakes that are considered failures of this Success Criterion
                                                                            by the WCAG Working Group.
                                                                         </p>
@@ -375,7 +371,7 @@
                                                                                                       of users with disabilities that go beyond those offered by mainstream user agents
                                                                                                    </p>
                                                                                                    <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                      <p class="note-title marker">Note</p>
+                                                                                                      <p class="note-title marker">참고</p>
                                                                                                       <p>Functionality provided by assistive technology includes alternative presentations
                                                                                                          (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
                                                                                                          voice), additional navigation or orientation mechanisms, and content transformations
@@ -383,13 +379,13 @@
                                                                                                       </p>
                                                                                                    </div>
                                                                                                    <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                      <p class="note-title marker">Note</p>
+                                                                                                      <p class="note-title marker">참고</p>
                                                                                                       <p>Assistive technologies often communicate data and messages with mainstream user agents
                                                                                                          by using and monitoring APIs.
                                                                                                       </p>
                                                                                                    </div>
                                                                                                    <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                      <p class="note-title marker">Note</p>
+                                                                                                      <p class="note-title marker">참고</p>
                                                                                                       <p>The distinction between mainstream user agents and assistive technologies is not absolute.
                                                                                                          Many mainstream user agents provide some features to assist individuals with disabilities.
                                                                                                          The basic difference is that mainstream user agents target broad and diverse audiences
@@ -448,7 +444,7 @@
                                                                                                          with humans
                                                                                                       </p>
                                                                                                       <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                         <p class="note-title marker">Note</p>
+                                                                                                         <p class="note-title marker">참고</p>
                                                                                                          <p>See also <a href="#dfn-sign-language">sign language</a>.
                                                                                                          </p>
                                                                                                       </div>
@@ -463,14 +459,14 @@
                                                                                                             href="#dfn-content">content</a>
                                                                                                          </p>
                                                                                                          <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                            <p class="note-title marker">Note</p>
+                                                                                                            <p class="note-title marker">참고</p>
                                                                                                             <p>A label is presented to all users whereas the <a href="#dfn-name">name</a> may be hidden and
                                                                                                                only exposed by assistive technology. In many (but not all) cases
                                                                                                                the name and the label are the same.
                                                                                                             </p>
                                                                                                          </div>
                                                                                                          <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                            <p class="note-title marker">Note</p>
+                                                                                                            <p class="note-title marker">참고</p>
                                                                                                             <p>The term label is not limited to the label element in HTML.</p>
                                                                                                          </div>
                                                                                                       </definition>
@@ -481,7 +477,7 @@
                                                                                                          <p xmlns="http://www.w3.org/1999/xhtml">text by which software can identify a component within Web
                                                                                                             content to the user</p>
                                                                                                             <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                               <p class="note-title marker">Note</p>
+                                                                                                               <p class="note-title marker">참고</p>
                                                                                                                <p>The name may be hidden and only exposed by assistive technology, whereas a <a
                                                                                                                   href="#dfn-label">label</a> is presented to all users. In many (but not all) cases, the
                                                                                                                   label and the name are
@@ -489,7 +485,7 @@
                                                                                                                </p>
                                                                                                             </div>
                                                                                                             <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                               <p class="note-title marker">Note</p>
+                                                                                                               <p class="note-title marker">참고</p>
                                                                                                                <p>This is unrelated to the name attribute in HTML.</p>
                                                                                                             </div>
                                                                                                          </definition>
@@ -502,7 +498,7 @@
                                                                                                                sequence is not expressing something in <a href="#dfn-human-language">human language</a>
                                                                                                             </p>
                                                                                                             <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                               <p class="note-title marker">Note</p>
+                                                                                                               <p class="note-title marker">참고</p>
                                                                                                                <p>This includes <a href="#dfn-ascii-art">ASCII Art</a> (which is a pattern of characters),
                                                                                                                   emoticons, leetspeak (which uses character substitution),
                                                                                                                   and images representing text
@@ -609,7 +605,7 @@
                                                                                                                </p>
                                                                                                             </aside>
                                                                                                             <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                               <p class="note-title marker">Note</p>
+                                                                                                               <p class="note-title marker">참고</p>
                                                                                                                <p>Refer to <a
                                                                                                                   href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#text-alternatives">Understanding
                                                                                                                   Text Alternatives</a> for more information.
@@ -638,20 +634,20 @@
                                                                                                                   function
                                                                                                                </p>
                                                                                                                <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                                  <p class="note-title marker">Note</p>
+                                                                                                                  <p class="note-title marker">참고</p>
                                                                                                                   <p>Multiple user interface components may be implemented as a single programmatic element.
                                                                                                                      "Components" here is not tied to programming techniques, but rather to what the user
                                                                                                                      perceives as separate controls.
                                                                                                                   </p>
                                                                                                                </div>
                                                                                                                <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                                  <p class="note-title marker">Note</p>
+                                                                                                                  <p class="note-title marker">참고</p>
                                                                                                                   <p>User interface components include form elements and links as well as components generated
                                                                                                                      by scripts.
                                                                                                                   </p>
                                                                                                                </div>
                                                                                                                <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                                  <p class="note-title marker">Note</p>
+                                                                                                                  <p class="note-title marker">참고</p>
                                                                                                                   <p>What is meant by "component" or "user interface component" here is also sometimes
                                                                                                                      called "user interface element".
                                                                                                                   </p>
@@ -674,13 +670,13 @@
                                                                                                                   href="#dfn-user-agent">user agent</a>
                                                                                                                </p>
                                                                                                                <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                                  <p class="note-title marker">Note</p>
+                                                                                                                  <p class="note-title marker">참고</p>
                                                                                                                   <p>Although any "other resources" would be rendered together with the primary resource,
                                                                                                                      they would not necessarily be rendered simultaneously with each other.
                                                                                                                   </p>
                                                                                                                </div>
                                                                                                                <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                                                                                  <p class="note-title marker">Note</p>
+                                                                                                                  <p class="note-title marker">참고</p>
                                                                                                                   <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
                                                                                                                      within the scope of conformance to be considered a Web page.
                                                                                                                   </p>

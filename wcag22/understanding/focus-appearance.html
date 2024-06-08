@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Understanding Success Criterion 2.4.13: Focus Appearance | WAI | W3C</title>
+    <title>성공 기준 이해 2.4.13: Focus Appearance | WAI | W3C</title>
     <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
     <link rel="stylesheet" href="base.css" />
     </head>
-<body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a>
+<body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a>
     <div class="minimal-header-container default-grid">
         <div class="minimal-header" id="site-header">
             <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2
@@ -71,11 +71,11 @@
                 <header class="box-h ">Page Contents</header>
                 <div class="box-i">
                     <ul>
-                        <li><a href="#brief">In Brief</a></li>
-                        <li><a href="#intent">Intent</a></li>
-                        <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#examples">Examples</a></li>
-                        <li><a href="#resources">Related Resources</a></li>
+                        <li><a href="#brief">요약</a></li>
+                        <li><a href="#intent">의도</a></li>
+                        <li><a href="#benefits">이점</a></li>
+                        <li><a href="#examples">예제</a></li>
+                        <li><a href="#resources">관련 자료</a></li>
                         <li><a href="#techniques">Techniques</a></li>
                         <li><a href="#key-terms">Key Terms</a></li>
                         </ul>
@@ -88,7 +88,7 @@
                 AAA)
             </h1>
             <aside class="box">
-                <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+                <header class="box-h  box-h-icon">성공 기준 (SC) </header>
                 <div class="box-i">
                     <p>
                         키보드 <a href="#dfn-focus-indicator">초점 표시기(focus indicator)</a>가 보이는 경우, 이 영역은 다음 모든 조건을 충족해야 한다:
@@ -111,7 +111,7 @@
                         </li>
                         </ul>
                     <div class="note">
-                        <p class="note-title marker">Note</p>
+                        <p class="note-title marker">참고</p>
                         <p>
                             사용자 인터페이스 구성요소 또는 하위 구성요소로 인식되는 것(외곽 또는 크기 결정 시)은 <a href="#dfn-presentation">표현(presentation)</a>에 따라 다르다.
                             표현(presentation)에는 구성 요소에서 보이는 <a href="#dfn-content">콘텐츠</a>, 테두리, 고유
@@ -119,11 +119,11 @@
                         </p>
                     </div>
                     <div class="note">
-                        <p class="note-title marker">Note</p>
+                        <p class="note-title marker">참고</p>
                         <p>초점 표시기가 나타날 수 있는 하위 구성요소의 예로는 열린 드롭다운 메뉴의 메뉴 항목이나 그리드의 초점 가능한 셀 등이 있다.</p>
                     </div>
                     <div class="note">
-                        <p class="note-title marker">Note</p>
+                        <p class="note-title marker">참고</p>
                         <p>
                             <a href="#dfn-technology">기술</a>(HTML, CSS, SVG 등) 내에서 정의된 색상을 기반으로 대비를 계산할 수 있다. 사용자 에이전트 해상도 향상 및 안티앨리어싱에 의해 수정된 픽셀은 무시할 수 있다.
                         </p>
@@ -132,18 +132,18 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-                <h2>In Brief</h2>
+                <h2>요약</h2>
                 <dl>
-                    <dt>Goal</dt>
+                    <dt>목표</dt>
                     <dd>키보드 초점을 더 쉽게 찾을 수 있도록 한다.</dd>
-                    <dt>What to do</dt>
+                    <dt>할 일</dt>
                     <dd>충분한 크기와 대비를 갖춘 초점 표시기를 사용하라.</dd>
-                    <dt>Why it's important</dt>
+                    <dt>중요성</dt>
                     <dd>노인을 포함하여 많은 사람들은 시각적으로 작은 형태의 변화를 볼 수 없다.</dd>
                 </dl>
                 </section>
             <section id="intent">
-                <h2>Intent</h2>
+                <h2>의도</h2>
                 <p>
                     이 성공 기준의 목적은 키보드 초점 표시기가 명확하게 보이고 식별 가능하도록 하는 것이다. 초점 모양은 <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html">2.4.7 초점 시각화</a> 및 <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">1.4.11 텍스트가 아닌 콘텐츠의 명도대비</a>와 밀접한 관련이 있다. 초점 시각화에서는 구성 요소에 키보드 초점이 있는 동안 시각적 초점 표시기가 있어야 합니다. 초점 형태는 최소 수준의 가시성을 정의한다. 텍스트가 아닌 콘텐츠의 명도대비에서는 구성 요소가 각 상태의 배경과 적절한 대비를 요구하는 반면 초점 형태는 초점 표시기 자체의 충분한 대비를 요구한다.
                 </p>
@@ -173,7 +173,7 @@
                         그러나 크기 요구 사항을 충족하는 가장 간단한 방법은 실선인 2 CSS 픽셀 외곽 두께의 초점 표시기를 사용하는 것이다.
                     </p>
                     <div class="note">
-                        <p class="note-title marker">Note</p>
+                        <p class="note-title marker">참고</p>
                         <p>
                             <a href="#dfn-css-pixel">CSS pixel</a>은 개발자가 "width: 200px"와 같은 CSS 선언에 사용하는 것이다. 이는 장치 독립적이며 물리적 픽셀 밀도에 따라 달라지는 장치
                             픽셀과 혼동하지 않아야 한다. 이 문서의 나머지 부분에서는 CSS 픽셀을 "px"로 표기한다.
@@ -255,7 +255,7 @@
                             <dd>4<em>h</em> + 4<em>w</em> - (16 - 4𝜋)<em>r</em></dd>
                             </dl>
                         <div class="note">
-                            <p class="note-title marker">Note</p>
+                            <p class="note-title marker">참고</p>
                             <p>
                                 초점 표시기가 충분히 큰지 확인하기 위해 복잡한 수학을 사용해야 하는 경우 이는 아마도 대신 더 큰 표시기를 사용해야 한다는 신호일 것이다. 항목이 초점을 받을 때 눈에 보이는 변화가 클수록 다른 사람이 더
                                 쉽게 볼 수 있다.
@@ -279,7 +279,7 @@
                                 </figcaption>
                             </figure>
                         <div class="note">
-                            <p class="note-title marker">Note</p>
+                            <p class="note-title marker">참고</p>
                             <p>
                                 초점 컨트롤의 너비와 높이에 따라 크기가 조정되는 초점 표시기 기술을 사용하는 것이 좋다. 그렇지 않고 페이지의 다양한 변형(예: 반응형 디자인)에서 컨트롤의 크기가 변경되면 표시기가 일부 변형에서는 영역
                                 요구 사항을 충족하지만 다른 변형에서는 충족하지 못할 수 있다. 예를 들어, 위 그림에서 버튼이 넓어짐에 따라 두 개의 강조 표시 직사각형의 너비가 조정되지 않는 경우 더 긴 버튼 레이블을 수용하기 위해
@@ -424,7 +424,7 @@
                             </figcaption>
                         </figure>
                         <div class="note">
-                            <p class="note-title marker">Note</p>
+                            <p class="note-title marker">참고</p>
                             <p>
                                 이 문서의 일부 예는 요소의 화면 캡처 이미지이다. 이러한 이미지의 해상도 손실로 인해 실제 픽셀 색상이 원본과 일치하지 않을 수 있다. 따라서 이는 설명 목적으로 사용하기 위한 것이며 충분한 대비를 위해
                                 픽셀 단위로 검사해서는 안 된다.
@@ -642,7 +642,7 @@
                             픽셀을 변경한 경우에는 사용자 에이전트 예외가 적용되지 않으며, 저작자는 이 성공 기준의 크기와 대비 요구사항을 충족하는지 확인해야 한다.
                         </p>
                         <div class="note">
-                            <p class="note-title marker">Note</p>
+                            <p class="note-title marker">참고</p>
                             <p>
                                 <code>body</code> 요소의 <code>background-color</code> 속성을 변경하는 것은 대부분의 구현에서 표시기에 바로 인접한 픽셀을 변경하는 한 가지 방법<em>이다</em>.
                                 그러나 흰색(<code>#FFFFFF</code>) 값을 지정해도 이 예외가 무효화되지는 않는다. 왜냐하면 <a
@@ -666,7 +666,7 @@
                         </section>
                         </section>
             <section id="benefits">
-                <h2>Benefits</h2>
+                <h2>이점</h2>
                 <ul>
                     <li>
                         이 성공 기준은 키보드 작업이 상호 작용할 구성 요소를 항상 시각적으로 결정함으로써 키보드를 사용하여 페이지를 작업하는 모든 사람에게 도움이 된다.
@@ -677,7 +677,7 @@
                     </ul>
             </section>
             <section id="examples">
-                <h2>Examples</h2>
+                <h2>예제</h2>
                 <ul>
                     <li>
                         링크에 초점이 맞춰지면 링크에 인접한 배경과 대조되는 윤곽선이 링크 주변에 표시된다.
@@ -694,8 +694,8 @@
                     </ul>
             </section>
             <section id="resources">
-                <h2>Related Resources</h2>
-                <p>Resources are for information purposes only, no endorsement implied.</p>
+                <h2>관련 자료</h2>
+                <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
                 <ul>
                     <li><a href="https://www.sarasoueidan.com/blog/focus-indicators/">A guide to designing accessible
                             focus
@@ -714,7 +714,7 @@
                     </ul>
                     </section>
             <section id="techniques">
-                <h2>Techniques</h2>
+                <h2>기법</h2>
                 <p>Each numbered item in this section represents a technique or combination of techniques
                     that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
                     it is not necessary to use these particular techniques. For information on using other
@@ -722,7 +722,7 @@
                         Criteria</a>, particularly the "Other Techniques" section.
                 </p>
                 <section id="sufficient">
-                    <h3>Sufficient Techniques</h3>
+                    <h3>충분 기법</h3>
                     <ol>
                         <li>
                             <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G195">G195: Using
@@ -739,7 +739,7 @@
                             </ol>
                             </section>
                 <section id="failure">
-                    <h3>Failures</h3>
+                    <h3>오류</h3>
                     <p>The following are common mistakes that are considered failures of this Success Criterion
                         by the WCAG Working Group.
                     </p>
@@ -769,7 +769,7 @@
                                 of users with disabilities that go beyond those offered by mainstream user agents
                             </p>
                             <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                <p class="note-title marker">Note</p>
+                                <p class="note-title marker">참고</p>
                                 <p>Functionality provided by assistive technology includes alternative presentations
                                     (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
                                     voice), additional navigation or orientation mechanisms, and content transformations
@@ -777,14 +777,14 @@
                                 </p>
                             </div>
                             <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                <p class="note-title marker">Note</p>
+                                <p class="note-title marker">참고</p>
                                 <p>Assistive technologies often communicate data and messages with mainstream user
                                     agents
                                     by using and monitoring APIs.
                                 </p>
                             </div>
                             <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                <p class="note-title marker">Note</p>
+                                <p class="note-title marker">참고</p>
                                 <p>The distinction between mainstream user agents and assistive technologies is not
                                     absolute.
                                     Many mainstream user agents provide some features to assist individuals with
@@ -888,7 +888,7 @@
                                         <a href="#dfn-process">process</a> or technique for achieving a result
                                     </p>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                        <p class="note-title marker">Note</p>
+                                        <p class="note-title marker">참고</p>
                                         <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied
                                                 upon</a> to be provided by either the platform or
                                             by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive
@@ -896,7 +896,7 @@
                                         </p>
                                     </div>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                        <p class="note-title marker">Note</p>
+                                        <p class="note-title marker">참고</p>
                                         <p>The mechanism needs to meet all success criteria for the conformance level claimed.
                                         </p>
                                     </div>
@@ -998,13 +998,13 @@
                                         or executed by <a href="#dfn-user-agent">user agents</a>
                                     </p>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                        <p class="note-title marker">Note</p>
+                                        <p class="note-title marker">참고</p>
                                         <p>As used in these guidelines "Web Technology" and the word "technology" (when used
                                             alone) both refer to Web Content Technologies.
                                         </p>
                                     </div>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                        <p class="note-title marker">Note</p>
+                                        <p class="note-title marker">참고</p>
                                         <p>Web content technologies may include markup languages, data formats, or programming
                                             languages that authors may use alone or in combination to create end-user
                                             experiences
@@ -1040,7 +1040,7 @@
                                         function
                                     </p>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                        <p class="note-title marker">Note</p>
+                                        <p class="note-title marker">참고</p>
                                         <p>Multiple user interface components may be implemented as a single programmatic
                                             element.
                                             "Components" here is not tied to programming techniques, but rather to what the user
@@ -1048,14 +1048,14 @@
                                         </p>
                                     </div>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                        <p class="note-title marker">Note</p>
+                                        <p class="note-title marker">참고</p>
                                         <p>User interface components include form elements and links as well as components
                                             generated
                                             by scripts.
                                         </p>
                                     </div>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                        <p class="note-title marker">Note</p>
+                                        <p class="note-title marker">참고</p>
                                         <p>What is meant by "component" or "user interface component" here is also sometimes
                                             called "user interface element".
                                         </p>
@@ -1078,13 +1078,13 @@
                                             href="#dfn-user-agent">user agent</a>
                                     </p>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                        <p class="note-title marker">Note</p>
+                                        <p class="note-title marker">참고</p>
                                         <p>Although any "other resources" would be rendered together with the primary resource,
                                             they would not necessarily be rendered simultaneously with each other.
                                         </p>
                                     </div>
                                     <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                        <p class="note-title marker">Note</p>
+                                        <p class="note-title marker">참고</p>
                                         <p>For the purposes of conformance with these guidelines, a resource must be
                                             "non-embedded"
                                             within the scope of conformance to be considered a Web page.

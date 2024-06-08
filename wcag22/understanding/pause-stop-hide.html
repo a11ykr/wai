@@ -3,11 +3,11 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.2.2: Pause, Stop, Hide | WAI | W3C</title>
+      <title>성공 기준 이해  2.2.2: Pause, Stop, Hide | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
-   <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
+   <body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
             <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding Docs</a></div>
             <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://www.w3.org/WAI/WCAG22/Understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
@@ -59,10 +59,10 @@
                <header class="box-h ">Page Contents</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
+                     <li><a href="#brief">요약</a></li>
+                     <li><a href="#intent">의도</a></li>
+                     <li><a href="#benefits">이점</a></li>
+                     <li><a href="#examples">예제</a></li>
                      <li><a href="#techniques">Techniques</a></li>
                      <li><a href="#key-terms">Key Terms</a></li>
                      <li><a href="#test-rules">Test Rules</a></li>
@@ -75,7 +75,7 @@
                   				<a href="https://w3.org/TR/WCAG22#pause-stop-hide">SC 2.2.2</a>:</span>Pause, Stop, Hide (Level A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">성공 기준 (SC) </header>
                <div class="box-i">
                   <p>이동, <a href="#dfn-blinking">깜빡임</a>, 스크롤, 자동 업데이트의 경우, 다음의 모든 사항을 준수해야 한다.</p>
                   <dl>
@@ -93,24 +93,24 @@
                      </dd>
                   </dl>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>깜빡임, 번쩍임과 관련된 요구사항은 <a href="https://www.w3.org/TR/WCAG22/#seizures-and-physical-reactions">지침 2.3</a>을 참고하라.
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>
                         이 성공기준을 준수하지 못하는 콘텐츠는 사용자가 전체 페이지를 사용하는 것을 방해할 수 있으므로, 웹 페이지의 모든 콘텐츠는 (다른 성공기준의 준수 여부와 상관없이) 이 성공기준을 준수해야 한다. <a href="https://www.w3.org/TR/WCAG22/#cc5">준수 요구사항 5: 불간섭</a>을 참고하라.
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>
                         소프트웨어에 의해 정기적으로 업데이트되거나 사용자 에이전트로 스트리밍되는 콘텐츠의 경우, 일시정지의 시작 시점부터 재시작 시점 사이에 생성되거나 수신되는 정보를 보존 또는 제시하는 것이 기술적으로 가능하지 않을 수 있으며, 많은 경우 사용자가 오도할 수 있으므로 요구사항이 아니다.
                      </p>
                   </div>
                   <div class="note">
-                     <p class="note-title marker">Note</p>
+                     <p class="note-title marker">참고</p>
                      <p>
                         프리로드 단계나 유사한 상황에서 발생하는 애니메이션은 그 단계에서 모든 사용자가 상호작용할 수 없고, 진행 상황을 표시하지 않으면 사용자들이 혼란을 겪거나 콘텐츠가 고정되었거나 깨졌다고 생각할 수 있는 경우에는 필수적인 것으로 간주될 수 있다.
                      </p>
@@ -119,18 +119,18 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>요약</h2>
                <dl>
-                  <dt>Goal</dt>
+                  <dt>목표</dt>
                   <dd>업데이트되거나 이동하는 콘텐츠로 인해 주의가 산만해지는 사용자가 줄어든다.</dd>
-                  <dt>What to do</dt>
+                  <dt>할 일</dt>
                   <dd>사용자가 다른 콘텐츠와 동시에 발생하는 콘텐츠 변경을 제어할 수 있다.</dd>
-                  <dt>Why it's important</dt>
+                  <dt>중요성</dt>
                   <dd>인지 장애와 주의력 결핍이 있는 일부 사람들은 지속적인 움직임에 집중할 수 없다.</dd>
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
+               <h2>의도</h2>
                <p>이 성공 기준의 목적은 웹 페이지와 상호 작용하는 동안 사용자의 주의를 산만하게 하지 않는 것이다.</p>
                <p>
                   "움직이고, 깜박이고, 스크롤되는 것"은 눈에 보이는 콘텐츠가 움직이는 느낌을 전달하는 콘텐츠를 의미한다. 일반적인 예로는 영화, 동기화된 미디어 프리젠테이션, 애니메이션, 실시간 게임 및 스크롤되는 주식 시세 표시기가 있다. '자동 업데이트'란 미리 설정된 시간 간격에 따라 콘텐츠가 업데이트되거나 사라지는 것을 말한다. 일반적인 시간 기반 콘텐츠에는 오디오, 자동으로 업데이트되는 날씨 정보, 뉴스, 주가 업데이트, 자동 진행 프레젠테이션 및 메시지가 포함된다. 콘텐츠 이동, 깜박임, 스크롤 및 콘텐츠 자동 업데이트에 대한 요구 사항은 다음을 제외하고 동일하다.
@@ -158,7 +158,7 @@
                         사용자가 중단한 지점에서 일시 중지하고 다시 시작하는 것은 콘텐츠를 읽기 위해 일시 ​​중지하려는 사용자에게 가장 적합하며 콘텐츠가 실시간 이벤트 또는 상태와 연결되지 않을 때 가장 잘 작동한다.
                      </p>
                      <div class="note">
-                        <p class="note-title marker">Note</p>
+                        <p class="note-title marker">참고</p>
                         <div>
                            <p>읽기 시간 제한과 관련된 추가 요구 사항은 <a href="timing-adjustable">2.2.1: 시간 제한 조정</a>을 참조하라.</p>
                         </div>
@@ -169,7 +169,7 @@
                         일시 정지 및 현시점 화면으로 이동(일시 정지가 해제될 때)은 실시간 또는 본질적으로 "상태" 정보에 더 좋다. 예를 들어, 기상 레이더, 주식 시세 표시기, 교통 카메라 또는 경매 타이머는 콘텐츠가 다시 시작될 때 일시 중지로 인해 이전 정보가 표시되는 경우 잘못된 정보를 표시한다.
                      </p>
                      <div class="note">
-                        <p class="note-title marker">Note</p>
+                        <p class="note-title marker">참고</p>
                         <div>
                            <p>
                               콘텐츠를 숨기는 것은 일시 중지하고 현시점 화면으로 이동하는 것과 동일한 결과를 가져온다(일시 중지가 해제된 경우).
@@ -195,7 +195,7 @@
                </ul>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>이점</h2>
                <ul>
                   <li>
                      5초 후에 깜박임을 멈추는 콘텐츠를 제공하거나 사용자가 콘텐츠 깜박임을 멈추는 메커니즘을 제공하면 특정 장애가 있는 사람들이 웹 페이지와 상호 작용할 수 있다.
@@ -206,7 +206,7 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>예제</h2>
                <dl>
                   <dt>활동에 영향을 주지 않고 일시 정지 가능한 필수 애니메이션</dt>
                   <dd>
@@ -235,14 +235,11 @@
                </dl>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>기법</h2>
+               <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>충분 기법</h3>
                   <ul>
                      <li>
                         <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G4">G4: Allowing the content to be paused and restarted from where it was paused</a>
@@ -269,7 +266,7 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
+                  <h3>오류</h3>
                   <p>The following are common mistakes that are considered failures of this Success Criterion
                      by the WCAG Working Group.
                   </p>
@@ -306,7 +303,7 @@
                      <definition xmlns="">
                         <p xmlns="http://www.w3.org/1999/xhtml">switch back and forth between two visual states in a way that is meant to draw attention</p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>See also <a href="#dfn-flash">flash</a>. It is possible for something to be large enough and blink brightly enough at the
                               right frequency to be also classified as a flash.
                            </p>
@@ -328,12 +325,12 @@
                            range
                         </p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>See <a href="#dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</a> for information about types of flash that are not allowed.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>See also <a href="#dfn-blinking">blinking</a>.
                            </p>
                         </div>
@@ -368,7 +365,7 @@
                            viewing distance) on a side does not violate the thresholds.
                         </p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>For general software or Web content, using a 341 x 256 pixel rectangle anywhere on
                               the displayed screen area when the content is viewed at 1024 x 768 pixels will provide
                               a good estimate of a 10 degree visual field for standard screen sizes and viewing
@@ -380,7 +377,7 @@
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>A transition is the change in relative luminance (or relative luminance/color for
                               red flashing) between adjacent peaks and valleys in a plot of relative luminance (or
                               relative luminance/color for red flashing) measurement against time. A flash consists
@@ -388,7 +385,7 @@
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>The new working definition in the field for <strong>"pair of opposing transitions involving a saturated red"</strong> (from WCAG 2.2) is a pair of opposing transitions where, one transition is either
                               to or from a state with a value R/(R + G + B) that is greater than or equal to 0.8,
                               and the difference between states is more than 0.2 (unitless) in the CIE 1976 UCS
@@ -396,7 +393,7 @@
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Tools are available that will carry out analysis from video screen capture. However,
                               no tool is necessary to evaluate for this condition if flashing is less than or equal
                               to 3 flashes in any one second. Content automatically passes (see #1 and #2 above).
@@ -417,7 +414,7 @@
                            black and 1 for lightest white
                         </p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <div>
                               <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
                                  * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
@@ -442,34 +439,34 @@
                            </div>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Before May 2021 the value of 0.04045 in the definition was different (0.03928). It
                               was taken from an older version of the specification and has been updated. It has
                               no practical effect on the calculations in the context of these guidelines.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Almost all systems used today to view Web content assume sRGB encoding. Unless it
                               is known that another color space will be used to process and display the content,
-                              authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+                              authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">성공 기준 이해 1.4.3</a>.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>If dithering occurs after delivery, then the source color value is used. For colors
                               that are dithered at the source, the average values of the colors that are dithered
                               should be used (average R, average G, and average B).
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Tools are available that automatically do the calculations when testing contrast and
                               flash.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>A <a href="relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
                            </p>
                         </div>

@@ -3,11 +3,11 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Understanding Success Criterion  2.4.4: Link Purpose (In Context) | WAI | W3C</title>
+      <title>성공 기준 이해  2.4.4: Link Purpose (In Context) | WAI | W3C</title>
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
-   <body dir="ltr"><a href="#main" class="button button--skip-link">Skip to content</a><div class="minimal-header-container default-grid">
+   <body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a><div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
             <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding Docs</a></div>
             <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://www.w3.org/WAI/WCAG22/Understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
@@ -59,11 +59,11 @@
                <header class="box-h ">Page Contents</header>
                <div class="box-i">
                   <ul>
-                     <li><a href="#brief">In Brief</a></li>
-                     <li><a href="#intent">Intent</a></li>
-                     <li><a href="#benefits">Benefits</a></li>
-                     <li><a href="#examples">Examples</a></li>
-                     <li><a href="#resources">Related Resources</a></li>
+                     <li><a href="#brief">요약</a></li>
+                     <li><a href="#intent">의도</a></li>
+                     <li><a href="#benefits">이점</a></li>
+                     <li><a href="#examples">예제</a></li>
+                     <li><a href="#resources">관련 자료</a></li>
                      <li><a href="#techniques">Techniques</a></li>
                      <li><a href="#key-terms">Key Terms</a></li>
                      <li><a href="#test-rules">Test Rules</a></li>
@@ -76,7 +76,7 @@
                   				<a href="https://w3.org/TR/WCAG22#link-purpose-in-context">SC 2.4.4</a>:</span>Link Purpose (In Context) (Level A)
             </h1>
             <aside class="box">
-               <header class="box-h  box-h-icon">Success Criterion (SC) </header>
+               <header class="box-h  box-h-icon">성공 기준 (SC) </header>
                <div class="box-i">
                   <p>
                      <a href="#dfn-link-purpose">각 링크의 목적</a>은 링크 텍스트만으로 식별 가능하거나 <a href="#dfn-programmatically-determined-link-context">프로그래밍 방식으로 판별되는 링크 맥락</a>과 함께 식별 가능해야 한다. 단, 링크의 목적이 <a href="#dfn-ambiguous-to-users-in-general">전반적으로 사용자에게 애매한 경우</a>는 제외한다.
@@ -85,18 +85,18 @@
             </aside>
             <div class="excol-all"></div>
             <section id="brief">
-               <h2>In Brief</h2>
+               <h2>요약</h2>
                <dl>
-                  <dt>Goal</dt>
+                  <dt>목표</dt>
                   <dd>사용자는 각 링크의 기능을 이해한다.</dd>
-                  <dt>What to do</dt>
+                  <dt>할 일</dt>
                   <dd>모든 링크에 대해 설명적인 이름이나 맥락을 제공하라.</dd>
-                  <dt>Why it's important</dt>
+                  <dt>중요성</dt>
                   <dd>시각 및 인지 장애가 있는 사람들은 더 쉽게 탐색할 수 있다.</dd>
                </dl>
             </section>
             <section id="intent">
-               <h2>Intent</h2>
+               <h2>의도</h2>
                <p>
                   이 성공 기준의 목적은 사용자가 각 링크의 목적을 이해하여 링크를 따라갈지 여부를 결정할 수 있도록 돕는 것이다. 가능하다면 추가적인 맥락 없이 링크의 목적을 식별하는 링크 텍스트를 제공하라. 보조 기술에는 사용자에게 웹 페이지에 있는 링크 목록을 제공하는 기능이 있다. 가능한 한 의미 있는 링크 텍스트는 이 링크 목록에서 선택하려는 사용자에게 도움이 될 것이다. 의미 있는 링크 텍스트는 링크에서 링크로 이동하려는 사용자에게도 도움이 된다. 의미 있는 링크는 사용자가 페이지를 이해하기 위해 복잡한 전략을 요구하지 않고도 따라갈 링크를 선택하는 데 도움이 된다.
                </p>
@@ -122,7 +122,7 @@
                   성공 기준에는 웹 페이지의 정보로 링크의 목적을 파악할 수 없는 링크에 대한 예외가 포함되어 있다. 이러한 상황에서는 장애를 가진 사람이 불리하지 않다. 링크 목적을 이해하기 위한 추가적인 맥락이 없기 때문이다. 그러나 웹 페이지에서 링크 목적을 해석하는 데 사용할 수 있는 어떤 맥락이라도 링크 텍스트에 포함하거나 프로그래밍적으로 링크와 연결하여 제공해야 성공 기준을 충족할 수 있다.
                </p>
                <div class="note">
-                  <p class="note-title marker">Note</p>
+                  <p class="note-title marker">참고</p>
                   <div>
                      <p>
                         링크의 목적을 알 수 없거나 모호한 상황이 있을 수 있다. 예를 들어, 게임에는 문 #1, 문 #2, 문 #3으로만 식별되는 링크가 있을 수 있다. 링크의 목적은 모든 사용자에게 긴장감을 조성하는 것이므로 이 링크 텍스트로 충분하다.
@@ -133,7 +133,7 @@
                </p>
             </section>
             <section id="benefits">
-               <h2>Benefits</h2>
+               <h2>이점</h2>
                <ul>
                   <li>
                      이 성공 기준은 운동 장애가 있는 사람들이 관심 없는 링크를 건너뛸 수 있도록 하고, 참조된 콘텐츠를 방문하는 데 필요한 키 입력을 피한 다음 현재 콘텐츠로 돌아가도록 함으로써 도움이 된다.
@@ -147,7 +147,7 @@
                </ul>
             </section>
             <section id="examples">
-               <h2>Examples</h2>
+               <h2>예제</h2>
                <dl>
                   <dt>해당 URI의 정보에 대한 설명을 제공하는 텍스트가 포함된 링크</dt>
                   <dd>한 페이지에는 '역사의 중세 시대에는 유혈사태가 많았다'는 문장이 적혀 있다. "역사의 중세 시대"는 링크이다.</dd>
@@ -168,8 +168,8 @@
                </dl>
             </section>
             <section id="resources">
-               <h2>Related Resources</h2>
-               <p>Resources are for information purposes only, no endorsement implied.</p>
+               <h2>관련 자료</h2>
+               <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
                <ul>
                   <li>
                      <a href="https://www.nngroup.com/articles/using-link-titles-to-help-users-predict-where-they-are-going/">Using Link Titles to Help Users Predict Where They Are Going</a>
@@ -183,14 +183,11 @@
                </ul>
             </section>
             <section id="techniques">
-               <h2>Techniques</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section.
+               <h2>기법</h2>
+               <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
                </p>
                <section id="sufficient">
-                  <h3>Sufficient Techniques</h3>
+                  <h3>충분 기법</h3>
                   <ul>
                      <li>
                         <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G91">G91: Providing link text that describes the purpose of a link</a>
@@ -279,10 +276,8 @@
                   </ul>
                </section>
                <section id="advisory">
-                  <h3>Advisory Techniques</h3>
-                  <p>Although not required for conformance, the following additional techniques should
-                     be considered in order to make content more accessible. Not all techniques can be
-                     used or would be effective in all situations.
+                  <h3>조언 기법</h3>
+                  <p>준수를 위해 필수는 아니지만 콘텐츠에 더 쉽게 접근할 수 있도록 다음과 같은 추가 기법을 고려해야 한다. 모든 기법을 사용할 수 없거나 모든 상황에서 효과적인 것은 아니다.
                   </p>
                   <ul>
                      <li>
@@ -298,7 +293,7 @@
                   </ul>
                </section>
                <section id="failure">
-                  <h3>Failures</h3>
+                  <h3>오류</h3>
                   <p>The following are common mistakes that are considered failures of this Success Criterion
                      by the WCAG Working Group.
                   </p>
@@ -386,7 +381,7 @@
                            </li>
                         </ol>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>The Accessibility Guidelines Working Group and the W3C do not specify which or how
                               much support by assistive
                               technologies there must be for a particular use of a Web technology in order for it
@@ -394,13 +389,13 @@
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Web technologies can be used in ways that are not accessibility supported as long
                               as they are not <a href="#dfn-relied-upon">relied upon</a> and the page as a whole meets the conformance requirements, including <a href="https://www.w3.org/TR/WCAG22/#cc4">Conformance Requirement 4</a> and <a href="https://www.w3.org/TR/WCAG22/#cc5">Conformance Requirement 5</a>.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>When a <a href="#dfn-technology">Web Technology</a> is used in a way that is "accessibility supported," it does not imply that the entire
                               technology or all uses of the technology are supported. Most technologies, including
                               HTML, lack support for at least one feature or use. Pages conform to WCAG only if
@@ -409,13 +404,13 @@
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>When citing Web content technologies that have multiple versions, the version(s) supported
                               should be specified.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>One way for authors to locate uses of a technology that are accessibility supported
                               would be to consult compilations of uses that are documented to be accessibility supported.
                               (See <a href="https://www.w3.org/WAI/WCAG21/Understanding/conformance#documented-lists">Understanding Accessibility-Supported Web Technology Uses</a>.) Authors, companies, technology vendors, or others may document accessibility-supported
@@ -449,7 +444,7 @@
                            of users with disabilities that go beyond those offered by mainstream user agents
                         </p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Functionality provided by assistive technology includes alternative presentations
                               (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
                               voice), additional navigation or orientation mechanisms, and content transformations
@@ -457,13 +452,13 @@
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Assistive technologies often communicate data and messages with mainstream user agents
                               by using and monitoring APIs.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>The distinction between mainstream user agents and assistive technologies is not absolute.
                               Many mainstream user agents provide some features to assist individuals with disabilities.
                               The basic difference is that mainstream user agents target broad and diverse audiences
@@ -532,45 +527,45 @@
                            </li>
                         </ol>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>In this definition, "can only be reached" means that there is some mechanism, such
                               as a conditional redirect, that prevents a user from "reaching" (loading) the non-conforming
                               page unless the user had just come from the conforming version.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>The alternate version does not need to be matched page for page with the original
                               (e.g., the conforming alternate version may consist of multiple pages).
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>If multiple language versions are available, then conforming alternate versions are
                               required for each language offered.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Alternate versions may be provided to accommodate different technology environments
                               or user groups. Each version should be as conformant as possible. One version would
                               need to be fully conformant in order to meet <a href="https://www.w3.org/TR/WCAG22/#cc1">conformance requirement 1</a>.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>The conforming alternative version does not need to reside within the scope of conformance,
                               or even on the same Web site, as long as it is as freely available as the non-conforming
                               version.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Alternate versions should not be confused with <a href="#dfn-supplemental-content">supplementary content</a>, which support the original page and enhance comprehension.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Setting user preferences within the content to produce a conforming version is an
                               acceptable mechanism for reaching another version as long as the method used to set
                               the preferences is accessibility supported.
@@ -602,7 +597,7 @@
                            with humans
                         </p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>See also <a href="#dfn-sign-language">sign language</a>.
                            </p>
                         </div>
@@ -621,12 +616,12 @@
                            <a href="#dfn-process">process</a> or technique for achieving a result
                         </p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive technologies</a>.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
                         </div>
                      </definition>
@@ -677,7 +672,7 @@
                   <dt id="dfn-programmatically-determined-link-context">programmatically determined link context</dt>
                   <dd>
                      <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">additional information that can be <a href="#dfn-programmatically-determined">programmatically determined</a> from <a href="#dfn-relationships">relationships</a> with a link, combined with the link text, and presented to users in different modalities
+                        <p xmlns="http://www.w3.org/1999/xhtml">추가 정보 that can be <a href="#dfn-programmatically-determined">programmatically determined</a> from <a href="#dfn-relationships">relationships</a> with a link, combined with the link text, and presented to users in different modalities
                         </p>
                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
                            <p>In HTML, information that is programmatically determinable from a link in English
@@ -686,7 +681,7 @@
                            </p>
                         </aside>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Since screen readers interpret punctuation, they can also provide the context from
                               the current sentence, when the focus is on a link in that sentence.
                            </p>
@@ -752,13 +747,13 @@
                            <a href="#dfn-mechanism">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent">user agents</a>
                         </p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>As used in these guidelines "Web Technology" and the word "technology" (when used
                               alone) both refer to Web Content Technologies.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Web content technologies may include markup languages, data formats, or programming
                               languages that authors may use alone or in combination to create end-user experiences
                               that range from static Web pages to synchronized media presentations to dynamic Web
@@ -789,13 +784,13 @@
                            that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
                         </p>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>Although any "other resources" would be rendered together with the primary resource,
                               they would not necessarily be rendered simultaneously with each other.
                            </p>
                         </div>
                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">Note</p>
+                           <p class="note-title marker">참고</p>
                            <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
                               within the scope of conformance to be considered a Web page.
                            </p>
