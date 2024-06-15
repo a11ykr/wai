@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,10 +7,14 @@
       <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
       <link rel="stylesheet" href="base.css" />
    </head>
-   <body dir="ltr"><a href="#main" class="button button--skip-link">본문 바로가기</a><div class="minimal-header-container default-grid">
+   <body dir="ltr">
+<a href="#main" class="button button--skip-link">본문 바로가기</a>
+<div class="minimal-header-container default-grid">
          <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href="https://www.w3.org/WAI/WCAG22/Understanding/">WCAG 2.2 Understanding Docs</a></div>
-            <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div><a class="minimal-header-link" href="https://www.w3.org/WAI/WCAG22/Understanding/about">About WCAG Understanding Docs</a><div class="minimal-header-logo"><a href="http://w3.org/" aria-label="W3C">
+            <div class="minimal-header-name"><a href=".">WCAG 2.2 이해</a></div>
+            <div class="minimal-header-subtitle">WCAG에 대한 정보성 설명</div>
+<div class="minimal-header-logo">
+<a href="http://w3.org/" aria-label="W3C">
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44" style="margin: 0.75em 0 0.75em 0.5em">
                      <g fill-rule="evenodd" fill="none">
                         <path fill="#015a9c" d="M-.231-.21h92.917v44.659H-.23z"></path>
@@ -34,9 +38,8 @@
          <div class="nav">
             <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
                <ul>
-                  <li class="nav__item"><a href=".">
-                        								All Understanding Docs
-                        							</a></li>
+                  <li class="nav__item"><a href=".">전체 문서</a></li>
+                    <li class="nav__item"><a href="./about">소개</a></li>
                   <li class="nav__item"><a href="distinguishable">
                         <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
                            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
@@ -56,7 +59,7 @@
       <div class="default-grid with-gap leftcol">
          <aside class="box nav-hack sidebar standalone-resource__sidebar ">
             <nav>
-               <header class="box-h ">Page Contents</header>
+               <header class="box-h ">페이지 콘텐츠</header>
                <div class="box-i">
                   <ul>
                      <li><a href="#brief">요약</a></li>
@@ -64,16 +67,16 @@
                      <li><a href="#benefits">이점</a></li>
                      <li><a href="#examples">예제</a></li>
                      <li><a href="#resources">관련 자료</a></li>
-                     <li><a href="#techniques">Techniques</a></li>
-                     <li><a href="#key-terms">Key Terms</a></li>
+                     <li><a href="#techniques">기법</a></li>
+                     
                      <li><a href="#test-rules">점검 규칙</a></li>
                   </ul>
                </div>
             </nav>
          </aside>
          <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">Understanding
-                  				<a href="https://w3.org/TR/WCAG22#images-of-text">SC 1.4.5</a>:</span>Images of Text (Level AA)
+            <h1><span class="standalone-resource__type-of-guidance">
+                  				<a href="https://w3.org/TR/WCAG22#images-of-text">성공기준 이해 1.4.5</a>:</span>Images of Text (Level AA)
             </h1>
             <aside class="box">
                <header class="box-h  box-h-icon">성공 기준 (SC) </header>
@@ -150,22 +153,7 @@
                   <dt>탐색 항목(Navigation items)</dt>
                   <dd>
                      웹 페이지에는 대상을 설명하는 아이콘과 텍스트가 모두 있는 탐색 링크 메뉴가 포함되어 있다. CSS는 텍스트의 글꼴 모음, 크기, 전경색과 배경색을 표시하는 데 사용된다. 탐색 링크 사이의 간격도 마찬가지이다.
-                  </dd>
-                  <dt>텍스트가 포함된 로고</dt>
-                  <dd>
-                     웹 사이트에는 각 웹 페이지의 왼쪽 상단에 조직의 로고가 있다. 로고에는 로고타입(로고의 일부 또는 전부인 텍스트)이 포함되어 있다. 텍스트의 시각적 표현은 로고의 아이덴티티를 표현하는 데 필수적이며, 텍스트 특성이 변경되지 않는 gif 이미지로 포함된다. 이미지에 대체 텍스트가 있다.
-                  </dd>
-                  <dt>글꼴 표현</dt>
-                  <dd>
-                     웹 페이지에 특정 글꼴에 대한 정보가 포함되어 있다. 글꼴을 다른 글꼴로 대체하면 표현의 목적이 무효화된다. 표현은 텍스트 특성을 변경할 수 없는 JPEG 이미지로 포함된다. 이미지에 대체 텍스트가 있다.
-                  </dd>
-                  <dt>편지의 표현</dt>
-                  <dd>
-                     웹 페이지에는 원본 편지의 표현이 포함되어 있다. 편지를 원래 형식으로 묘사하는 것은 편지가 쓰여진 시기에 대한 정보를 전달하는 데 필수적이다. 해당 글자는 텍스트 특성이 변경되지 않는 gif 이미지로 포함되어 있다. 이미지에 대체 텍스트가 있다.
-                  </dd>
-                  <dt>기호 텍스트 문자</dt>
-                  <dd>
-                     양식을 사용하면 사용자가 텍스트 블록을 입력할 수 있다. 이 양식은 텍스트 스타일 지정 및 맞춤법 검사 기능을 포함하여 다양한 버튼을 제공한다. 일부 버튼은 인간의 언어로 무언가를 표현하는 순서를 형성하지 않는 텍스트 문자를 사용한다. 예를 들어 "B"는 글꼴 두께를 늘리고 "I"는 텍스트를 기울임꼴로 표시하며 "ABC"는 맞춤법을 검사한다. 기호 텍스트 문자는 텍스트 특성을 변경할 수 없는 gif 이미지로 포함된다. 버튼에는 텍스트 대체 항목이 있다.
+                   을 사용하면 사용자가 텍스트 블록을 입력할 수 있다. 이 양식은 텍스트 스타일 지정 및 맞춤법 검사 기능을 포함하여 다양한 버튼을 제공한다. 일부 버튼은 인간의 언어로 무언가를 표현하는 순서를 형성하지 않는 텍스트 문자를 사용한다. 예를 들어 "B"는 글꼴 두께를 늘리고 "I"는 텍스트를 기울임꼴로 표시하며 "ABC"는 맞춤법을 검사한다. 기호 텍스트 문자는 텍스트 특성을 변경할 수 없는 gif 이미지로 포함된다. 버튼에는 텍스트 대체 항목이 있다.
                   </dd>
                   <dt>텍스트 이미지의 사용자 정의 가능한 글꼴 설정</dt>
                   <dd>웹 사이트에서는 사용자가 글꼴 설정을 지정할 수 있으며 사이트의 모든 텍스트 이미지는 해당 설정에 따라 제공된다.</dd>
@@ -399,11 +387,13 @@
                <ul>
                   <li><a href="/WAI/standards-guidelines/act/rules/0va7u6/">HTML images contain no text</a></li>
                </ul>
-            </section><a class="button button-backtotop" href="#top"><span>
+            </section>
+<a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
                      <path d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z"></path>
                   </svg> 맨 위로
-                  			</span></a></main>
+                  			</span></a>
+</main>
          
       </div>
       <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
@@ -417,7 +407,9 @@
          </div>
       </footer>
 
-      <link rel="stylesheet" href="../a11y-light.css" /><script src="../highlight.min.js"></script><script>
+      <link rel="stylesheet" href="../a11y-light.css" />
+<script src="../highlight.min.js"></script>
+<script>
       hljs.configure({
         cssSelector: 'pre'
       });
