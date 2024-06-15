@@ -1,212 +1,201 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>성공 기준 이해  2.3.1: Three Flashes or Below Threshold | WAI | W3C</title>
-      <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
-      <link rel="stylesheet" href="base.css" />
-   </head>
-   <body dir="ltr">
-<a href="#main" class="button button--skip-link">본문 바로가기</a>
-<div class="minimal-header-container default-grid">
-         <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href=".">WCAG 2.2 이해</a></div>
-            <div class="minimal-header-subtitle">WCAG에 대한 정보성 설명</div>
-
-         </div>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>성공 기준 이해  2.3.1: 3회 또는 임계값 이하의 번쩍임 | WAI | W3C</title>
+   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
+   <link rel="stylesheet" href="base.css" />
+</head>
+<body dir="ltr">
+   <a href="#main" class="button button--skip-link">본문 바로가기</a>
+   <div class="minimal-header-container default-grid">
+      <div class="minimal-header" id="site-header">
+         <div class="minimal-header-name"><a href=".">WCAG 2.2 이해</a></div>
+         <div class="minimal-header-subtitle">WCAG에 필수적이지 않은 정보성 설명</div>
       </div>
-      <div class="default-grid nav-container nav-page-specific">
-         <div class="nav">
-            <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
+   </div>
+   <div class="default-grid nav-container nav-page-specific">
+      <div class="nav">
+         <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
+            <ul>
+               <li class="nav__item"><a href=".">전체 문서</a></li>
+               <li class="nav__item"><a href="./about">소개</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+   <div class="default-grid with-gap leftcol">
+      <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+         <nav>
+            <header class="box-h ">페이지 콘텐츠</header>
+            <div class="box-i">
                <ul>
-                  <li class="nav__item"><a href=".">전체 문서</a></li>
-                    <li class="nav__item"><a href="./about">소개</a></li>
-                  <li class="nav__item"><a href="seizures-and-physical-reactions">
-                        <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Seizures and Physical Reactions</a></li>
-                  <li class="nav__item"></li>
-                  <li class="nav__item"><a href="three-flashes">Next SC: Three Flashes
-                        <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
-                        </svg></a></li>
+                  <li><a href="#brief">요약</a></li>
+                  <li><a href="#intent">의도</a></li>
+                  <li><a href="#benefits">이점</a></li>
+                  <li><a href="#examples">예제</a></li>
+                  <li><a href="#resources">관련 자료</a></li>
+                  <li><a href="#techniques">기법</a></li>
                </ul>
-            </nav>
-         </div>
-      </div>
-      <div class="default-grid with-gap leftcol">
-         <aside class="box nav-hack sidebar standalone-resource__sidebar ">
-            <nav>
-               <header class="box-h ">페이지 콘텐츠</header>
-               <div class="box-i">
-                  <ul>
-                     <li><a href="#brief">요약</a></li>
-                     <li><a href="#intent">의도</a></li>
-                     <li><a href="#benefits">이점</a></li>
-                     <li><a href="#examples">예제</a></li>
-                     <li><a href="#resources">관련 자료</a></li>
-                     <li><a href="#techniques">기법</a></li>
-                     
-                  </ul>
+            </div>
+         </nav>
+      </aside>
+      <main id="main" class="standalone-resource__main">
+         <h1><span class="standalone-resource__type-of-guidance"> <a href="https://w3.org/TR/WCAG22#three-flashes-or-below-threshold">성공기준 이해 2.3.1</a>:</span>3회 또는 임계값 이하의 번쩍임 (Level A)
+         </h1>
+         <aside class="box">
+            <header class="box-h  box-h-icon">성공 기준 (SC) </header>
+            <div class="box-i">
+               <p>
+                  <a href="#dfn-web-page">웹 페이지</a>는 초당 3회 이상 번쩍이는 콘텐츠를 포함해서는 안 된다. 또는 <a href="#dfn-flash">번쩍임</a>은 <a href="#dfn-general-flash-and-red-flash-thresholds">일반 번쩍임과 적색 번쩍임 임계값</a> 이하로 설정해야 한다.
+               </p>
+               <div class="note">
+                  <p class="note-title marker">참고</p>
+                  <p>
+                     이 성공기준을 준수하지 못하는 콘텐츠는 사용자가 전체 웹 페이지를 사용하는 것을 방해할 수 있으므로, 웹 페이지의 모든 콘텐츠는 (다른 성공기준의 준수 여부와 상관없이) 이 성공기준을 준수해야 한다. <a href="https://www.w3.org/TR/WCAG22/#cc5">준수 요구사항 5: 불간섭</a>을 참고하라.
+                  </p>
                </div>
-            </nav>
+            </div>
          </aside>
-         <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance"> <a href="https://w3.org/TR/WCAG22#three-flashes-or-below-threshold">성공기준 이해 2.3.1</a>:</span>Three Flashes or Below Threshold (Level A)
-            </h1>
-            <aside class="box">
-               <header class="box-h  box-h-icon">성공 기준 (SC) </header>
-               <div class="box-i">
-                  <p>
-                     <a href="#dfn-web-page">웹 페이지</a>는 초당 3회 이상 번쩍이는 콘텐츠를 포함해서는 안 된다. 또는 <a href="#dfn-flash">번쩍임</a>은 <a href="#dfn-general-flash-and-red-flash-thresholds">일반 번쩍임과 적색 번쩍임 임계값</a> 이하로 설정해야 한다.
-                  </p>
-                  <div class="note">
-                     <p class="note-title marker">참고</p>
-                     <p>
-                        이 성공기준을 준수하지 못하는 콘텐츠는 사용자가 전체 웹 페이지를 사용하는 것을 방해할 수 있으므로, 웹 페이지의 모든 콘텐츠는 (다른 성공기준의 준수 여부와 상관없이) 이 성공기준을 준수해야 한다. <a href="https://www.w3.org/TR/WCAG22/#cc5">준수 요구사항 5: 불간섭</a>을 참고하라.
-                     </p>
-                  </div>
-               </div>
-            </aside>
-            <div class="excol-all"></div>
-            <section id="brief">
-               <h2>요약</h2>
-               <dl>
-                  <dt>목표</dt>
-                  <dd>콘텐츠가 발작을 유발하지 않는다.</dd>
-                  <dt>할 일</dt>
-                  <dd>번쩍이는 콘텐츠를 피하거나 임계값 미만으로 유지하라.</dd>
-                  <dt>중요성</dt>
-                  <dd>번쩍이는 콘텐츠는 편두통, 현기증, 메스꺼움, 발작을 유발할 수 있다.</dd>
-               </dl>
-            </section>
-            <section id="intent">
-               <h2>의도</h2>
-               <p>이 성공 기준의 목적은 사용자가 광과민성 발작 없이 사이트의 전체 콘텐츠에 접근할 수 있도록 하는 것이다.</p>
+         <div class="excol-all"></div>
+         <section id="brief">
+            <h2>요약</h2>
+            <dl>
+               <dt>목표</dt>
+               <dd>콘텐츠가 발작을 유발하지 않는다.</dd>
+               <dt>할 일</dt>
+               <dd>번쩍이는 콘텐츠를 피하거나 임계값 미만으로 유지하라.</dd>
+               <dt>중요성</dt>
+               <dd>번쩍이는 콘텐츠는 편두통, 현기증, 메스꺼움, 발작을 유발할 수 있다.</dd>
+            </dl>
+         </section>
+         <section id="intent">
+            <h2>의도</h2>
+            <p>이 성공 기준의 목적은 사용자가 광과민성 발작 없이 사이트의 전체 콘텐츠에 접근할 수 있도록 하는 것이다.</p>
+            <p>
+               광과민성 발작 장애가 있는 개인은 몇 번 이상 깜박이는 동안 특정 빈도로 깜박이는 콘텐츠에 의해 발작을 일으킬 수 있다. 사람들은 다른 색상보다 빨간색 깜박임에 훨씬 더 민감하므로 강렬한 적색 깜박임에 대한 특별한 테스트가 제공된다. 이 지침은 원래 콘텐츠를 더 가까운 거리에서(더 큰 시야각을 사용하여) 보는 데스크탑 모니터에 맞게 조정된 방송 산업 지침을 기반으로 했다.
+            </p>
+            <p>
+               번쩍임은 디스플레이, 이미지를 렌더링하는 컴퓨터 또는 렌더링되는 콘텐츠로 인해 발생할 수 있다. 저작자는 앞의 두 가지를 통제할 수 없다. 이러한 문제는 디스플레이, 컴퓨터의 설계와 속도로 해결될 수 있다. 이 기준의 목적은 번쩍임 임계값을 위반하는 깜빡임이 콘텐츠 자체로 인해 발생하지 않도록 하는 것이다. 예를 들어 콘텐츠에는 일련의 섬광 또는 빠른 폭발의 클로즈업을 보여주는 비디오 클립이나 애니메이션 이미지가 포함될 수 있다.
+            </p>
+            <p>
+               이 성공 기준은 넓은 주파수 범위(3~50Hz) 내에서 단일 픽셀의 번쩍임을 허용하지 않는 WCAG 1.0의 훨씬 더 제한적인 기준을 대체한다. 이 적합 기준은 영국 및 기타 국가에서 TV 방송에 사용 중인 기존 규정을 기반으로 하며 컴퓨터 디스플레이 시청에 맞게 조정되었다. WCAG 2.0에서는 평가를 위한 참조 화면 해상도로 1024 x 768 화면이 사용되었다. 341 x 256 픽셀 블록은 일반적인 시청 거리에서 10도 뷰포트를 나타낸다. (10도 필드는 기존 규정에서 가져온 것이며 사람들이 사진 자극에 가장 민감한 눈의 중심 시력 부분을 나타낸다.)
+            </p>
+            <p>
+               다양한 화면 크기의 장치(소형 휴대용 디스플레이부터 대형 거실 디스플레이까지)가 확산되고 <a href="https://www.w3.org/TR/WCAG21/#dfn-css-pixels">CSS 픽셀</a>을 밀도 독립적인 측정 단위로 채택함에 따라 이전 평가 기준은 시대에 뒤떨어진 것처럼 보일 수 있다. 그러나 일관된 크기의 이미지는 모든 장치에서 상대적으로 동일한 비율의 사용자 시야를 사용한다. 대형 화면에서는 이미지가 차지하는 크기가 작아지지만, 대형 화면이 시야에서 더 많은 부분을 차지한다. 모바일 화면에서는 이미지가 화면의 대부분 또는 전부를 차지할 수 있다. 그러나 모바일 화면 자체는 사용자의 시야에서 더 작은 부분을 차지한다. 따라서 CSS 픽셀로 표시되는 깜박이는 콘텐츠의 동일한 차원은 여전히 ​​일관된 평가 수단을 제공할 수 있다. 원본 픽셀 블록을 CSS 픽셀로 대체한다는 것은 깜박이는 결합 영역이 341 x 256 CSS 픽셀, 즉 87,296 CSS 픽셀의 깜박이는 영역이 된다는 것을 의미한다.
+            </p>
+            <p>
+               콘텐츠는 사용자가 콘텐츠를 볼 수 있는 최대 규모와 사용자 에이전트의 표준 확대/축소 수준에서 분석되어야 한다. 예를 들어, 웹 페이지의 특정 영역과 전체 화면에서 재생될 수 있는 비디오의 경우 전체 화면에서 비디오의 위험을 분석해야 한다.
+            </p>
+            <p>
+               비디오 콘텐츠가 sRGB 이외의 색상 공간으로 제공되는 경우 가장 높은 동적 범위를 제공하는 버전을 테스트해야 한다. 이러한 경우 일반 번쩍임의 업계 표준 정의는 더 어두운 이미지가 160cd/m2 미만인 경우 20cd/m2 이상의 휘도 변화이다. (<a href="https://www.itu.int/rec/R-REC-BT.1702/">ITU-R BT.1702</a>.) 이는 표준 동적 범위(SDR) 및 높은 동적 범위(HDR) 콘텐츠에 적용된다. 더 어두운 상태가 160cd/m2 이상인 HDR 콘텐츠의 경우 일반 번쩍임은 Michelson 대비가 1/17 이상이다. 여기서 Michelson 대비는 (LHigh - LLow) / (LHigh + LLow)로 계산한다. 여기서 LHigh와 Llow는 각각 높은 휘도 상태와 낮은 휘도 상태이다.
+            </p>
+            <p>반복될 수 있는 짧은 클립(예: GIF 애니메이션)의 경우 반복하는 동안 콘텐츠를 분석해야 한다.</p>
+            <div class="note">
+               <p class="note-title marker">참고</p>
                <p>
-                  광과민성 발작 장애가 있는 개인은 몇 번 이상 깜박이는 동안 특정 빈도로 깜박이는 콘텐츠에 의해 발작을 일으킬 수 있다. 사람들은 다른 색상보다 빨간색 깜박임에 훨씬 더 민감하므로 강렬한 적색 깜박임에 대한 특별한 테스트가 제공된다. 이 지침은 원래 콘텐츠를 더 가까운 거리에서(더 큰 시야각을 사용하여) 보는 데스크탑 모니터에 맞게 조정된 방송 산업 지침을 기반으로 했다.
+                  규정은 사람이 선택하는 실제 시청 거리를 설명할 수 없다. 이상적인 시청 거리보다 화면에 더 가까운 사용자는 일반적으로 통과하는 깜박이는 영역의 영향을 받는다. 줌이나 화면 확대에 의존하는 사용자에게도 동일한 문제가 적용된다. 반대로 이상적인 거리보다 화면에서 더 멀리 떨어져 있는 사용자는 임계값보다 큰 깜박이는 영역을 견딜 수 있어야 한다.
                </p>
-               <p>
-                  번쩍임은 디스플레이, 이미지를 렌더링하는 컴퓨터 또는 렌더링되는 콘텐츠로 인해 발생할 수 있다. 저작자는 앞의 두 가지를 통제할 수 없다. 이러한 문제는 디스플레이, 컴퓨터의 설계와 속도로 해결될 수 있다. 이 기준의 목적은 번쩍임 임계값을 위반하는 깜빡임이 콘텐츠 자체로 인해 발생하지 않도록 하는 것이다. 예를 들어 콘텐츠에는 일련의 섬광 또는 빠른 폭발의 클로즈업을 보여주는 비디오 클립이나 애니메이션 이미지가 포함될 수 있다.
-               </p>
-               <p>
-                  이 성공 기준은 넓은 주파수 범위(3~50Hz) 내에서 단일 픽셀의 번쩍임을 허용하지 않는 WCAG 1.0의 훨씬 더 제한적인 기준을 대체합니다. 이 적합 기준은 영국 및 기타 국가에서 TV 방송에 사용 중인 기존 규정을 기반으로 하며 컴퓨터 디스플레이 시청에 맞게 조정되었다. WCAG 2.0에서는 평가를 위한 참조 화면 해상도로 1024 x 768 화면이 사용되었다. 341 x 256 픽셀 블록은 일반적인 시청 거리에서 10도 뷰포트를 나타낸다. (10도 필드는 기존 규정에서 가져온 것이며 사람들이 사진 자극에 가장 민감한 눈의 중심 시력 부분을 나타낸다.)
-               </p>
-               <p>
-                  다양한 화면 크기의 장치(소형 휴대용 디스플레이부터 대형 거실 디스플레이까지)가 확산되고 <a href="https://www.w3.org/TR/WCAG21/#dfn-css-pixels">CSS 픽셀</a>을 밀도 독립적인 측정 단위로 채택함에 따라 이전 평가 기준은 시대에 뒤떨어진 것처럼 보일 수 있다. 그러나 일관된 크기의 이미지는 모든 장치에서 상대적으로 동일한 비율의 사용자 시야를 사용한다. 대형 화면에서는 이미지가 차지하는 크기가 작아지지만, 대형 화면이 시야에서 더 많은 부분을 차지한다. 모바일 화면에서는 이미지가 화면의 대부분 또는 전부를 차지할 수 있다. 그러나 모바일 화면 자체는 사용자의 시야에서 더 작은 부분을 차지한다. 따라서 CSS 픽셀로 표시되는 깜박이는 콘텐츠의 동일한 차원은 여전히 ​​일관된 평가 수단을 제공할 수 있다. 원본 픽셀 블록을 CSS 픽셀로 대체한다는 것은 깜박이는 결합 영역이 341 x 256 CSS 픽셀, 즉 87,296 CSS 픽셀의 깜박이는 영역이 된다는 것을 의미한다.
-               </p>
-               <p>
-                  콘텐츠는 사용자가 콘텐츠를 볼 수 있는 최대 규모와 사용자 에이전트의 표준 확대/축소 수준에서 분석되어야 한다. 예를 들어, 웹 페이지의 특정 영역과 전체 화면에서 재생될 수 있는 비디오의 경우 전체 화면에서 비디오의 위험을 분석해야 한다.
-               </p>
-               <p>
-                  비디오 콘텐츠가 sRGB 이외의 색상 공간으로 제공되는 경우 가장 높은 동적 범위를 제공하는 버전을 테스트해야 한다. 이러한 경우 일반 번쩍임의 업계 표준 정의는 더 어두운 이미지가 160cd/m2 미만인 경우 20cd/m2 이상의 휘도 변화이다. (<a href="https://www.itu.int/rec/R-REC-BT.1702/">ITU-R BT.1702</a>.) 이는 표준 동적 범위(SDR) 및 높은 동적 범위(HDR) 콘텐츠에 적용된다. 더 어두운 상태가 160cd/m2 이상인 HDR 콘텐츠의 경우 일반 번쩍임은 Michelson 대비가 1/17 이상이다. 여기서 Michelson 대비는 (LHigh - LLow) / (LHigh + LLow)로 계산한다. 여기서 LHigh와 Llow는 각각 높은 휘도 상태와 낮은 휘도 상태이다.
-               </p>
-               <p>반복될 수 있는 짧은 클립(예: GIF 애니메이션)의 경우 반복하는 동안 콘텐츠를 분석해야 한다.</p>
-               <div class="note">
-                  <p class="note-title marker">참고</p>
-                  <p>
-                     규정은 사람이 선택하는 실제 시청 거리를 설명할 수 없다. 이상적인 시청 거리보다 화면에 더 가까운 사용자는 일반적으로 통과하는 깜박이는 영역의 영향을 받는다. 줌이나 화면 확대에 의존하는 사용자에게도 동일한 문제가 적용된다. 반대로 이상적인 거리보다 화면에서 더 멀리 떨어져 있는 사용자는 임계값보다 큰 깜박이는 영역을 견딜 수 있어야 한다.
-                  </p>
-               </div>
-               <p>
-                  동시에 연속적으로 발생하는 번쩍임의 합산면적은 실제로 동시에 섬광을 발하는 전체 면적을 의미한다. 화각 10도 내에서 동시에 깜박이는 연속 영역을 합산하여 계산된다.
-               </p>
-               <div class="note">
-                  <p class="note-title marker">참고</p>
-                  <div>
-                     <p>"깜박임"과 "번쩍임"이라는 용어가 때때로 동일한 내용을 나타낼 수 있다는 점에 유의하는 것이 중요하다.</p>
-                     <ul>
-                        <li>
-                           "깜박임"은 주의를 산만하게 하는 문제를 일으키는 콘텐츠를 의미한다. 깜박임은 멈추는 한 짧은 시간 동안 허용될 수 있다(또는 멈출 수 있는 한).
-                        </li>
-                        <li>
-                           "번쩍임"은 발작을 유발할 수 있는 콘텐츠를 의미한다(초당 3회 이상이고 충분히 크고 밝은 경우). 이는 단 1초도 허용할 수 없으며 발작을 일으킬 수 있다. 그리고 대부분의 사용자가 플래시를 끌 수 있는 것보다 발작이 더 빨리 발생할 수 있으므로 플래시를 끄는 것도 선택 사항이 아니다.
-                        </li>
-                        <li>
-                           깜박임은 보통 초당 3회 이상의 속도로 발생하지 않지만, 그렇게 발생할 수도 있다. 만약 깜박임이 초당 3회 이상의 속도로 발생한다면, 이는 번쩍임으로 간주된다.
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="note">
-                  <p class="note-title marker">참고</p>
-                  <div>
-                     <p>
-                        "강렬한 적색이 포함된 상반되는 전환의 쌍"에 대한 (WCAG 2.2에서) 새로운 정의는 다음과 같다. 한 쪽의 R/(R + G + B) 값이 0.8이상이고 CIE 1976 UCS 색도도(chromaticity diagram)에서 반대 쪽과의 차이가 0.2(단위 없음)보다 큰 한 쌍의 전환이다. [ISO_9241-391]
-                     </p>
-                     <p>색도 차이는 다음과 같이 계산된다.</p>
-                     <ul>
-                        <li><code>SQRT( (u'1 - u'2)^2 + (v'1 - v'2)^2 )</code></li>
-                     </ul>
-                     <p>
-                        여기서 u'1과 v'1은 상태 1의 색도 좌표이고 u'2와 v'2는 상태 2의 색도 좌표이다. u'와 v'의 1976 UCS 색도 좌표는 다음과 같이 계산된다.
-                     </p>
-                     <ul>
-                        <li><code>u' = 4 * X / (X + 15 * Y + 3 * Z)</code></li>
-                        <li><code>v' = 9 * Y / (X + 15 * Y + 3 * Z)</code></li>
-                     </ul>
-                     <p>여기서 X, Y, Z는 CIE XYZ 색 공간에 있는 색상의 삼색 자극값이며 다음과 같이 계산할 수 있다.
-                     </p>
-                     <ul>
-                        <li><code>X = 0.4124564 * R + 0.3575761 * G + 0.1804375 * B</code></li>
-                        <li><code>Y = 0.2126729 * R + 0.7151522 * G + 0.0721750 * B</code></li>
-                        <li><code>Z = 0.0193339 * R + 0.1191920 * G + 0.9503041 * B</code></li>
-                     </ul>
-                     <p>여기서 R, G, B는 "상대 휘도" 정의에 지정된 대로 0~1 범위의 값이다.</p>
-                  </div>
-               </div>
-            </section>
-            <section id="benefits">
-               <h2>이점</h2>
-               <ul>
-                  <li>
-                     번쩍이는 자료를 볼 때 발작을 일으키는 개인은 대체 텍스트에만 제한되지 않고 발작 없이 사이트의 전체 콘텐츠를 경험할 수 있다. 여기에는 광과민성 간질뿐만 아니라 기타 광과민성 발작 장애가 있는 사람도 포함된다.
-                  </li>
-               </ul>
-            </section>
-            <section id="examples">
-               <h2>예제</h2>
-               <ul>
-                  <li>
-                     웹 사이트에는 기관총 발사의 총구 섬광 비디오가 있지만 번쩍이는 이미지의 크기는 번쩍임 임계값 크기 아래의 화면의 작은 부분으로 제한된다.
-                  </li>
-                  <li>
-                     매우 밝은 번개가 번쩍이는 장면이 포함된 영화는 번개가 1초에 세 번만 번쩍이도록 편집된다.
-                  </li>
-               </ul>
-            </section>
-            <section id="resources">
-               <h2>관련 자료</h2>
-               <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
-               <ul>
-                  <li>
-                     <a href="https://www.hardingfpa.com/">Harding FPA Web Site</a>
-                  </li>
-                  <li>
-                     <a href="https://trace.umd.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</a>
-                  </li>
-                  <li>
-                     <a href="https://trace.umd.edu/information-about-photosensitive-seizure-disorders/">Information about Photosensitive Seizure Disorders</a>
-                  </li>
-                  <li>
-                     <a href="https://www.epilepsy.org.uk/">Epilepsy Action</a>
-                  </li>
-                  <li>
-                     <a href="http://www.epilepsy.com/learn/triggers-seizures/photosensitivity-and-seizures">Epilepsy Foundation - Photosensitivity and Seizures</a>
-                  </li>
-               </ul>
-            </section>
-            <section id="techniques">
-               <h2>기법</h2>
-               <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
-               </p>
-               <section id="sufficient">
-                  <h3>충분 기법</h3>
+            </div>
+            <p>
+               동시에 연속적으로 발생하는 번쩍임의 합산면적은 실제로 동시에 섬광을 발하는 전체 면적을 의미한다. 화각 10도 내에서 동시에 깜박이는 연속 영역을 합산하여 계산된다.
+            </p>
+            <div class="note">
+               <p class="note-title marker">참고</p>
+               <div>
+                  <p>"깜박임"과 "번쩍임"이라는 용어가 때때로 동일한 내용을 나타낼 수 있다는 점에 유의하는 것이 중요하다.</p>
                   <ul>
                      <li>
-                        <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G19">G19: Ensuring that no component of the content flashes more than three times in any 1-second
-                           period</a>
+                        "깜박임"은 주의를 산만하게 하는 문제를 일으키는 콘텐츠를 의미한다. 깜박임은 멈추는 한 짧은 시간 동안 허용될 수 있다(또는 멈출 수 있는 한).
+                     </li>
+                     <li>
+                        "번쩍임"은 발작을 유발할 수 있는 콘텐츠를 의미한다(초당 3회 이상이고 충분히 크고 밝은 경우). 이는 단 1초도 허용할 수 없으며 발작을 일으킬 수 있다. 그리고 대부분의 사용자가 플래시를 끌 수 있는 것보다 발작이 더 빨리 발생할 수 있으므로 플래시를 끄는 것도 선택 사항이 아니다.
+                     </li>
+                     <li>
+                        깜박임은 보통 초당 3회 이상의 속도로 발생하지 않지만, 그렇게 발생할 수도 있다. 만약 깜박임이 초당 3회 이상의 속도로 발생한다면, 이는 번쩍임으로 간주된다.
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="note">
+               <p class="note-title marker">참고</p>
+               <div>
+                  <p>
+                     "강렬한 적색이 포함된 상반되는 전환의 쌍"에 대한 (WCAG 2.2에서) 새로운 정의는 다음과 같다. 한 쪽의 R/(R + G + B) 값이 0.8이상이고 CIE 1976 UCS 색도도(chromaticity diagram)에서 반대 쪽과의 차이가 0.2(단위 없음)보다 큰 한 쌍의 전환이다. [ISO_9241-391]
+                  </p>
+                  <p>색도 차이는 다음과 같이 계산된다.</p>
+                  <ul>
+                     <li><code>SQRT( (u'1 - u'2)^2 + (v'1 - v'2)^2 )</code></li>
+                  </ul>
+                  <p>
+                     여기서 u'1과 v'1은 상태 1의 색도 좌표이고 u'2와 v'2는 상태 2의 색도 좌표이다. u'와 v'의 1976 UCS 색도 좌표는 다음과 같이 계산된다.
+                  </p>
+                  <ul>
+                     <li><code>u' = 4 * X / (X + 15 * Y + 3 * Z)</code></li>
+                     <li><code>v' = 9 * Y / (X + 15 * Y + 3 * Z)</code></li>
+                  </ul>
+                  <p>여기서 X, Y, Z는 CIE XYZ 색 공간에 있는 색상의 삼색 자극값이며 다음과 같이 계산할 수 있다.
+                  </p>
+                  <ul>
+                     <li><code>X = 0.4124564 * R + 0.3575761 * G + 0.1804375 * B</code></li>
+                     <li><code>Y = 0.2126729 * R + 0.7151522 * G + 0.0721750 * B</code></li>
+                     <li><code>Z = 0.0193339 * R + 0.1191920 * G + 0.9503041 * B</code></li>
+                  </ul>
+                  <p>여기서 R, G, B는 "상대 휘도" 정의에 지정된 대로 0~1 범위의 값이다.</p>
+               </div>
+            </div>
+         </section>
+         <section id="benefits">
+            <h2>이점</h2>
+            <ul>
+               <li>
+                  번쩍이는 자료를 볼 때 발작을 일으키는 개인은 대체 텍스트에만 제한되지 않고 발작 없이 사이트의 전체 콘텐츠를 경험할 수 있다. 여기에는 광과민성 간질뿐만 아니라 기타 광과민성 발작 장애가 있는 사람도 포함된다.
+               </li>
+            </ul>
+         </section>
+         <section id="examples">
+            <h2>예제</h2>
+            <ul>
+               <li>
+                  웹 사이트에는 기관총 발사의 총구 섬광 비디오가 있지만 번쩍이는 이미지의 크기는 번쩍임 임계값 크기 아래의 화면의 작은 부분으로 제한된다.
+               </li>
+               <li>
+                  매우 밝은 번개가 번쩍이는 장면이 포함된 영화는 번개가 1초에 세 번만 번쩍이도록 편집된다.
+               </li>
+            </ul>
+         </section>
+         <section id="resources">
+            <h2>관련 자료</h2>
+            <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
+            <ul>
+               <li>
+                  <a href="https://www.hardingfpa.com/">Harding FPA Web Site</a>
+               </li>
+               <li>
+                  <a href="https://trace.umd.edu/peat/">Trace Center Photosensitive Epilepsy Analysis Tool (PEAT)</a>
+               </li>
+               <li>
+                  <a href="https://trace.umd.edu/information-about-photosensitive-seizure-disorders/">Information about Photosensitive Seizure Disorders</a>
+               </li>
+               <li>
+                  <a href="https://www.epilepsy.org.uk/">Epilepsy Action</a>
+               </li>
+               <li>
+                  <a href="http://www.epilepsy.com/learn/triggers-seizures/photosensitivity-and-seizures">Epilepsy Foundation - Photosensitivity and Seizures</a>
+               </li>
+            </ul>
+         </section>
+         <section id="techniques">
+            <h2>기법</h2>
+            <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
+            </p>
+            <section id="sufficient">
+               <h3>충분 기법</h3>
+               <ul>
+                  <li>
+                     <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G19">G19: Ensuring that no component of the content flashes more than three times in any 1-second
+                        period</a>
                      </li>
                      <li>
                         <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G176">G176: Keeping the flashing area small enough</a>
@@ -214,334 +203,52 @@
                      <li>
                         <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G15">G15: Using a tool to ensure that content does not violate the general flash threshold or
                            red flash threshold</a>
-                     </li>
-                  </ul>
+                        </li>
+                     </ul>
+                  </section>
                </section>
-            </section>
-            <section id="key-terms">
-               <details>
-                  <summary>
-                     <h2>Key Terms</h2>
-                  </summary>
-                  <dt id="dfn-assistive-technology">assistive technology</dt>
-                  <dd>
-                     <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
-                           of users with disabilities that go beyond those offered by mainstream user agents
-                        </p>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>Functionality provided by assistive technology includes alternative presentations
-                              (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                              voice), additional navigation or orientation mechanisms, and content transformations
-                              (e.g., to make tables more accessible).
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>Assistive technologies often communicate data and messages with mainstream user agents
-                              by using and monitoring APIs.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                              Many mainstream user agents provide some features to assist individuals with disabilities.
-                              The basic difference is that mainstream user agents target broad and diverse audiences
-                              that usually include people with and without disabilities. Assistive technologies
-                              target narrowly defined populations of users with specific disabilities. The assistance
-                              provided by an assistive technology is more specific and appropriate to the needs
-                              of its target users. The mainstream user agent may provide important functionality
-                              to assistive technologies like retrieving Web content from program objects or parsing
-                              markup into identifiable bundles.
-                           </p>
-                        </div>
-                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                           <p>Assistive technologies that are important in the context of this document include
-                              the following:
-                           </p>
-                           <ul>
-                              <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                 visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                 color, synchronization with speech, etc. in order to improve the visual readability
-                                 of rendered text and images;
-                              </li>
-                              <li>screen readers, which are used by people who are blind to read textual information
-                                 through synthesized speech or braille;
-                              </li>
-                              <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                 learning disabilities to convert text into synthetic speech;
-                              </li>
-                              <li>speech recognition software, which may be used by people who have some physical disabilities;</li>
-                              <li>alternative keyboards, which are used by people with certain physical disabilities
-                                 to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                 switches, sip/puff and other special input devices.);
-                              </li>
-                              <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                 to simulate mouse pointing and button activations.
-                              </li>
-                           </ul>
-                        </aside>
-                     </definition>
-                  </dd>
-                  <dt id="dfn-blinking">blinking</dt>
-                  <dd>
-                     <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">switch back and forth between two visual states in a way that is meant to draw attention</p>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>참조하라 <a href="#dfn-flash">flash</a>. It is possible for something to be large enough and blink brightly enough at the
-                              right frequency to be also classified as a flash.
-                           </p>
-                        </div>
-                     </definition>
-                  </dd>
-                  <dt id="dfn-flash">flash</dt>
-                  <dd>
-                     <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">a pair of opposing changes in <a href="#dfn-relative-luminance">relative luminance</a> that can cause seizures in some people if it is large enough and in the right frequency
-                           range
-                        </p>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>See <a href="#dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</a> for information about types of flash that are not allowed.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>참조하라 <a href="#dfn-blinking">blinking</a>.
-                           </p>
-                        </div>
-                     </definition>
-                  </dd>
-                  <dt id="dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</dt>
-                  <dd>
-                     <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">a <a href="#dfn-flash">flash</a> or rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
-                        </p>
-                        <ol xmlns="http://www.w3.org/1999/xhtml">
-                           <li>there are no more than three <strong>general flashes</strong> and / or no more than three <strong>red flashes</strong> within any one-second period; or
-                           </li>
-                           <li>the combined area of flashes occurring concurrently occupies no more than a total
-                              of .006 steradians within any 10 degree visual field on the screen (25% of any 10
-                              degree visual field on the screen) at typical viewing distance
-                           </li>
-                        </ol>
-                        <p xmlns="http://www.w3.org/1999/xhtml">where:</p>
-                        <ul xmlns="http://www.w3.org/1999/xhtml">
-                           <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a href="#dfn-relative-luminance">relative luminance</a> of 10% or more of the maximum relative luminance (1.0) where the relative luminance
-                              of
-                              the darker image is below 0.80; and where "a pair of opposing changes" is an increase
-                              followed by a decrease, or a decrease followed by an increase, and
-                           </li>
-                           <li>A <strong>red flash</strong> is defined as any pair of opposing transitions involving a saturated red
-                           </li>
-                        </ul>
-                        <p xmlns="http://www.w3.org/1999/xhtml">
-                           <em>Exception:</em> Flashing that is a fine, balanced, pattern such as white noise or an alternating
-                           checkerboard pattern with "squares" smaller than 0.1 degree (of visual field at typical
-                           viewing distance) on a side does not violate the thresholds.
-                        </p>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>For general software or Web content, using a 341 x 256 pixel rectangle anywhere on
-                              the displayed screen area when the content is viewed at 1024 x 768 pixels will provide
-                              a good estimate of a 10 degree visual field for standard screen sizes and viewing
-                              distances (e.g., 15-17 inch screen at 22-26 inches). This resolution of 75 - 85 ppi
-                              is known to be lower, and thus more conservative than the nominal CSS pixel resolution
-                              of 96 ppi in CSS specifications. Higher resolutions displays showing the same rendering
-                              of the content yield smaller and safer images so it is lower resolutions that are
-                              used to define the thresholds.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>A transition is the change in relative luminance (or relative luminance/color for
-                              red flashing) between adjacent peaks and valleys in a plot of relative luminance (or
-                              relative luminance/color for red flashing) measurement against time. A flash consists
-                              of two opposing transitions.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>The new working definition in the field for <strong>"pair of opposing transitions involving a saturated red"</strong> (from WCAG 2.2) is a pair of opposing transitions where, one transition is either
-                              to or from a state with a value R/(R + G + B) that is greater than or equal to 0.8,
-                              and the difference between states is more than 0.2 (unitless) in the CIE 1976 UCS
-                              chromaticity diagram. [[ISO_9241-391]]
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>Tools are available that will carry out analysis from video screen capture. However,
-                              no tool is necessary to evaluate for this condition if flashing is less than or equal
-                              to 3 flashes in any one second. Content automatically passes (see #1 and #2 above).
-                           </p>
-                        </div>
-                     </definition>
-                  </dd>
-                  <dt id="dfn-relative-luminance">relative luminance</dt>
-                  <dd>
-                     <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">the relative brightness of any point in a colorspace, normalized to 0 for darkest
-                           black and 1 for lightest white
-                        </p>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <div>
-                              <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
-                                 * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
-                              </p>
-                              <ul>
-                                 <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
-                                 </li>
-                                 <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
-                                 </li>
-                                 <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
-                                 </li>
-                              </ul>
-                              <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
-                              <ul>
-                                 <li>RsRGB = R8bit/255</li>
-                                 <li>GsRGB = G8bit/255</li>
-                                 <li>BsRGB = B8bit/255</li>
-                              </ul>
-                              <p>The "^" character is the exponentiation operator. (Formula taken from
-                                 [[SRGB]].)
-                              </p>
-                           </div>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>Before May 2021 the value of 0.04045 in the definition was different (0.03928). It
-                              was taken from an older version of the specification and has been updated. It has
-                              no practical effect on the calculations in the context of these guidelines.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>Almost all systems used today to view Web content assume sRGB encoding. Unless it
-                              is known that another color space will be used to process and display the content,
-                              authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">성공 기준 이해 1.4.3</a>.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>If dithering occurs after delivery, then the source color value is used. For colors
-                              that are dithered at the source, the average values of the colors that are dithered
-                              should be used (average R, average G, and average B).
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>Tools are available that automatically do the calculations when testing contrast and
-                              flash.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>A <a href="relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
-                           </p>
-                        </div>
-                     </definition>
-                  </dd>
-                  <dt id="dfn-user-agent">user agent</dt>
-                  <dd>
-                     <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for users</p>
-                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                           <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
-                           </p>
-                        </aside>
-                     </definition>
-                  </dd>
-                  <dt id="dfn-web-page">web page</dt>
-                  <dd>
-                     <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using HTTP plus any other resources
-                           that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user agent</a>
-                        </p>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>Although any "other resources" would be rendered together with the primary resource,
-                              they would not necessarily be rendered simultaneously with each other.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                              within the scope of conformance to be considered a Web page.
-                           </p>
-                        </div>
-                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                           <p>A Web resource including all embedded images and media.</p>
-                        </aside>
-                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                           <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                              lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                              and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                              to display, but do not change the URI of the page as a whole.
-                           </p>
-                        </aside>
-                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                           <p>A customizable portal site, where users can choose content to display from a set of
-                              different content modules.
-                           </p>
-                        </aside>
-                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                           <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                              interactive shopping environment where you visually move around in a store dragging
-                              products off of the shelves around you and into a visual shopping cart in front of
-                              you. Clicking on a product causes it to be demonstrated with a specification sheet
-                              floating alongside. This might be a single-page Web site or just one page within a
-                              Web site.
-                           </p>
-                        </aside>
-                     </definition>
-                  </dd>
-               </details>
-            </section>
-<a class="button button-backtotop" href="#top"><span>
+               <a class="button button-backtotop" href="#top"><span>
                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
                      <path d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z"></path>
                   </svg> 맨 위로
-                  			</span></a>
-</main>
-         
-      </div>
-      <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-         <div class="inner" style="grid-column: 2 / 8">
-            <p><strong>원문 갱신:</strong> Updated 2 May 2024.
-            </p>
-            <p>이 문서는 <strong>비공식</strong> 번역본입니다. 부가적인 요소는 열람의 편의를 위해 삭제하였으니 <a href="https://www.w3.org/WAI/WCAG22/Understanding/">원문</a>을 참고하시기 바랍니다.
-            </p>
-            <p>번역 작업에 참여하거나 수정을 원하시는 분은 <a href="https://github.com/a11ykr/wcag22-understanding/issues/new">Github 저장소에 의견</a>을 남겨주십시오.
-            </p>
+               </span></a>
+            </main>
+            
          </div>
-      </footer>
-
-      <link rel="stylesheet" href="../a11y-light.css" />
-<script src="../highlight.min.js"></script>
-<script>
-      hljs.configure({
-        cssSelector: 'pre'
-      });
-      hljs.highlightAll();
-			var translationStrings = {}; /* fix WAI JS */
-		</script><script src="https://www.w3.org/WAI/assets/scripts/main.js"></script><script>
-      var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(["setDoNotTrack", true]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//www.w3.org/analytics/piwik/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '328']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script><noscript>
-         <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
-   </body>
-</html>
+         <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+            <div class="inner" style="grid-column: 2 / 8">
+               <p><strong>원문 갱신:</strong> Updated 2 May 2024.
+               </p>
+               <p>이 문서는 <strong>비공식</strong> 번역본입니다. 부가적인 요소는 열람의 편의를 위해 삭제하였으니 <a href="https://www.w3.org/WAI/WCAG22/Understanding/">원문</a>을 참고하시기 바랍니다.
+               </p>
+               <p>번역 작업에 참여하거나 수정을 원하시는 분은 <a href="https://github.com/a11ykr/wcag22-understanding/issues/new">Github 저장소에 의견</a>을 남겨주십시오.
+               </p>
+            </div>
+         </footer>
+         
+         <link rel="stylesheet" href="../a11y-light.css" />
+         <script src="../highlight.min.js"></script>
+         <script>
+            hljs.configure({
+               cssSelector: 'pre'
+            });
+            hljs.highlightAll();
+            var translationStrings = {}; /* fix WAI JS */
+         </script><script src="https://www.w3.org/WAI/assets/scripts/main.js"></script><script>
+            var _paq = _paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(["setDoNotTrack", true]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+               var u="//www.w3.org/analytics/piwik/";
+               _paq.push(['setTrackerUrl', u+'piwik.php']);
+               _paq.push(['setSiteId', '328']);
+               var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+               g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+         </script><noscript>
+            <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
+         </noscript>
+      </body>
+      </html>

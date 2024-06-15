@@ -1,93 +1,80 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>성공 기준 이해  2.4.7: Focus Visible | WAI | W3C</title>
-      <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
-      <link rel="stylesheet" href="base.css" />
-   </head>
-   <body dir="ltr">
-<a href="#main" class="button button--skip-link">본문 바로가기</a>
-<div class="minimal-header-container default-grid">
-         <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href=".">WCAG 2.2 이해</a></div>
-            <div class="minimal-header-subtitle">WCAG에 대한 정보성 설명</div>
-
-         </div>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>성공 기준 이해  2.4.7: 초점 시각화 | WAI | W3C</title>
+   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
+   <link rel="stylesheet" href="base.css" />
+</head>
+<body dir="ltr">
+   <a href="#main" class="button button--skip-link">본문 바로가기</a>
+   <div class="minimal-header-container default-grid">
+      <div class="minimal-header" id="site-header">
+         <div class="minimal-header-name"><a href=".">WCAG 2.2 이해</a></div>
+         <div class="minimal-header-subtitle">WCAG에 필수적이지 않은 정보성 설명</div>
       </div>
-      <div class="default-grid nav-container nav-page-specific">
-         <div class="nav">
-            <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
+   </div>
+   <div class="default-grid nav-container nav-page-specific">
+      <div class="nav">
+         <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
+            <ul>
+               <li class="nav__item"><a href=".">전체 문서</a></li>
+               <li class="nav__item"><a href="./about">소개</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+   <div class="default-grid with-gap leftcol">
+      <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+         <nav>
+            <header class="box-h ">페이지 콘텐츠</header>
+            <div class="box-i">
                <ul>
-                  <li class="nav__item"><a href=".">전체 문서</a></li>
-                    <li class="nav__item"><a href="./about">소개</a></li>
-                  <li class="nav__item"><a href="navigable">
-                        <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Navigable</a></li>
-                  <li class="nav__item"><a href="headings-and-labels">
-                        <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Headings and Labels</a></li>
-                  <li class="nav__item"><a href="location">Next SC: Location
-                        <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
-                        </svg></a></li>
+                  <li><a href="#brief">요약</a></li>
+                  <li><a href="#intent">의도</a></li>
+                  <li><a href="#benefits">이점</a></li>
+                  <li><a href="#examples">예제</a></li>
+                  <li><a href="#resources">관련 자료</a></li>
+                  <li><a href="#techniques">기법</a></li>
+                  <li><a href="#test-rules">점검 규칙</a></li>
                </ul>
-            </nav>
-         </div>
-      </div>
-      <div class="default-grid with-gap leftcol">
-         <aside class="box nav-hack sidebar standalone-resource__sidebar ">
-            <nav>
-               <header class="box-h ">페이지 콘텐츠</header>
-               <div class="box-i">
-                  <ul>
-                     <li><a href="#brief">요약</a></li>
-                     <li><a href="#intent">의도</a></li>
-                     <li><a href="#benefits">이점</a></li>
-                     <li><a href="#examples">예제</a></li>
-                     <li><a href="#resources">관련 자료</a></li>
-                     <li><a href="#techniques">기법</a></li>
-                     <li><a href="#test-rules">점검 규칙</a></li>
-                  </ul>
-               </div>
-            </nav>
+            </div>
+         </nav>
+      </aside>
+      <main id="main" class="standalone-resource__main">
+         <h1><span class="standalone-resource__type-of-guidance">
+            <a href="https://w3.org/TR/WCAG22#focus-visible">성공기준 이해 2.4.7</a>:</span>초점 시각화 (Level AA)
+         </h1>
+         <aside class="box">
+            <header class="box-h  box-h-icon">성공 기준 (SC) </header>
+            <div class="box-i">
+               <p>키보드로 조작할 수 있는 사용자 인터페이스는 키보드 초점이 표시되는 작동 모드를 제공해야 한다.</p>
+            </div>
          </aside>
-         <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">
-                  				<a href="https://w3.org/TR/WCAG22#focus-visible">성공기준 이해 2.4.7</a>:</span>Focus Visible (Level AA)
-            </h1>
-            <aside class="box">
-               <header class="box-h  box-h-icon">성공 기준 (SC) </header>
-               <div class="box-i">
-                  <p>키보드로 조작할 수 있는 사용자 인터페이스는 키보드 초점이 표시되는 작동 모드를 제공해야 한다.</p>
-               </div>
-            </aside>
-            <div class="excol-all"></div>
-            <section id="brief">
-               <h2>요약</h2>
-               <dl>
-                  <dt>목표</dt>
-                  <dd>사용자가 어떤 요소에 키보드 초점이 있는지 안다.</dd>
-                  <dt>할 일</dt>
-                  <dd>초점을 받는 각 항목에 지시자(indicator)가 표시되는지 확인하라.</dd>
-                  <dt>중요성</dt>
-                  <dd>초점 표시기(focus indicator)가 없으면 시력이 있는 키보드 사용자는 페이지를 조작할 수 없다.</dd>
-               </dl>
-            </section>
-            <section id="intent">
-               <h2>의도</h2>
-               <p>이 성공 기준의 목적은 키보드 초점이 있는 요소를 사용자가 알 수 있도록 돕는 것이다.</p>
-               <p>
-                  "운용 방식"은 항상 초점 표시기를 표시하지 않거나 키보드를 사용할 때만 초점 표시기를 표시할 수 있는 사용자 에이전트를 고려한다. 사용자 에이전트는 키보드를 사용할 때만 표시하는 등 초점 표시기 표시를 최적화할 수
-                  있다. 저작자는 초점이 보이는 운용 방식을 하나 이상 제공할 책임이 있다. 대부분의 경우 운용 방식이 하나만 있으므로 이 성공 기준이 적용된다. 초점 표시기는 시간 제한을 두어서는 안 되며, 키보드 초점이 표시되면
-                  그대로 유지되어야 한다.
-               </p>
-               <p>
-                  키보드 초점 표시기는 다양한 형태를 취할 수 있다. <span class="wcag22"> <span class="new-version">WCAG 2.2의 새로운 기능: </span> 초점 시각화는 해당 형식이
-                     무엇인지 지정하지 않지만 <a href="focus-appearance">2.4.13 초점 형태 (Level AAA)</a>는 일관되고 가시적인 지시자를 만드는 데 대한 지침을 제공한다.</span>
+         <div class="excol-all"></div>
+         <section id="brief">
+            <h2>요약</h2>
+            <dl>
+               <dt>목표</dt>
+               <dd>사용자가 어떤 요소에 키보드 초점이 있는지 안다.</dd>
+               <dt>할 일</dt>
+               <dd>초점을 받는 각 항목에 지시자(indicator)가 표시되는지 확인하라.</dd>
+               <dt>중요성</dt>
+               <dd>초점 표시기(focus indicator)가 없으면 시력이 있는 키보드 사용자는 페이지를 조작할 수 없다.</dd>
+            </dl>
+         </section>
+         <section id="intent">
+            <h2>의도</h2>
+            <p>이 성공 기준의 목적은 키보드 초점이 있는 요소를 사용자가 알 수 있도록 돕는 것이다.</p>
+            <p>
+               "운용 방식"은 항상 초점 표시기를 표시하지 않거나 키보드를 사용할 때만 초점 표시기를 표시할 수 있는 사용자 에이전트를 고려한다. 사용자 에이전트는 키보드를 사용할 때만 표시하는 등 초점 표시기 표시를 최적화할 수
+               있다. 저작자는 초점이 보이는 운용 방식을 하나 이상 제공할 책임이 있다. 대부분의 경우 운용 방식이 하나만 있으므로 이 성공 기준이 적용된다. 초점 표시기는 시간 제한을 두어서는 안 되며, 키보드 초점이 표시되면
+               그대로 유지되어야 한다.
+            </p>
+            <p>
+               키보드 초점 표시기는 다양한 형태를 취할 수 있다. <span class="wcag22"> <span class="new-version">WCAG 2.2의 새로운 기능: </span> 초점 시각화는 해당 형식이
+               무엇인지 지정하지 않지만 <a href="focus-appearance">2.4.13 초점 형태 (Level AAA)</a>는 일관되고 가시적인 지시자를 만드는 데 대한 지침을 제공한다.</span>
             </section>
             <section id="benefits">
                <h2>이점</h2>
@@ -126,91 +113,91 @@
                      <li>
                         <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G149">G149: Using user interface components that are highlighted by the user agent when they receive
                            focus</a>
-                     </li>
-                     <li>
-                        <a class="css" href="https://www.w3.org/WAI/WCAG22/Techniques/css/C15">C15: Using CSS to change the presentation of a user interface component when it receives
-                           focus</a>
-                     </li>
-                     <li>
-                        <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G165">G165: Using the default focus indicator for the platform so that high visibility default
-                           focus indicators will carry over</a>
-                     </li>
-                     <li>
-                        <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G195">G195: Using an author-supplied, visible focus indicator</a>
-                     </li>
-                     <li>
-                        <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C40">C40: Creating a two-color focus indicator to ensure sufficient contrast with all components</a>
-                     </li>
-                     <li>
-                        <a class="script" href="https://www.w3.org/WAI/WCAG22/Techniques/client-side-script/SCR31">SCR31: Using script to change the background color or border of the element with focus</a>
-                     </li>
-                  </ul>
-               </section>
-               <section id="failure">
-                  <h3>오류</h3>
-                  <p>다음은 WCAG 실무 그룹에서 이 성공 기준의 실패로 간주하는 일반적인 실수이다.
-                  </p>
-                  <ul>
-                     <li>
-                        <a class="failure" href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F55">F55:  received</a>
-                     </li>
-                     <li>
-                        <a class="failure" href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F78">F78: Failure of Success Criterion 1.4.11, 2.4.7 and 2.4.13 due to styling element outlines
-                           and borders in a way that removes or renders non-visible the visual focus indicator</a>
-                     </li>
-                  </ul>
-               </section>
-            </section>
-            <section id="test-rules">
-               <h2>점검 규칙</h2>
-               <p>다음은 이 성공 기준의 특정 측면에 대한 점검 규칙이다. WCAG 준수 여부를 확인하기 위해 이러한 특정 점검 규칙을 사용할 필요는 없지만 이것은 정의되고 승인된 검사 방법이다. 점검 규칙 사용에 대한 자세한 내용은 <a href="understanding-act-rules.html">WCAG 성공 기준에 대한 점검 규칙 이해</a>를 참고하라.
-               </p>
-               <ul>
-                  <li><a href="/WAI/standards-guidelines/act/rules/oj04fd/">Element in sequential focus order has visible focus</a></li>
-               </ul>
-            </section>
-<a class="button button-backtotop" href="#top"><span>
-                  <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
-                     <path d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z"></path>
-                  </svg> 맨 위로
-                  			</span></a>
-</main>
-         
-      </div>
-      <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-         <div class="inner" style="grid-column: 2 / 8">
-            <p><strong>원문 갱신:</strong> Updated 2 May 2024.
-            </p>
-            <p>이 문서는 <strong>비공식</strong> 번역본입니다. 부가적인 요소는 열람의 편의를 위해 삭제하였으니 <a href="https://www.w3.org/WAI/WCAG22/Understanding/">원문</a>을 참고하시기 바랍니다.
-            </p>
-            <p>번역 작업에 참여하거나 수정을 원하시는 분은 <a href="https://github.com/a11ykr/wcag22-understanding/issues/new">Github 저장소에 의견</a>을 남겨주십시오.
-            </p>
-         </div>
-      </footer>
-
-      <link rel="stylesheet" href="../a11y-light.css" />
-<script src="../highlight.min.js"></script>
-<script>
-      hljs.configure({
-        cssSelector: 'pre'
-      });
-      hljs.highlightAll();
-			var translationStrings = {}; /* fix WAI JS */
-		</script><script src="https://www.w3.org/WAI/assets/scripts/main.js"></script><script>
-      var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(["setDoNotTrack", true]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//www.w3.org/analytics/piwik/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '328']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script><noscript>
-         <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
-   </body>
-</html>
+                        </li>
+                        <li>
+                           <a class="css" href="https://www.w3.org/WAI/WCAG22/Techniques/css/C15">C15: Using CSS to change the presentation of a user interface component when it receives
+                              focus</a>
+                           </li>
+                           <li>
+                              <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G165">G165: Using the default focus indicator for the platform so that high visibility default
+                                 focus indicators will carry over</a>
+                              </li>
+                              <li>
+                                 <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G195">G195: Using an author-supplied, visible focus indicator</a>
+                              </li>
+                              <li>
+                                 <a href="https://www.w3.org/WAI/WCAG22/Techniques/css/C40">C40: Creating a two-color focus indicator to ensure sufficient contrast with all components</a>
+                              </li>
+                              <li>
+                                 <a class="script" href="https://www.w3.org/WAI/WCAG22/Techniques/client-side-script/SCR31">SCR31: Using script to change the background color or border of the element with focus</a>
+                              </li>
+                           </ul>
+                        </section>
+                        <section id="failure">
+                           <h3>오류</h3>
+                           <p>다음은 WCAG 실무 그룹에서 이 성공 기준의 실패로 간주하는 일반적인 실수이다.
+                           </p>
+                           <ul>
+                              <li>
+                                 <a class="failure" href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F55">F55:  received</a>
+                              </li>
+                              <li>
+                                 <a class="failure" href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F78">F78: Failure of Success Criterion 1.4.11, 2.4.7 and 2.4.13 due to styling element outlines
+                                    and borders in a way that removes or renders non-visible the visual focus indicator</a>
+                                 </li>
+                              </ul>
+                           </section>
+                        </section>
+                        <section id="test-rules">
+                           <h2>점검 규칙</h2>
+                           <p>다음은 이 성공 기준의 특정 측면에 대한 점검 규칙이다. WCAG 준수 여부를 확인하기 위해 이러한 특정 점검 규칙을 사용할 필요는 없지만 이것은 정의되고 승인된 검사 방법이다. 점검 규칙 사용에 대한 자세한 내용은 <a href="understanding-act-rules.html">WCAG 성공 기준에 대한 점검 규칙 이해</a>를 참고하라.
+                           </p>
+                           <ul>
+                              <li><a href="/WAI/standards-guidelines/act/rules/oj04fd/">Element in sequential focus order has visible focus</a></li>
+                           </ul>
+                        </section>
+                        <a class="button button-backtotop" href="#top"><span>
+                           <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
+                              <path d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z"></path>
+                           </svg> 맨 위로
+                        </span></a>
+                     </main>
+                     
+                  </div>
+                  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+                     <div class="inner" style="grid-column: 2 / 8">
+                        <p><strong>원문 갱신:</strong> Updated 2 May 2024.
+                        </p>
+                        <p>이 문서는 <strong>비공식</strong> 번역본입니다. 부가적인 요소는 열람의 편의를 위해 삭제하였으니 <a href="https://www.w3.org/WAI/WCAG22/Understanding/">원문</a>을 참고하시기 바랍니다.
+                        </p>
+                        <p>번역 작업에 참여하거나 수정을 원하시는 분은 <a href="https://github.com/a11ykr/wcag22-understanding/issues/new">Github 저장소에 의견</a>을 남겨주십시오.
+                        </p>
+                     </div>
+                  </footer>
+                  
+                  <link rel="stylesheet" href="../a11y-light.css" />
+                  <script src="../highlight.min.js"></script>
+                  <script>
+                     hljs.configure({
+                        cssSelector: 'pre'
+                     });
+                     hljs.highlightAll();
+                     var translationStrings = {}; /* fix WAI JS */
+                  </script><script src="https://www.w3.org/WAI/assets/scripts/main.js"></script><script>
+                     var _paq = _paq || [];
+                     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+                     _paq.push(["setDoNotTrack", true]);
+                     _paq.push(['trackPageView']);
+                     _paq.push(['enableLinkTracking']);
+                     (function() {
+                        var u="//www.w3.org/analytics/piwik/";
+                        _paq.push(['setTrackerUrl', u+'piwik.php']);
+                        _paq.push(['setSiteId', '328']);
+                        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+                     })();
+                  </script><noscript>
+                     <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
+                  </noscript>
+               </body>
+               </html>

@@ -1,251 +1,183 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>성공 기준 이해  2.4.10: Section Headings | WAI | W3C</title>
-      <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
-      <link rel="stylesheet" href="base.css" />
-   </head>
-   <body dir="ltr">
-<a href="#main" class="button button--skip-link">본문 바로가기</a>
-<div class="minimal-header-container default-grid">
-         <div class="minimal-header" id="site-header">
-            <div class="minimal-header-name"><a href=".">WCAG 2.2 이해</a></div>
-            <div class="minimal-header-subtitle">WCAG에 대한 정보성 설명</div>
-
-         </div>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>성공 기준 이해  2.4.10: 섹션 제목 | WAI | W3C</title>
+   <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
+   <link rel="stylesheet" href="base.css" />
+</head>
+<body dir="ltr">
+   <a href="#main" class="button button--skip-link">본문 바로가기</a>
+   <div class="minimal-header-container default-grid">
+      <div class="minimal-header" id="site-header">
+         <div class="minimal-header-name"><a href=".">WCAG 2.2 이해</a></div>
+         <div class="minimal-header-subtitle">WCAG에 필수적이지 않은 정보성 설명</div>
       </div>
-      <div class="default-grid nav-container nav-page-specific">
-         <div class="nav">
-            <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
+   </div>
+   <div class="default-grid nav-container nav-page-specific">
+      <div class="nav">
+         <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
+            <ul>
+               <li class="nav__item"><a href=".">전체 문서</a></li>
+               <li class="nav__item"><a href="./about">소개</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+   <div class="default-grid with-gap leftcol">
+      <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+         <nav>
+            <header class="box-h ">페이지 콘텐츠</header>
+            <div class="box-i">
                <ul>
-                  <li class="nav__item"><a href=".">전체 문서</a></li>
-                    <li class="nav__item"><a href="./about">소개</a></li>
-                  <li class="nav__item"><a href="navigable">
-                        <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"></path>
-                        </svg> Guideline: Navigable</a></li>
-                  <li class="nav__item"><a href="link-purpose-link-only">
-                        <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
-                        </svg>Previous SC: Link Purpose (Link Only)</a></li>
-                  <li class="nav__item"><a href="focus-not-obscured-minimum">Next SC: Focus Not Obscured (Minimum)
-                        <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
-                           <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
-                        </svg></a></li>
+                  <li><a href="#brief">요약</a></li>
+                  <li><a href="#intent">의도</a></li>
+                  <li><a href="#benefits">이점</a></li>
+                  <li><a href="#examples">예제</a></li>
+                  <li><a href="#resources">관련 자료</a></li>
+                  <li><a href="#techniques">기법</a></li>
                </ul>
-            </nav>
-         </div>
-      </div>
-      <div class="default-grid with-gap leftcol">
-         <aside class="box nav-hack sidebar standalone-resource__sidebar ">
-            <nav>
-               <header class="box-h ">페이지 콘텐츠</header>
-               <div class="box-i">
-                  <ul>
-                     <li><a href="#brief">요약</a></li>
-                     <li><a href="#intent">의도</a></li>
-                     <li><a href="#benefits">이점</a></li>
-                     <li><a href="#examples">예제</a></li>
-                     <li><a href="#resources">관련 자료</a></li>
-                     <li><a href="#techniques">기법</a></li>
-                     
-                  </ul>
+            </div>
+         </nav>
+      </aside>
+      <main id="main" class="standalone-resource__main">
+         <h1><span class="standalone-resource__type-of-guidance">
+            <a href="https://w3.org/TR/WCAG22#section-headings">성공기준 이해 2.4.10</a>:</span>섹션 제목 (Level AAA)
+         </h1>
+         <aside class="box">
+            <header class="box-h  box-h-icon">성공 기준 (SC) </header>
+            <div class="box-i">
+               <p>
+                  콘텐츠는 <a href="#dfn-section">섹션</a> 제목을 사용하여 구조화해야 한다.
+               </p>
+               <div class="note">
+                  <p class="note-title marker">참고</p>
+                  <p>“제목”(Heading)은 일반적인 의미로 사용되며, 타이틀(titles)과 상이한 유형의 콘텐츠에 제목을 추가하는 다른 방법을 포함한다.</p>
                </div>
-            </nav>
-         </aside>
-         <main id="main" class="standalone-resource__main">
-            <h1><span class="standalone-resource__type-of-guidance">
-                  				<a href="https://w3.org/TR/WCAG22#section-headings">성공기준 이해 2.4.10</a>:</span>Section Headings (Level AAA)
-            </h1>
-            <aside class="box">
-               <header class="box-h  box-h-icon">성공 기준 (SC) </header>
-               <div class="box-i">
+               <div class="note">
+                  <p class="note-title marker">참고</p>
                   <p>
-                     콘텐츠는 <a href="#dfn-section">섹션</a> 제목을 사용하여 구조화해야 한다.
+                     이 성공기준은 <a href="#dfn-user-interface-component">사용자 인터페이스 구성요소</a>가 아닌 글쓰기(writing) 내에서의 섹션을 다룬다. 사용자 인터페이스 구성요소는 <a href="https://www.w3.org/TR/WCAG22/#name-role-value">성공 기준 4.1.2</a>를 참고하라.
                   </p>
-                  <div class="note">
-                     <p class="note-title marker">참고</p>
-                     <p>“제목”(Heading)은 일반적인 의미로 사용되며, 타이틀(titles)과 상이한 유형의 콘텐츠에 제목을 추가하는 다른 방법을 포함한다.</p>
-                  </div>
-                  <div class="note">
-                     <p class="note-title marker">참고</p>
-                     <p>
-                        이 성공기준은 <a href="#dfn-user-interface-component">사용자 인터페이스 구성요소</a>가 아닌 글쓰기(writing) 내에서의 섹션을 다룬다. 사용자 인터페이스 구성요소는 <a href="https://www.w3.org/TR/WCAG22/#name-role-value">성공 기준 4.1.2</a>를 참고하라.
-                     </p>
-                  </div>
                </div>
-            </aside>
-            <div class="excol-all"></div>
-            <section id="brief">
-               <h2>요약</h2>
-               <dl>
-                  <dt>목표</dt>
-                  <dd>사용자는 콘텐츠가 섹션으로 구성되는 방식을 이해한다.</dd>
-                  <dt>할 일</dt>
-                  <dd>콘텐츠가 섹션으로 구성되어 있는 경우 섹션 제목을 제공하라.</dd>
-                  <dt>중요성</dt>
-                  <dd>특히 인지 장애나 시각 장애가 있는 사람들은 스스로 방향을 잡을 수 있다.</dd>
-               </dl>
-            </section>
-            <section id="intent">
-               <h2>의도</h2>
-               <p>
-                  이 성공 기준의 목적은 페이지가 섹션으로 구성될 때 웹 페이지 섹션에 대한 제목을 제공하는 것이다. 예를 들어 긴 문서는 다양한 장으로 나뉘는 경우가 많고, 장에는 하위 주제가 있는 등의 경우가 있다. 이러한 섹션이 있는 경우 해당 섹션을 소개하는 제목이 있어야 한다. 이는 콘텐츠의 구성을 명확하게 나타내고, 콘텐츠 내 탐색을 용이하게 하며, 콘텐츠 이해를 돕는 심리적 "핸들"을 제공한다. 다른 페이지 요소는 표시를 개선하기 위해 제목을 보완할 수 있지만(예: 가로 규칙 및 상자) 시각적 표시는 문서 섹션을 식별하는 데 충분하지 않다.
-               </p>
-               <p>
-                  이 조항은 모든 유형의 콘텐츠에 적용될 수 없고 제목 삽입이 항상 가능하지 않을 수 있으므로 AAA 수준에 포함된다. 예를 들어, 기존 문서를 웹에 게시할 때 저작자가 원본 문서에 포함하지 않은 제목은 삽입할 수 없다. 또는 긴 편지는 종종 다양한 주제를 다루게 되지만, 편지에 제목을 넣는 것은 매우 이상할 것이다. 그러나 문서를 제목이 있는 섹션으로 나눌 수 있으면 이해와 탐색이 모두 쉬워진다.
-               </p>
-            </section>
-            <section id="benefits">
-               <h2>이점</h2>
+            </div>
+         </aside>
+         <div class="excol-all"></div>
+         <section id="brief">
+            <h2>요약</h2>
+            <dl>
+               <dt>목표</dt>
+               <dd>사용자는 콘텐츠가 섹션으로 구성되는 방식을 이해한다.</dd>
+               <dt>할 일</dt>
+               <dd>콘텐츠가 섹션으로 구성되어 있는 경우 섹션 제목을 제공하라.</dd>
+               <dt>중요성</dt>
+               <dd>특히 인지 장애나 시각 장애가 있는 사람들은 스스로 방향을 잡을 수 있다.</dd>
+            </dl>
+         </section>
+         <section id="intent">
+            <h2>의도</h2>
+            <p>
+               이 성공 기준의 목적은 페이지가 섹션으로 구성될 때 웹 페이지 섹션에 대한 제목을 제공하는 것이다. 예를 들어 긴 문서는 다양한 장으로 나뉘는 경우가 많고, 장에는 하위 주제가 있는 등의 경우가 있다. 이러한 섹션이 있는 경우 해당 섹션을 소개하는 제목이 있어야 한다. 이는 콘텐츠의 구성을 명확하게 나타내고, 콘텐츠 내 탐색을 용이하게 하며, 콘텐츠 이해를 돕는 심리적 "핸들"을 제공한다. 다른 페이지 요소는 표시를 개선하기 위해 제목을 보완할 수 있지만(예: 가로 규칙 및 상자) 시각적 표시는 문서 섹션을 식별하는 데 충분하지 않다.
+            </p>
+            <p>
+               이 조항은 모든 유형의 콘텐츠에 적용될 수 없고 제목 삽입이 항상 가능하지 않을 수 있으므로 AAA 수준에 포함된다. 예를 들어, 기존 문서를 웹에 게시할 때 저작자가 원본 문서에 포함하지 않은 제목은 삽입할 수 없다. 또는 긴 편지는 종종 다양한 주제를 다루게 되지만, 편지에 제목을 넣는 것은 매우 이상할 것이다. 그러나 문서를 제목이 있는 섹션으로 나눌 수 있으면 이해와 탐색이 모두 쉬워진다.
+            </p>
+         </section>
+         <section id="benefits">
+            <h2>이점</h2>
+            <ul>
+               <li>
+                  시각 장애인은 웹 페이지의 한 섹션에서 다른 섹션으로 이동했을 떄 알 수 있으며 각 섹션의 목적도 알 수 있다.
+               </li>
+               <li>
+                  일부 학습 장애가 있는 사용자는 제목을 사용하여 페이지 콘텐츠의 전체 구성을 더 쉽게 이해할 수 있다.
+               </li>
+               <li>
+                  키보드로 콘텐츠를 탐색하는 사람들은 제목에서 제목으로 초점을 이동할 수 있어 관심 있는 콘텐츠를 빠르게 찾을 수 있다.
+               </li>
+               <li>
+                  페이지의 일부 콘텐츠가 업데이트되는 페이지에서는 제목을 사용하여 업데이트된 콘텐츠에 빠르게 액세스할 수 있다.
+               </li>
+            </ul>
+         </section>
+         <section id="examples">
+            <h2>예제</h2>
+            <ul>
+               <li>메뉴에는 다양한 코스에 대한 다양한 섹션이 포함되어 있다. 각 섹션에는 애피타이저, 샐러드, 수프, 앙트레, 디저트라는 제목이 있다.</li>
+               <li>웹 애플리케이션에는 관련 설정 그룹으로 구분된 설정 페이지가 포함되어 있다. 각 섹션에는 설정 분류를 설명하는 제목이 포함되어 있다.</li>
+            </ul>
+         </section>
+         <section id="resources">
+            <h2>관련 자료</h2>
+            <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
+            <ul>
+               <li>
+                  <a href="http://webaim.org/techniques/semanticstructure/">WebAIM: Semantic Structure</a>
+               </li>
+               <li>
+                  <a href="http://accessibility.psu.edu/headingshtml/">Heading Tags</a>
+               </li>
+            </ul>
+         </section>
+         <section id="techniques">
+            <h2>기법</h2>
+            <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
+            </p>
+            <section id="sufficient">
+               <h3>충분 기법</h3>
                <ul>
                   <li>
-                     시각 장애인은 웹 페이지의 한 섹션에서 다른 섹션으로 이동했을 떄 알 수 있으며 각 섹션의 목적도 알 수 있다.
+                     <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G141">G141: Organizing a page using headings</a>
                   </li>
                   <li>
-                     일부 학습 장애가 있는 사용자는 제목을 사용하여 페이지 콘텐츠의 전체 구성을 더 쉽게 이해할 수 있다.
-                  </li>
-                  <li>
-                     키보드로 콘텐츠를 탐색하는 사람들은 제목에서 제목으로 초점을 이동할 수 있어 관심 있는 콘텐츠를 빠르게 찾을 수 있다.
-                  </li>
-                  <li>
-                     페이지의 일부 콘텐츠가 업데이트되는 페이지에서는 제목을 사용하여 업데이트된 콘텐츠에 빠르게 액세스할 수 있다.
+                     <a class="html" href="https://www.w3.org/WAI/WCAG22/Techniques/html/H69">H69: Providing heading elements at the beginning of each section of content</a>
                   </li>
                </ul>
             </section>
-            <section id="examples">
-               <h2>예제</h2>
-               <ul>
-                  <li>메뉴에는 다양한 코스에 대한 다양한 섹션이 포함되어 있다. 각 섹션에는 애피타이저, 샐러드, 수프, 앙트레, 디저트라는 제목이 있다.</li>
-                  <li>웹 애플리케이션에는 관련 설정 그룹으로 구분된 설정 페이지가 포함되어 있다. 각 섹션에는 설정 분류를 설명하는 제목이 포함되어 있다.</li>
-               </ul>
-            </section>
-            <section id="resources">
-               <h2>관련 자료</h2>
-               <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
-               <ul>
-                  <li>
-                     <a href="http://webaim.org/techniques/semanticstructure/">WebAIM: Semantic Structure</a>
-                  </li>
-                  <li>
-                     <a href="http://accessibility.psu.edu/headingshtml/">Heading Tags</a>
-                  </li>
-               </ul>
-            </section>
-            <section id="techniques">
-               <h2>기법</h2>
-               <p>이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
-               </p>
-               <section id="sufficient">
-                  <h3>충분 기법</h3>
-                  <ul>
-                     <li>
-                        <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G141">G141: Organizing a page using headings</a>
-                     </li>
-                     <li>
-                        <a class="html" href="https://www.w3.org/WAI/WCAG22/Techniques/html/H69">H69: Providing heading elements at the beginning of each section of content</a>
-                     </li>
-                  </ul>
-               </section>
-            </section>
-            <section id="key-terms">
-               <details>
-                  <summary>
-                     <h2>Key Terms</h2>
-                  </summary>
-                  <dt id="dfn-section">section</dt>
-                  <dd>
-                     <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">a self-contained portion of written content that deals with one or more related topics
-                           or thoughts
-                        </p>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>A section may consist of one or more paragraphs and include graphics, tables, lists
-                              and sub-sections.
-                           </p>
-                        </div>
-                     </definition>
-                  </dd>
-                  <dt id="dfn-user-interface-component">user interface component</dt>
-                  <dd>
-                     <definition xmlns="">
-                        <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
-                           function
-                        </p>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>Multiple user interface components may be implemented as a single programmatic element.
-                              "Components" here is not tied to programming techniques, but rather to what the user
-                              perceives as separate controls.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>User interface components include form elements and links as well as components generated
-                              by scripts.
-                           </p>
-                        </div>
-                        <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                           <p class="note-title marker">참고</p>
-                           <p>What is meant by "component" or "user interface component" here is also sometimes
-                              called "user interface element".
-                           </p>
-                        </div>
-                        <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                           <p>An applet has a "control" that can be used to move through content by line or page
-                              or random access. Since each of these would need to have a name and be settable independently,
-                              they would each be a "user interface component."
-                           </p>
-                        </aside>
-                     </definition>
-                  </dd>
-               </details>
-            </section>
-<a class="button button-backtotop" href="#top"><span>
-                  <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
-                     <path d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z"></path>
-                  </svg> 맨 위로
-                  			</span></a>
-</main>
-         
+         </section>
+         <a class="button button-backtotop" href="#top"><span>
+            <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
+               <path d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z"></path>
+            </svg> 맨 위로
+         </span></a>
+      </main>
+      
+   </div>
+   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+      <div class="inner" style="grid-column: 2 / 8">
+         <p><strong>원문 갱신:</strong> Updated 2 May 2024.
+         </p>
+         <p>이 문서는 <strong>비공식</strong> 번역본입니다. 부가적인 요소는 열람의 편의를 위해 삭제하였으니 <a href="https://www.w3.org/WAI/WCAG22/Understanding/">원문</a>을 참고하시기 바랍니다.
+         </p>
+         <p>번역 작업에 참여하거나 수정을 원하시는 분은 <a href="https://github.com/a11ykr/wcag22-understanding/issues/new">Github 저장소에 의견</a>을 남겨주십시오.
+         </p>
       </div>
-      <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-         <div class="inner" style="grid-column: 2 / 8">
-            <p><strong>원문 갱신:</strong> Updated 2 May 2024.
-            </p>
-            <p>이 문서는 <strong>비공식</strong> 번역본입니다. 부가적인 요소는 열람의 편의를 위해 삭제하였으니 <a href="https://www.w3.org/WAI/WCAG22/Understanding/">원문</a>을 참고하시기 바랍니다.
-            </p>
-            <p>번역 작업에 참여하거나 수정을 원하시는 분은 <a href="https://github.com/a11ykr/wcag22-understanding/issues/new">Github 저장소에 의견</a>을 남겨주십시오.
-            </p>
-         </div>
-      </footer>
-
-      <link rel="stylesheet" href="../a11y-light.css" />
-<script src="../highlight.min.js"></script>
-<script>
+   </footer>
+   
+   <link rel="stylesheet" href="../a11y-light.css" />
+   <script src="../highlight.min.js"></script>
+   <script>
       hljs.configure({
-        cssSelector: 'pre'
+         cssSelector: 'pre'
       });
       hljs.highlightAll();
-			var translationStrings = {}; /* fix WAI JS */
-		</script><script src="https://www.w3.org/WAI/assets/scripts/main.js"></script><script>
+      var translationStrings = {}; /* fix WAI JS */
+   </script><script src="https://www.w3.org/WAI/assets/scripts/main.js"></script><script>
       var _paq = _paq || [];
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
       _paq.push(["setDoNotTrack", true]);
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
       (function() {
-        var u="//www.w3.org/analytics/piwik/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '328']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+         var u="//www.w3.org/analytics/piwik/";
+         _paq.push(['setTrackerUrl', u+'piwik.php']);
+         _paq.push(['setSiteId', '328']);
+         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
-    </script><noscript>
-         <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-      </noscript>
-   </body>
+   </script><noscript>
+      <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
+   </noscript>
+</body>
 </html>
