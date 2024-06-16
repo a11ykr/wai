@@ -4,44 +4,28 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>성공 기준 이해 3.1.1: Language of Page | WAI | W3C</title>
+   <title>성공 기준 이해 3.1.1: 페이지 언어 표시 | WAI | W3C</title>
    <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
    <link rel="stylesheet" href="base.css" />
-   </head>
+</head>
 <body dir="ltr">
-<a href="#main" class="button button--skip-link">본문 바로가기</a>
+   <a href="#main" class="button button--skip-link">본문 바로가기</a>
    <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
          <div class="minimal-header-name"><a href=".">WCAG 2.2 이해</a></div>
          <div class="minimal-header-subtitle">WCAG에 필수적이지 않은 정보성 설명</div>
-                  
-
-         </div>
-         </div>
+      </div>
+   </div>
    <div class="default-grid nav-container nav-page-specific">
       <div class="nav">
          <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
             <ul>
-               <li class="nav__item"><a href=".">
-                     All Understanding Docs
-                  </a></li>
-               <li class="nav__item"><a href="readable">
-                     <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                           d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z">
-                        </path>
-                     </svg> Guideline: Readable</a></li>
-               <li class="nav__item"></li>
-               <li class="nav__item"><a href="language-of-parts">Next SC: Language of Parts
-                     <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                           d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z">
-                        </path>
-                     </svg></a></li>
-               </ul>
-               </nav>
-               </div>
-               </div>
+               <li class="nav__item"><a href=".">전체 문서</a></li>
+               <li class="nav__item"><a href="./about">소개</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
    <div class="default-grid with-gap leftcol">
       <aside class="box nav-hack sidebar standalone-resource__sidebar ">
          <nav>
@@ -61,18 +45,18 @@
       </aside>
       <main id="main" class="standalone-resource__main">
          <h1><span class="standalone-resource__type-of-guidance">
-               <a href="https://w3.org/TR/WCAG22#language-of-page">성공기준 이해 3.1.1</a>:</span>Language of Page (Level A)
+            <a href="https://w3.org/TR/WCAG22#language-of-page">성공기준 이해 3.1.1</a>:</span>페이지 언어 표시 (Level A)
          </h1>
          <aside class="box">
             <header class="box-h  box-h-icon">성공 기준 (SC) </header>
             <div class="box-i">
                <p>
                   각 <a href="#dfn-web-page">웹 페이지</a>의 기본 <a href="#dfn-human-language">인간 언어</a>는 <a
-                     href="#dfn-programmatically-determined">프로그래밍 방식으로 판별</a>될 수 있어야 한다.
+                  href="#dfn-programmatically-determined">프로그래밍 방식으로 판별</a>될 수 있어야 한다.
                </p>
-               </div>
-               </aside>
-               <div class="excol-all"></div>
+            </div>
+         </aside>
+         <div class="excol-all"></div>
          <section id="brief">
             <h2>요약</h2>
             <dl>
@@ -90,10 +74,9 @@
                이 성공 기준의 목적은 콘텐츠 개발자가 사용자 에이전트가 텍스트 및 기타 언어 콘텐츠를 올바르게 표시하는 데 필요한 정보를 웹 페이지에 제공하도록 하는 것이다. 보조 기술과 기존 사용자 에이전트 모두 웹 페이지의
                언어가 식별되면 텍스트를 더 정확하게 렌더링할 수 있다. 화면 낭독기는 올바른 발음 규칙을 불러올 수 있다. 시각적 브라우저는 문자와 스크립트를 올바르게 표시할 수 있다. 미디어 플레이어는 자막을 올바르게 표시할 수
                있다. 결과적으로 장애가 있는 사용자가 콘텐츠를 더 잘 이해할 수 있게 된다.
-               </p>
+            </p>
             <p>
-               웹 페이지의 기본 인간 언어는 <a href="https://www.w3.org/International/techniques/authoring-html#gslang">국제화 모범 사례: XHTML 및 HTML
-                  콘텐츠에서 언어 지정(Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content)</a>에 설명된 기본 텍스트
+               웹 페이지의 기본 인간 언어는 <a href="https://www.w3.org/International/techniques/authoring-html#gslang">국제화 모범 사례: XHTML 및 HTML 콘텐츠에서 언어 지정(Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content)</a>에 설명된 기본 텍스트
                처리 언어이다. 웹 페이지가 여러 언어를 사용하는 경우 기본 텍스트 처리 언어는 가장 많이
                사용되는 언어이다. (여러 언어를 동일하게 사용하는 경우 처음 사용하는 언어를 기본 인간 언어로 선택해야 한다.)
             </p>
@@ -102,11 +85,11 @@
                <div>
                   <p>
                      레벨 A 준수를 목표로 하는 다국어 사이트의 경우 실무 그룹은 개발자가 성공 기준 3.1.2를 따르도록 강력히 권장한다. 성공 기준 3.1.2가 수준 AA 성공 기준이더라도 마찬가지이다.
-                     </p>
+                  </p>
                </div>
-               </div>
-               </section>
-               <section id="benefits">
+            </div>
+         </section>
+         <section id="benefits">
             <h2>이점</h2>
             <p>이 성공 기준은 다음의 경우에 도움이 된다.</p>
             <ul>
@@ -114,9 +97,9 @@
                <li>문자와 알파벳을 인식하거나 단어를 해독하는 등 서면(written) 자료를 유창하고 정확하게 읽는 데 어려움을 겪는 사람</li>
                <li>텍스트 음성 변환 소프트웨어를 사용하는 특정 인지, 언어 및 학습 장애가 있는 사람</li>
                <li>동기화된 미디어의 자막에 의존하는 사람</li>
-               </ul>
-               </section>
-               <section id="examples">
+            </ul>
+         </section>
+         <section id="examples">
             <h2>예제</h2>
             <dl>
                <dt>예 1. 두 가지 언어로 된 콘텐츠가 포함된 웹 페이지</dt>
@@ -125,373 +108,105 @@
                   독일어(de)로 식별된다.
                </dd>
             </dl>
-            </section>
-            <section id="resources">
-               <h2>관련 자료</h2>
-               <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
-               <ul>
+         </section>
+         <section id="resources">
+            <h2>관련 자료</h2>
+            <p>자료는 정보 제공 목적으로만 제공되며 보증을 암시하지 않는다.</p>
+            <ul>
                <li>
-                  <a href="https://www.w3.org/International/techniques/authoring-html#gslang">Internationalization Best
-                     Practices: Specifying Language in XHTML &amp; HTML Content</a>
+                  <a href="https://www.w3.org/International/techniques/authoring-html#gslang">Internationalization Best Practices: Specifying Language in XHTML &amp; HTML Content</a>
+               </li>
+            </ul>
+         </section>
+         <section id="techniques">
+            <h2>기법</h2>
+            <p>
+               이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
+            </p>
+            <section id="sufficient">
+               <h3>충분 기법</h3>
+               <ul>
+                  <li>
+                     <a class="html" href="https://www.w3.org/WAI/WCAG22/Techniques/html/H57">H57: Using the language attribute on the HTML element</a>
+                  </li>
+                  <li>
+                     <a class="pdf" href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF16">PDF16: Setting the default language using the /Lang entry in the document catalog of a PDF document</a>
+                  </li>
+                  <li>
+                     <a class="pdf" href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF19">PDF19: Specifying the language for a passage or phrase with the Lang entry in PDF documents</a>
                   </li>
                </ul>
             </section>
-            <section id="techniques">
-               <h2>기법</h2>
-               <p>Each numbered item in this section represents a technique or combination of techniques
-                  that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-                  it is not necessary to use these particular techniques. For information on using other
-                  techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success
-                     Criteria</a>, particularly the "Other Techniques" section.
-                  </p>
-                  <section id="sufficient">
-                     <h3>충분 기법</h3>
-                     <ul>
-                        <li>
-                           <a class="html" href="https://www.w3.org/WAI/WCAG22/Techniques/html/H57">H57: Using the language
-                              attribute on the HTML element</a>
-                           </li>
-                           <li>
-                              <a class="pdf" href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF16">PDF16: Setting the default
-                                 language using the /Lang entry in the document catalog of a PDF
-                                 document</a>
-                              </li>
-                              <li>
-                                 <a class="pdf" href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF19">PDF19: Specifying the
-                                    language for a passage or phrase with the Lang entry in PDF documents</a>
-                                 </li>
-                              </ul>
-                              </section>
-                              <section id="advisory">
-                                 <h3>조언 기법</h3>
-                                 <p>Although not required for conformance, the following additional techniques should
-                                    be considered in order to make content more accessible. Not all techniques can be
-                                    used or would be effective in all situations.
-                                 </p>
-                                 <ul>
-                                 <li>
-                                    <a class="server" href="https://www.w3.org/WAI/WCAG22/Techniques/server-side-script/SVR5">SVR5:
-                                       Specifying the default language in the HTTP header</a>
-                                    </li>
-                                 </ul>
-                                 </section>
-                                 </section>
-                           <section id="key-terms">
-                              <details>
-                                 <summary>
-                                    <h2>Key Terms</h2>
-                                 </summary>
-                                 <dt id="dfn-assistive-technology">assistive technology</dt>
-                                 <dd>
-                                    <definition xmlns="">
-                                       <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a
-                                             href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide
-                                          functionality to meet the requirements
-                                          of users with disabilities that go beyond those offered by mainstream user agents
-                                       </p>
-                                       <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                          <p class="note-title marker">참고</p>
-                                          <p>Functionality provided by assistive technology includes alternative presentations
-                                             (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                                             voice), additional navigation or orientation mechanisms, and content transformations
-                                             (e.g., to make tables more accessible).
-                                          </p>
-                                       </div>
-                                       <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                          <p class="note-title marker">참고</p>
-                                          <p>Assistive technologies often communicate data and messages with mainstream user agents
-                                             by using and monitoring APIs.
-                                          </p>
-                                       </div>
-                                       <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                          <p class="note-title marker">참고</p>
-                                          <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                                             Many mainstream user agents provide some features to assist individuals with disabilities.
-                                             The basic difference is that mainstream user agents target broad and diverse audiences
-                                             that usually include people with and without disabilities. Assistive technologies
-                                             target narrowly defined populations of users with specific disabilities. The assistance
-                                             provided by an assistive technology is more specific and appropriate to the needs
-                                             of its target users. The mainstream user agent may provide important functionality
-                                             to assistive technologies like retrieving Web content from program objects or parsing
-                                             markup into identifiable bundles.
-                                          </p>
-                                       </div>
-                                       <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                          <p>Assistive technologies that are important in the context of this document include
-                                             the following:
-                                          </p>
-                                          <ul>
-                                             <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                                visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                                color, synchronization with speech, etc. in order to improve the visual readability
-                                                of rendered text and images;
-                                             </li>
-                                             <li>screen readers, which are used by people who are blind to read textual information
-                                                through synthesized speech or braille;
-                                             </li>
-                                             <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                                learning disabilities to convert text into synthetic speech;
-                                             </li>
-                                             <li>speech recognition software, which may be used by people who have some physical
-                                                disabilities;</li>
-                                             <li>alternative keyboards, which are used by people with certain physical disabilities
-                                                to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                                switches, sip/puff and other special input devices.);
-                                             </li>
-                                             <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                                to simulate mouse pointing and button activations.
-                                             </li>
-                                          </ul>
-                                       </aside>
-                                    </definition>
-                                 </dd>
-                                 <dt id="dfn-human-language">human language</dt>
-                                 <dd>
-                                    <definition xmlns="">
-                                       <p xmlns="http://www.w3.org/1999/xhtml">language that is spoken, written or signed (through visual
-                                          or tactile means) to communicate
-                                          with humans
-                                       </p>
-                                       <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                          <p class="note-title marker">참고</p>
-                                          <p>참조하라 <a href="#dfn-sign-language">sign language</a>.
-                                          </p>
-                                       </div>
-                                    </definition>
-                                 </dd>
-                                 <dt id="dfn-programmatically-determined">programmatically determined</dt>
-                                 <dd>
-                                    <definition xmlns="">
-                                       <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided
-                                          in a way that different
-                                          <a href="#dfn-user-agent">user agents</a>, including <a href="#dfn-assistive-technology">assistive
-                                             technologies</a>, can extract and present this
-                                          information to users in different modalities
-                                       </p>
-                                       <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                          <p>Determined in a markup language from elements and attributes that are accessed directly
-                                             by commonly available assistive technology.
-                                          </p>
-                                       </aside>
-                                       <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                          <p>Determined from technology-specific data structures in a non-markup language and exposed
-                                             to assistive technology via an accessibility API that is supported by commonly available
-                                             assistive technology.
-                                          </p>
-                                       </aside>
-                                    </definition>
-                                 </dd>
-                                 <dt id="dfn-sign-language">sign language</dt>
-                                 <dd>
-                                    <definition xmlns="">
-                                       <p xmlns="http://www.w3.org/1999/xhtml">a language using combinations of movements of the hands and
-                                          arms, facial expressions,
-                                          or body positions to convey meaning
-                                       </p>
-                                    </definition>
-                                 </dd>
-                                 <dt id="dfn-user-agent">user agent</dt>
-                                 <dd>
-                                    <definition xmlns="">
-                                       <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for
-                                          users</p>
-                                       <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                          <p>Web browsers, media players, plug-ins, and other programs — including <a
-                                                href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving,
-                                             rendering, and interacting with Web content.
-                                          </p>
-                                       </aside>
-                                    </definition>
-                                 </dd>
-                                 <dt id="dfn-web-page">web page</dt>
-                                 <dd>
-                                    <definition xmlns="">
-                                       <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using
-                                          HTTP plus any other resources
-                                          that are used in the rendering or intended to be rendered together with it by a <a
-                                             href="#dfn-user-agent">user agent</a>
-                                       </p>
-                                       <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                          <p class="note-title marker">참고</p>
-                                          <p>Although any "other resources" would be rendered together with the primary resource,
-                                             they would not necessarily be rendered simultaneously with each other.
-                                          </p>
-                                       </div>
-                                       <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                          <p class="note-title marker">참고</p>
-                                          <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                                             within the scope of conformance to be considered a Web page.
-                                          </p>
-                                       </div>
-                                       <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                          <p>A Web resource including all embedded images and media.</p>
-                                       </aside>
-                                       <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                          <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                                             lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                                             and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                                             to display, but do not change the URI of the page as a whole.
-                                          </p>
-                                       </aside>
-                                       <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                          <p>A customizable portal site, where users can choose content to display from a set of
-                                             different content modules.
-                                          </p>
-                                       </aside>
-                                       <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                          <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                                             interactive shopping environment where you visually move around in a store dragging
-                                             products off of the shelves around you and into a visual shopping cart in front of
-                                             you. Clicking on a product causes it to be demonstrated with a specification sheet
-                                             floating alongside. This might be a single-page Web site or just one page within a
-                                             Web site.
-                                          </p>
-                                       </aside>
-                                    </definition>
-                                 </dd>
-                              </details>
-                           </section>
-                           <section id="test-rules">
-                              <h2>점검 규칙</h2>
-                              <p>The following are Test Rules for certain aspects of this Success Criterion. It is
-                                 not necessary to use these particular Test Rules to check for conformance with WCAG,
-                                 but they are defined and approved test methods. For information on using Test Rules,
-                                 see <a href="understanding-act-rules.html">Understanding Test Rules for WCAG Success Criteria</a>.
-                              </p>
-                              <ul>
-                                 <li><a href="/WAI/standards-guidelines/act/rules/b5c3f8/">HTML page has lang attribute</a></li>
-                                 <li><a href="/WAI/standards-guidelines/act/rules/bf051a/">HTML page lang attribute has valid language
-                                       tag</a></li>
-                                 <li><a href="/WAI/standards-guidelines/act/rules/5b7ae0/proposed/">HTML page lang and xml:lang attributes
-                                       have matching values</a></li>
-                                 <li><a href="/WAI/standards-guidelines/act/rules/ucwvc8/proposed/">HTML page language subtag matches
-                                       default language</a></li>
-                              </ul>
-                                             </section>
-<a class="button button-backtotop" href="#top"><span>
-                                                   <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
-                                                   <path
-                                                      d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z">
-                                                   </path>
-                                                   </svg> 맨 위로
-                                                   </span></a>
-                                                   </main>
-                                                   <aside class="box box-icon box-space-above" id="helpimprove" style="grid-column: 2 / 8; grid-row: 3">
-                                                      <header class="box-h  box-h-icon box-h-space-above box-h-icon">
-                                                         <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
-                                                <path
-                                                   d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z">
-                                                </path>
-                                                </svg>
-                                                <h2> Help improve this page </h2>
-                                                </header>
-                                                <div class="box-i">
-                                                   <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                                             list <a
-                                                href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a>
-                                             or via GitHub
-                                             </p>
-                                          <div class="button-group"><a
-                                                href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D"
-                                                class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork
-                                                   &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub
-                                                   Issue</span></a></div>
-                                          </div>
-                                          </aside>
-                                          </div>
-                                          <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-                                             <div class="inner" style="grid-column: 2 / 8">
-                                                <p><strong>원문 갱신:</strong> Updated 2 May 2024.
-                                                </p>
-                                                <p><strong>Developed by</strong> <a href="https://www.w3.org/groups/wg/ag/participants">Accessibility
-                                                      Guidelines Working Group (AG WG) Participants</a> (Co-Chairs: Alastair Campbell, Charles Adams, Rachael
-                                                   Bradley Montgomery. W3C Staff
-                                                   Contact: Kevin White).
-                                                </p>
-                                                <p>The content was developed as part of the <a href="https://www.w3.org/WAI/about/projects/#us">WAI-Core
-                                                      projects</a> funded by U.S. Federal funds. The user interface was designed by the Education and
-                                                   Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with
-                                                   contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
-                                                   of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the
-                                                   European Commission.
-                                                </p>
-                                                </div>
-                                                </footer>
-                                                <footer class="site-footer grid-4q" aria-label="Site">
-                                                   <div class="q1-start q3-end about">
-                                                      <div>
-                                                   <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web
-                                                         Accessibility Initiative (WAI)</a></p>
-                                                   <p>Strategies, standards, and supporting resources to make the Web accessible to people
-                                                      with disabilities.
-                                                   </p>
-                                                   </div>
-                                                   <div class="social" dir="auto" translate="no" lang="en">
-                                                      <ul>
-                                                         <li><a href="https://twitter.com/w3c_wai">
-                                                               <svg focusable="false" aria-hidden="true" class="icon-twitter " viewBox="0 0 32 32">
-                                                               <path
-                                                                  d="M31.939 6.092c-1.18 0.519-2.44 0.872-3.767 1.033 1.352-0.815 2.392-2.099 2.884-3.631-1.268 0.74-2.673 1.279-4.169 1.579-1.195-1.279-2.897-2.079-4.788-2.079-3.623 0-6.56 2.937-6.56 6.556 0 0.52 0.060 1.020 0.169 1.499-5.453-0.257-10.287-2.876-13.521-6.835-0.569 0.963-0.888 2.081-0.888 3.3 0 2.28 1.16 4.284 2.917 5.461-1.076-0.035-2.088-0.331-2.971-0.821v0.081c0 3.18 2.257 5.832 5.261 6.436-0.551 0.148-1.132 0.228-1.728 0.228-0.419 0-0.82-0.040-1.221-0.115 0.841 2.604 3.26 4.503 6.139 4.556-2.24 1.759-5.079 2.807-8.136 2.807-0.52 0-1.039-0.031-1.56-0.089 2.919 1.859 6.357 2.945 10.076 2.945 12.072 0 18.665-9.995 18.665-18.648 0-0.279 0-0.56-0.020-0.84 1.281-0.919 2.4-2.080 3.28-3.397l-0.063-0.027z">
-                                                               </path>
-                                                               </svg> Twitter</a></li>
-                                                               <li><a href="https://www.w3.org/WAI/feed.xml">
-                                                                     <svg focusable="false" aria-hidden="true" class="icon-rss " viewBox="0 0 32 32">
-                                                               <path
-                                                                  d="M25.599 32c0-14.044-11.555-25.6-25.599-25.6v-6.4c17.553 0 32 14.447 32 32h-6.401zM4.388 23.22c2.419 0 4.391 1.972 4.391 4.393 0 2.417-1.98 4.387-4.401 4.387-2.417 0-4.377-1.965-4.377-4.387s1.967-4.392 4.388-4.393zM21.212 32h-6.22c0-8.225-6.767-14.993-14.992-14.993v-6.22c11.636 0 21.212 9.579 21.212 21.213z">
-                                                               </path>
-                                                               </svg> Feed</a></li>
-                                                               <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv">
-                                                                     <svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32">
-                                                               <path
-                                                                  d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z">
-                                                               </path>
-                                                               </svg> YouTube</a></li>
-                                                               <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
-                                                               </ul>
-                                                               </div>
-                                                               <div dir="auto" translate="no" lang="en">
-                                                      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a
-                                                            href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
-                                                      </p>
-                                                      </div>
-                                                      </div>
-                                                      <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
-                                                         <ul style="margin-bottom:0">
-                                                      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-                                                      <li><a href="/WAI/sitemap/">Site Map</a></li>
-                                                      <li><a href="/WAI/news/">News</a></li>
-                                                      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-                                                      <li><a href="/WAI/translations/"> Translations</a></li>
-                                                      <li><a href="/WAI/roles/">Resources for Roles</a></li>
-                                                      </ul>
-                                                      </div>
-                                             </footer>
-                                             <link rel="stylesheet" href="../a11y-light.css" />
-                                             <script src="../highlight.min.js"></script>
-                                             <script>
-                                                hljs.configure({
-                                                   cssSelector: 'pre'
-                                                });
-                                                hljs.highlightAll();
-                                                var translationStrings = {}; /* fix WAI JS */
-</script>
-                                             <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
-                                             <script>
-                                                var _paq = _paq || [];
-                                                /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-                                                _paq.push(["setDoNotTrack", true]);
-                                                _paq.push(['trackPageView']);
-                                                _paq.push(['enableLinkTracking']);
-                                                (function () {
-                                                   var u = "//www.w3.org/analytics/piwik/";
-                                                   _paq.push(['setTrackerUrl', u + 'piwik.php']);
-                                                   _paq.push(['setSiteId', '328']);
-                                                   var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-                                                   g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
-                                                })();
-                                             </script><noscript>
-                                                <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-                                             </noscript>
-                                             </body>
-                                             
-                                             </html>
+            <section id="advisory">
+               <h3>조언 기법</h3>
+               <p>
+                  준수를 위해 필수는 아니지만 콘텐츠에 더 쉽게 접근할 수 있도록 다음과 같은 추가 기법을 고려해야 한다. 모든 기법을 사용할 수 없거나 모든 상황에서 효과적인 것은 아니다.
+               </p>
+               <ul>
+                  <li>
+                     <a class="server" href="https://www.w3.org/WAI/WCAG22/Techniques/server-side-script/SVR5">SVR5: Specifying the default language in the HTTP header</a>
+                  </li>
+               </ul>
+            </section>
+         </section>
+         <section id="test-rules">
+            <h2>점검 규칙</h2>
+            <p>
+               다음은 이 성공 기준의 특정 측면에 대한 점검 규칙이다. WCAG 준수 여부를 확인하기 위해 이러한 특정 점검 규칙을 사용할 필요는 없지만 이것은 정의되고 승인된 검사 방법이다. 점검 규칙 사용에 대한 자세한 내용은 <a href="understanding-act-rules.html">WCAG 성공 기준에 대한 점검 규칙 이해</a>를 참고하라.
+            </p>
+            <ul>
+               <li><a href="/WAI/standards-guidelines/act/rules/b5c3f8/">HTML page has lang attribute</a></li>
+               <li><a href="/WAI/standards-guidelines/act/rules/bf051a/">HTML page lang attribute has valid language
+                  tag</a></li>
+                  <li><a href="/WAI/standards-guidelines/act/rules/5b7ae0/proposed/">HTML page lang and xml:lang attributes
+                     have matching values</a></li>
+                     <li><a href="/WAI/standards-guidelines/act/rules/ucwvc8/proposed/">HTML page language subtag matches
+                        default language</a></li>
+                     </ul>
+                  </section>
+                  <a class="button button-backtotop" href="#top"><span>
+                     <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
+                        <path
+                        d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z">
+                     </path>
+                  </svg> 맨 위로
+               </span></a>
+            </main>
+         </div>
+         <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+            <div class="inner" style="grid-column: 2 / 8">
+               <p><strong>원문 갱신:</strong>  2 May 2024.
+               </p>
+               <p>이 문서는 <strong>비공식</strong> 번역본입니다. 부가적인 요소는 열람의 편의를 위해 삭제하였으니 <a href="https://www.w3.org/WAI/WCAG22/Understanding/">원문</a>을 참고하시기 바랍니다.</p>
+               <p>번역 작업에 참여하거나 수정을 원하시는 분은 <a href="https://github.com/a11ykr/wcag22-understanding/issues/new">Github 저장소에 의견</a>을 남겨주십시오.</p>
+            </div>
+         </footer>
+         <link rel="stylesheet" href="../a11y-light.css" />
+         <script src="../highlight.min.js"></script>
+         <script>
+            hljs.configure({
+               cssSelector: 'pre'
+            });
+            hljs.highlightAll();
+            var translationStrings = {}; /* fix WAI JS */
+         </script>
+         <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
+         <script>
+            var _paq = _paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(["setDoNotTrack", true]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+               var u = "//www.w3.org/analytics/piwik/";
+               _paq.push(['setTrackerUrl', u + 'piwik.php']);
+               _paq.push(['setSiteId', '328']);
+               var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+               g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+            })();
+         </script><noscript>
+            <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
+         </noscript>
+      </body>
+      
+      </html>

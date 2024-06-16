@@ -4,599 +4,233 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>성공 기준 이해 3.2.2: On Input | WAI | W3C</title>
+   <title>성공 기준 이해 3.2.2: 입력 활성 | WAI | W3C</title>
    <link rel="stylesheet" href="https://w3.org/WAI/assets/css/style.css" />
    <link rel="stylesheet" href="base.css" />
-   </head>
+</head>
 <body dir="ltr">
-<a href="#main" class="button button--skip-link">본문 바로가기</a>
+   <a href="#main" class="button button--skip-link">본문 바로가기</a>
    <div class="minimal-header-container default-grid">
       <div class="minimal-header" id="site-header">
          <div class="minimal-header-name"><a href=".">WCAG 2.2 이해</a></div>
          <div class="minimal-header-subtitle">WCAG에 필수적이지 않은 정보성 설명</div>
-                  
-
       </div>
-      </div>
-<div class="default-grid nav-container nav-page-specific">
-   <div class="nav">
-      <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
-         <ul>
-            <li class="nav__item"><a href=".">전체 문서</a></li>
-                    <li class="nav__item"><a href="./about">소개</a></li>
-            <li class="nav__item"><a href="predictable">
-                  <svg alt="up" focusable="false" aria-hidden="true" class="icon-arrow-up-thin pager-icon" viewBox="0 0 16 16">
-                     <path fill-rule="evenodd"
-                        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z">
-                     </path>
-                  </svg> Guideline: Predictable</a></li>
-            <li class="nav__item"><a href="on-focus">
-                  <svg focusable="false" aria-hidden="true" class="icon-arrow-left-thin pager-icon" viewBox="0 0 16 16">
-                     <path fill-rule="evenodd"
-                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z">
-                     </path>
-                  </svg>Previous SC: On Focus</a></li>
-            <li class="nav__item"><a href="consistent-navigation">Next SC: Consistent Navigation
-                  <svg focusable="false" aria-hidden="true" class="icon-arrow-right-thin pager-icon" viewBox="0 0 16 16">
-                     <path fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z">
-                     </path>
-                  </svg></a></li>
-            </ul>
-            </nav>
-            </div>
-            </div>
-<div class="default-grid with-gap leftcol">
-   <aside class="box nav-hack sidebar standalone-resource__sidebar ">
-      <nav>
-         <header class="box-h ">페이지 콘텐츠</header>
-         <div class="box-i">
+   </div>
+   <div class="default-grid nav-container nav-page-specific">
+      <div class="nav">
+         <nav class="nav standalone-resource-pager" aria-label="Understanding Docs">
             <ul>
-               <li><a href="#brief">요약</a></li>
-               <li><a href="#intent">의도</a></li>
-               <li><a href="#benefits">이점</a></li>
-               <li><a href="#examples">예제</a></li>
-               <li><a href="#techniques">기법</a></li>
-               
-               </ul>
-         </div>
+               <li class="nav__item"><a href=".">전체 문서</a></li>
+               <li class="nav__item"><a href="./about">소개</a></li>
+            </ul>
          </nav>
-   </aside>
-   <main id="main" class="standalone-resource__main">
-      <h1><span class="standalone-resource__type-of-guidance">
-            <a href="https://w3.org/TR/WCAG22#on-input">성공기준 이해 3.2.2</a>:</span>On Input (Level A)
-      </h1>
-      <aside class="box">
-         <header class="box-h  box-h-icon">성공 기준 (SC) </header>
-         <div class="box-i">
-            <p>
-               어떠한 <a href="#dfn-user-interface-component">사용자 인터페이스 구성요소</a>의 설정 변경도, 해당 구성요소를 사용하기 전에 사용자에게 그 행동을 알리지 않고 자동으로 <a
-                  href="#dfn-changes-of-context">맥락의 변화</a>를 초래해서는 안 된다.
-            </p>
+      </div>
+   </div>
+   <div class="default-grid with-gap leftcol">
+      <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+         <nav>
+            <header class="box-h ">페이지 콘텐츠</header>
+            <div class="box-i">
+               <ul>
+                  <li><a href="#brief">요약</a></li>
+                  <li><a href="#intent">의도</a></li>
+                  <li><a href="#benefits">이점</a></li>
+                  <li><a href="#examples">예제</a></li>
+                  <li><a href="#techniques">기법</a></li>
+               </ul>
             </div>
-            </aside>
-            <div class="excol-all"></div>
-      <section id="brief">
-         <h2>요약</h2>
-         <dl>
-            <dt>목표</dt>
-            <dd>콘텐츠를 더욱 예측 가능하게 운용할 수 있다.</dd>
-            <dt>할 일</dt>
-            <dd>입력에 따라 맥락이 변경되면 사용자에게 미리 경고한다.</dd>
-            <dt>중요성</dt>
-            <dd>예측 가능하게 동작하는 콘텐츠는 장애인에게 특히 중요하다.</dd>
-         </dl>
-      </section>
-      <section id="intent">
-         <h2>의도</h2>
-         <p>
-            이 성공 기준의 목적은 데이터를 입력하거나 양식 컨트롤을 선택하면 예측 가능한 효과가 있는지 확인하는 것이다. 사용자 인터페이스 구성 요소의 설정을 변경하면 사용자가 더 이상 상호 작용하지 않을 때 유지되는 컨트롤의 일부 측면이 변경된다. 따라서 확인란을 선택하거나 텍스트 필드에 텍스트를 입력하거나 목록 컨트롤에서 선택한 옵션을 변경하면 설정이 변경되지만 링크나 버튼을 활성화하면 변경되지 않는다. 상황의 변화는
-            변화를 쉽게 인식하지 못하거나 변화로 인해 쉽게 주의가 산만해지는 사용자에게 혼란을 줄 수 있다. 맥락 변화는 사용자의 작업에 대한 응답으로 해당 변경이 발생할 것이 분명한 경우에만 적절하다.
-         </p>
-         <div class="note">
-            <p class="note-title marker">참고</p>
-            <div>
+         </nav>
+      </aside>
+      <main id="main" class="standalone-resource__main">
+         <h1><span class="standalone-resource__type-of-guidance">
+            <a href="https://w3.org/TR/WCAG22#on-input">성공기준 이해 3.2.2</a>:</span>입력 활성 (Level A)
+         </h1>
+         <aside class="box">
+            <header class="box-h  box-h-icon">성공 기준 (SC) </header>
+            <div class="box-i">
                <p>
-                  이 성공 기준은 컨트롤 설정 변경으로 인한 상황 변화를 다룬다. 탭 컨트롤의 링크나 탭을 클릭하면 해당 컨트롤의 설정이 변경되는 것이 아니라 컨트롤이 활성화된다.
+                  어떠한 <a href="#dfn-user-interface-component">사용자 인터페이스 구성요소</a>의 설정 변경도, 해당 구성요소를 사용하기 전에 사용자에게 그 행동을 알리지 않고 자동으로 <a
+                  href="#dfn-changes-of-context">맥락의 변화</a>를 초래해서는 안 된다.
                </p>
             </div>
+         </aside>
+         <div class="excol-all"></div>
+         <section id="brief">
+            <h2>요약</h2>
+            <dl>
+               <dt>목표</dt>
+               <dd>콘텐츠를 더욱 예측 가능하게 운용할 수 있다.</dd>
+               <dt>할 일</dt>
+               <dd>입력에 따라 맥락이 변경되면 사용자에게 미리 경고한다.</dd>
+               <dt>중요성</dt>
+               <dd>예측 가능하게 동작하는 콘텐츠는 장애인에게 특히 중요하다.</dd>
+            </dl>
+         </section>
+         <section id="intent">
+            <h2>의도</h2>
+            <p>
+               이 성공 기준의 목적은 데이터를 입력하거나 양식 컨트롤을 선택하면 예측 가능한 효과가 있는지 확인하는 것이다. 사용자 인터페이스 구성 요소의 설정을 변경하면 사용자가 더 이상 상호 작용하지 않을 때 유지되는 컨트롤의 일부 측면이 변경된다. 따라서 확인란을 선택하거나 텍스트 필드에 텍스트를 입력하거나 목록 컨트롤에서 선택한 옵션을 변경하면 설정이 변경되지만 링크나 버튼을 활성화하면 변경되지 않는다. 상황의 변화는
+               변화를 쉽게 인식하지 못하거나 변화로 인해 쉽게 주의가 산만해지는 사용자에게 혼란을 줄 수 있다. 맥락 변화는 사용자의 작업에 대한 응답으로 해당 변경이 발생할 것이 분명한 경우에만 적절하다.
+            </p>
+            <div class="note">
+               <p class="note-title marker">참고</p>
+               <div>
+                  <p>
+                     이 성공 기준은 컨트롤 설정 변경으로 인한 상황 변화를 다룬다. 탭 컨트롤의 링크나 탭을 클릭하면 해당 컨트롤의 설정이 변경되는 것이 아니라 컨트롤이 활성화된다.
+                  </p>
+               </div>
             </div>
             <div class="note">
-            <p class="note-title marker">참고</p>
-            <div>
-               <p>
-                  여기서 "구성요소" 및 "사용자 인터페이스 구성요소"가 의미하는 것은 때때로 "사용자 인터페이스 요소"라고도 한다.
-               </p>
+               <p class="note-title marker">참고</p>
+               <div>
+                  <p>
+                     여기서 "구성요소" 및 "사용자 인터페이스 구성요소"가 의미하는 것은 때때로 "사용자 인터페이스 요소"라고도 한다.
+                  </p>
+               </div>
             </div>
-            </div>
-            </section>
-            <section id="benefits">
-         <h2>이점</h2>
-         <ul>
-            <li>
-               이 성공 기준은 대화형 콘텐츠를 더욱 예측 가능하게 만들어 장애가 있는 사용자에게 도움이 된다. 예상치 못한 상황 변화는 시각 장애나 인지 장애가 있는 사용자에게 혼란을 주어 콘텐츠를 사용할 수 없게 만들 수 있다.
-            </li>
-            <li>
-               <p>상황의 변화를 감지할 수 없는 사람은 사이트를 탐색하는 동안 방향을 상실할 가능성이 적다. 예를 들어:
-               </p>
-               <ul>
-                  <li>
-                     전맹이나 저시력자는 새 창이 팝업되는 등 시각적 상황 변화가 발생했을 때 알아채기 어려울 수 있다. 이 경우 미리 상황 변화를 경고해주면 뒤로 가기 버튼이 예상과 다르게 동작할 때 혼란을 최소화할 수 있다.
-                  </li>
-               </ul>
-            </li>
-            <li>
-               일부 저시력자, 읽기 및 지적 장애인, 그리고 시각적 단서를 해석하기 어려운 사람들은 상황 변화를 감지하기 위해 추가적인 단서가 필요할 수 있다.
-            </li>
-         </ul>
+         </section>
+         <section id="benefits">
+            <h2>이점</h2>
+            <ul>
+               <li>
+                  이 성공 기준은 대화형 콘텐츠를 더욱 예측 가능하게 만들어 장애가 있는 사용자에게 도움이 된다. 예상치 못한 상황 변화는 시각 장애나 인지 장애가 있는 사용자에게 혼란을 주어 콘텐츠를 사용할 수 없게 만들 수 있다.
+               </li>
+               <li>
+                  <p>상황의 변화를 감지할 수 없는 사람은 사이트를 탐색하는 동안 방향을 상실할 가능성이 적다. 예를 들어:
+                  </p>
+                  <ul>
+                     <li>
+                        전맹이나 저시력자는 새 창이 팝업되는 등 시각적 상황 변화가 발생했을 때 알아채기 어려울 수 있다. 이 경우 미리 상황 변화를 경고해주면 뒤로 가기 버튼이 예상과 다르게 동작할 때 혼란을 최소화할 수 있다.
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  일부 저시력자, 읽기 및 지적 장애인, 그리고 시각적 단서를 해석하기 어려운 사람들은 상황 변화를 감지하기 위해 추가적인 단서가 필요할 수 있다.
+               </li>
+            </ul>
          </section>
          <section id="examples">
-         <h2>예제</h2>
-         <ul>
-            <li>
-               웹 기반 달력 및 일정 관리 응용 프로그램에서 달력 항목을 생성하기 위한 양식이 제공된다. 제목, 시간 및 위치에 대한 표준 필드와 함께 생성할 달력 항목 유형을 선택하는 라디오 버튼 세트가 있다. 캘린더 항목 유형은 회의, 약속 또는 알림일 수 있다. 사용자가 회의용 라디오를 선택하면 회의 참가자를 입력하기 위한 페이지에 추가 필드가 표시된다. 미리 알림 버튼을 선택하면 다른 필드가 나타난다. 항목의 일부만 변경되고 전체 구조는 동일하게 유지되므로 기본 맥락은 사용자에게 그대로 유지된다.
-            </li>
-            <li>
-               양식에는 미국 전화번호를 나타내는 필드가 포함되어 있다. 모든 전화번호에는 3자리 지역번호, 3자리 국번, 마지막 4자리 숫자가 있으며,  전화번호의 각 부분은 별도의 필드에 입력된다. 사용자가 한 필드 입력을 완료하면 포커스가 자동으로 전화번호의 다음 필드로 이동한다. 전화 필드의 이러한 동작은 양식 시작 부분에서 사용자를 위해 설명된다.
-            </li>
-         </ul>
+            <h2>예제</h2>
+            <ul>
+               <li>
+                  웹 기반 달력 및 일정 관리 응용 프로그램에서 달력 항목을 생성하기 위한 양식이 제공된다. 제목, 시간 및 위치에 대한 표준 필드와 함께 생성할 달력 항목 유형을 선택하는 라디오 버튼 세트가 있다. 캘린더 항목 유형은 회의, 약속 또는 알림일 수 있다. 사용자가 회의용 라디오를 선택하면 회의 참가자를 입력하기 위한 페이지에 추가 필드가 표시된다. 미리 알림 버튼을 선택하면 다른 필드가 나타난다. 항목의 일부만 변경되고 전체 구조는 동일하게 유지되므로 기본 맥락은 사용자에게 그대로 유지된다.
+               </li>
+               <li>
+                  양식에는 미국 전화번호를 나타내는 필드가 포함되어 있다. 모든 전화번호에는 3자리 지역번호, 3자리 국번, 마지막 4자리 숫자가 있으며,  전화번호의 각 부분은 별도의 필드에 입력된다. 사용자가 한 필드 입력을 완료하면 포커스가 자동으로 전화번호의 다음 필드로 이동한다. 전화 필드의 이러한 동작은 양식 시작 부분에서 사용자를 위해 설명된다.
+               </li>
+            </ul>
          </section>
          <section id="techniques">
-         <h2>기법</h2>
-         <p>Each numbered item in this section represents a technique or combination of techniques
-            that the WCAG Working Group deems sufficient for meeting this Success Criterion. However,
-            it is not necessary to use these particular techniques. For information on using other
-            techniques, see <a href="understanding-techniques">Understanding Techniques for WCAG Success
-               Criteria</a>, particularly the "Other Techniques" section.
+            <h2>기법</h2>
+            <p>
+               이 섹션에서 번호가 매겨진 각 항목은 WCAG 실무 그룹이 이 성공 기준을 충족하기에 충분하다고 간주하는 기법 또는 기법의 조합을 나타낸다. 그러나 이러한 특정 기법을 사용할 필요는 없다. 다른 기법 사용에 대한 자세한 내용은 <a href="understanding-techniques">WCAG 성공 기준에 대한 기법 이해</a>, 특히 "기타 기법" 섹션을 참고하라.
             </p>
             <section id="sufficient">
                <h3>충분 기법</h3>
                <ul>
                   <li>
                      <p>
-                        <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G80">G80: Providing a
-                           submit button to initiate a change of context</a> using a technology-specific technique
-                        listed below
+                        <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G80">G80: Providing a submit button to initiate a change of context</a> using a technology-specific technique listed below
+                     </p>
+                     <ul>
+                        <li>
+                           <a class="html" href="https://www.w3.org/WAI/WCAG22/Techniques/html/H32">H32: Providing
+                              submit buttons</a>
+                           </li>
+                           <li>
+                              <a class="html" href="https://www.w3.org/WAI/WCAG22/Techniques/html/H84">H84: Using a button
+                                 with a select element to perform an action</a>
+                              </li>
+                              <li>
+                                 <a class="pdf" href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF15">PDF15: Providing
+                                    submit buttons with the submit-form action in PDF forms</a>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G13">G13: Describing what will happen before a change to a form control that causes a change of context to occur is made</a>
+                           </li>
+                           <li>
+                              <a class="script" href="https://www.w3.org/WAI/WCAG22/Techniques/client-side-script/SCR19">SCR19: Using an onchange event on a select element without causing a change of context</a>
+                           </li>
+                        </ul>
+                        <div class="note">
+                           <p class="note-title marker">참고</p>
+                           <div>
+                              <p>
+                                 내용의 변화가 항상 <a href="#dfn-changes-of-context">맥락의 변화</a>는 아니다. 콘텐츠의 변경이 맥락의 변경도 아닌 경우 이 성공 기준은 자동으로 충족된다.
+                              </p>
+                           </div>
+                        </div>
+                     </section>
+                     <section id="advisory">
+                        <h3>조언 기법</h3>
+                        <p>
+                           준수를 위해 필수는 아니지만 콘텐츠에 더 쉽게 접근할 수 있도록 다음과 같은 추가 기법을 고려해야 한다. 모든 기법을 사용할 수 없거나 모든 상황에서 효과적인 것은 아니다.
                         </p>
                         <ul>
                            <li>
-                              <a class="html" href="https://www.w3.org/WAI/WCAG22/Techniques/html/H32">H32: Providing
-                                 submit buttons</a>
-                              </li>
-                              <li>
-                                 <a class="html" href="https://www.w3.org/WAI/WCAG22/Techniques/html/H84">H84: Using a button
-                                    with a select element to perform an action</a>
-                                 </li>
-                                 <li>
-                                    <a class="pdf" href="https://www.w3.org/WAI/WCAG22/Techniques/pdf/PDF15">PDF15: Providing
-                                       submit buttons with the submit-form action in PDF forms</a>
-                                    </li>
-                                 </ul>
-                              </li>
-                              <li>
-                                 <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G13">G13: Describing what
-                                    will happen before a change to a form control that causes a change
-                                    of context to occur is made</a>
-                                 </li>
-                                 <li>
-                                    <a class="script" href="https://www.w3.org/WAI/WCAG22/Techniques/client-side-script/SCR19">SCR19:
-                                       Using an onchange event on a select element without causing a change of context</a>
-                                    </li>
-                                 </ul>
-                                 <div class="note">
-                                    <p class="note-title marker">참고</p>
-                                    <div>
-                                       <p>A change of content is not always a
-                                          <a href="#dfn-changes-of-context">change of context</a>. This success criterion is automatically
-                                          met if changes in content are not also changes
-                                          of context.
-                                       </p>
-                                    </div>
-                                    </div>
-                                    </section>
-                                    <section id="advisory">
-                                       <h3>조언 기법</h3>
-                                       <p>Although not required for conformance, the following additional techniques should
-                                          be considered in order to make content more accessible. Not all techniques can be
-                                          used or would be effective in all situations.
-                                       </p>
-                                       <ul>
-                                    <li>
-                                       <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G201">G201: Giving users
-                                          advanced warning when opening a new window</a>
-                                       </li>
-                                    </ul>
-                                    </section>
-                                    <section id="failure">
-                                       <h3>오류</h3>
-                                       <p>The following are common mistakes that are considered failures of this Success Criterion
-                                          by the WCAG Working Group.
-                                       </p>
-                                       <ul>
-                                       <li>
-                                          <a class="failure" href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F36">F36: Failure of
-                                             Success Criterion 3.2.2 due to automatically submitting a form and given
-                                             a value</a>
-                                          </li>
-                                          <li>
-                                             <a class="failure" href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F37">F37: Failure of
-                                                Success Criterion 3.2.2 due to launching a new window without prior warning
-                                                when the selection of a radio button, check box or select list is changed</a>
-                                             </li>
-                                          </ul>
-                                          </section>
-                                          </section>
-                                    <section id="key-terms">
-                                       <details>
-                                          <summary>
-                                             <h2>Key Terms</h2>
-                                          </summary>
-                                          <dt id="dfn-assistive-technology">assistive technology</dt>
-                                          <dd>
-                                             <definition xmlns="">
-                                                <p xmlns="http://www.w3.org/1999/xhtml">hardware and/or software that acts as a <a
-                                                      href="#dfn-user-agent">user agent</a>, or along with a mainstream user agent, to provide
-                                                   functionality to meet the requirements
-                                                   of users with disabilities that go beyond those offered by mainstream user agents
-                                                </p>
-                                                <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                   <p class="note-title marker">참고</p>
-                                                   <p>Functionality provided by assistive technology includes alternative presentations
-                                                      (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
-                                                      voice), additional navigation or orientation mechanisms, and content transformations
-                                                      (e.g., to make tables more accessible).
-                                                   </p>
-                                                </div>
-                                                <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                   <p class="note-title marker">참고</p>
-                                                   <p>Assistive technologies often communicate data and messages with mainstream user agents
-                                                      by using and monitoring APIs.
-                                                   </p>
-                                                </div>
-                                                <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                   <p class="note-title marker">참고</p>
-                                                   <p>The distinction between mainstream user agents and assistive technologies is not absolute.
-                                                      Many mainstream user agents provide some features to assist individuals with disabilities.
-                                                      The basic difference is that mainstream user agents target broad and diverse audiences
-                                                      that usually include people with and without disabilities. Assistive technologies
-                                                      target narrowly defined populations of users with specific disabilities. The assistance
-                                                      provided by an assistive technology is more specific and appropriate to the needs
-                                                      of its target users. The mainstream user agent may provide important functionality
-                                                      to assistive technologies like retrieving Web content from program objects or parsing
-                                                      markup into identifiable bundles.
-                                                   </p>
-                                                </div>
-                                                <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                                   <p>Assistive technologies that are important in the context of this document include
-                                                      the following:
-                                                   </p>
-                                                   <ul>
-                                                      <li>screen magnifiers, and other visual reading assistants, which are used by people with
-                                                         visual, perceptual and physical print disabilities to change text font, size, spacing,
-                                                         color, synchronization with speech, etc. in order to improve the visual readability
-                                                         of rendered text and images;
-                                                      </li>
-                                                      <li>screen readers, which are used by people who are blind to read textual information
-                                                         through synthesized speech or braille;
-                                                      </li>
-                                                      <li>text-to-speech software, which is used by some people with cognitive, language, and
-                                                         learning disabilities to convert text into synthetic speech;
-                                                      </li>
-                                                      <li>speech recognition software, which may be used by people who have some physical
-                                                         disabilities;</li>
-                                                      <li>alternative keyboards, which are used by people with certain physical disabilities
-                                                         to simulate the keyboard (including alternate keyboards that use head pointers, single
-                                                         switches, sip/puff and other special input devices.);
-                                                      </li>
-                                                      <li>alternative pointing devices, which are used by people with certain physical disabilities
-                                                         to simulate mouse pointing and button activations.
-                                                      </li>
-                                                   </ul>
-                                                   </aside>
-                                                   </definition>
-                                                   </dd>
-                                                   <dt id="dfn-changes-of-context">changes of context</dt>
-                                                   <dd>
-                                                      <definition xmlns="">
-                                                         <p xmlns="http://www.w3.org/1999/xhtml">major changes that, if made without user awareness, can
-                                                            disorient users who are not
-                                                            able to view
-                                                            the entire page simultaneously
-                                                         </p>
-                                                         <p xmlns="http://www.w3.org/1999/xhtml">Changes in context include changes of:</p>
-                                                         <ol xmlns="http://www.w3.org/1999/xhtml">
-                                                            <li>
-                                                               <a href="#dfn-user-agent">user agent</a>;
-                                                            </li>
-                                                            <li>
-                                                               <a href="#dfn-viewport">viewport</a>;
-                                                            </li>
-                                                            <li>focus;</li>
-                                                            <li>
-                                                               <a href="#dfn-content">content</a> that changes the meaning of the <a href="#dfn-web-page">Web page</a>
-                                                            </li>
-                                                         </ol>
-                                                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                            <p class="note-title marker">참고</p>
-                                                            <p>A change of content is not always a change of context. Changes in content, such as
-                                                               an expanding outline, dynamic menu, or a tab control do not necessarily change the
-                                                               context, unless they also change one of the above (e.g., focus).
-                                                            </p>
-                                                         </div>
-                                                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                                            <p>Opening a new window, moving focus to a different component, going to a new page (including
-                                                               anything that would look to a user as if they had moved to a new page) or significantly
-                                                               re-arranging the content of a page are examples of changes of context.
-                                                            </p>
-                                                         </aside>
-                                                      </definition>
-                                                   </dd>
-                                                   <dt id="dfn-content">content</dt>
-                                                   <dd>
-                                                      <definition xmlns="">
-                                                         <p xmlns="http://www.w3.org/1999/xhtml">information and sensory experience to be communicated to
-                                                            the user by means of a <a href="#dfn-user-agent">user agent</a>, including code or markup that
-                                                            defines the content's <a href="#dfn-structure">structure</a>, <a href="#dfn-presentation">presentation</a>, and
-                                                            interactions
-                                                         </p>
-                                                      </definition>
-                                                   </dd>
-                                                   <dt id="dfn-presentation">presentation</dt>
-                                                   <dd>
-                                                      <definition xmlns="">
-                                                         <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="#dfn-content">content</a> in a
-                                                            form to be perceived by users
-                                                         </p>
-                                                      </definition>
-                                                   </dd>
-                                                   <dt id="dfn-structure">structure</dt>
-                                                   <dd>
-                                                      <definition xmlns="">
-                                                         <ol xmlns="http://www.w3.org/1999/xhtml">
-                                                            <li>The way the parts of a <a href="#dfn-web-page">Web page</a> are organized in relation to
-                                                               each other; and
-                                                            </li>
-                                                            <li>The way a collection of <a href="#dfn-web-page">Web pages</a> is organized
-                                                            </li>
-                                                         </ol>
-                                                      </definition>
-                                                   </dd>
-                                                   <dt id="dfn-user-agent">user agent</dt>
-                                                   <dd>
-                                                      <definition xmlns="">
-                                                         <p xmlns="http://www.w3.org/1999/xhtml">any software that retrieves and presents Web content for
-                                                            users</p>
-                                                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                                            <p>Web browsers, media players, plug-ins, and other programs — including <a
-                                                                  href="#dfn-assistive-technology">assistive technologies</a> — that help in retrieving,
-                                                               rendering, and interacting with Web content.
-                                                            </p>
-                                                         </aside>
-                                                      </definition>
-                                                   </dd>
-                                                   <dt id="dfn-user-interface-component">user interface component</dt>
-                                                   <dd>
-                                                      <definition xmlns="">
-                                                         <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a
-                                                            single control for a distinct
-                                                            function
-                                                         </p>
-                                                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                            <p class="note-title marker">참고</p>
-                                                            <p>Multiple user interface components may be implemented as a single programmatic element.
-                                                               "Components" here is not tied to programming techniques, but rather to what the user
-                                                               perceives as separate controls.
-                                                            </p>
-                                                         </div>
-                                                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                            <p class="note-title marker">참고</p>
-                                                            <p>User interface components include form elements and links as well as components generated
-                                                               by scripts.
-                                                            </p>
-                                                         </div>
-                                                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                            <p class="note-title marker">참고</p>
-                                                            <p>What is meant by "component" or "user interface component" here is also sometimes
-                                                               called "user interface element".
-                                                            </p>
-                                                         </div>
-                                                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                                            <p>An applet has a "control" that can be used to move through content by line or page
-                                                               or random access. Since each of these would need to have a name and be settable
-                                                               independently,
-                                                               they would each be a "user interface component."
-                                                            </p>
-                                                         </aside>
-                                                      </definition>
-                                                   </dd>
-                                                   <dt id="dfn-viewport">viewport</dt>
-                                                   <dd>
-                                                      <definition xmlns="">
-                                                         <p xmlns="http://www.w3.org/1999/xhtml">object in which the user agent presents content</p>
-                                                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                            <p class="note-title marker">참고</p>
-                                                            <p>The <a href="#dfn-user-agent">user agent</a> presents content through one or more viewports.
-                                                               Viewports include windows, frames,
-                                                               loudspeakers, and virtual magnifying glasses. A viewport may contain another viewport
-                                                               (e.g., nested frames). Interface components created by the user agent such as prompts,
-                                                               menus, and alerts are not viewports.
-                                                            </p>
-                                                         </div>
-                                                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                            <p class="note-title marker">참고</p>
-                                                            <p>This definition is based on <a href="https://www.w3.org/TR/WAI-USERAGENT/glossary.html">User
-                                                                  Agent Accessibility Guidelines 1.0 Glossary</a> [[UAAG10]].
-                                                            </p>
-                                                         </div>
-                                                      </definition>
-                                                   </dd>
-                                                   <dt id="dfn-web-page">web page</dt>
-                                                   <dd>
-                                                      <definition xmlns="">
-                                                         <p xmlns="http://www.w3.org/1999/xhtml">a non-embedded resource obtained from a single URI using
-                                                            HTTP plus any other resources
-                                                            that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent">user
-                                                               agent</a>
-                                                         </p>
-                                                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                            <p class="note-title marker">참고</p>
-                                                            <p>Although any "other resources" would be rendered together with the primary resource,
-                                                               they would not necessarily be rendered simultaneously with each other.
-                                                            </p>
-                                                         </div>
-                                                         <div xmlns="http://www.w3.org/1999/xhtml" class="note">
-                                                            <p class="note-title marker">참고</p>
-                                                            <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
-                                                               within the scope of conformance to be considered a Web page.
-                                                            </p>
-                                                         </div>
-                                                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                                            <p>A Web resource including all embedded images and media.</p>
-                                                         </aside>
-                                                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                                            <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
-                                                               lives entirely at http://example.com/mail, but includes an inbox, a contacts area
-                                                               and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
-                                                               to display, but do not change the URI of the page as a whole.
-                                                            </p>
-                                                         </aside>
-                                                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                                            <p>A customizable portal site, where users can choose content to display from a set of
-                                                               different content modules.
-                                                            </p>
-                                                         </aside>
-                                                         <aside xmlns="http://www.w3.org/1999/xhtml" class="example">
-                                                            <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
-                                                               interactive shopping environment where you visually move around in a store dragging
-                                                               products off of the shelves around you and into a visual shopping cart in front of
-                                                               you. Clicking on a product causes it to be demonstrated with a specification sheet
-                                                               floating alongside. This might be a single-page Web site or just one page within a
-                                                               Web site.
-                                                            </p>
-                                                         </aside>
-                                                      </definition>
-                                                   </dd>
-                                                   </details>
-                                                   </section>
-<a class="button button-backtotop" href="#top"><span>
-                                                         <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
-                                                <path
-                                                   d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z">
-                                                </path>
-                                                </svg> 맨 위로
-                                                </span></a>
-                                                </main>
-                                                <aside class="box box-icon box-space-above" id="helpimprove" style="grid-column: 2 / 8; grid-row: 3">
-                                                   <header class="box-h  box-h-icon box-h-space-above box-h-icon">
-                                                      <svg focusable="false" aria-hidden="true" class="icon-comments" viewBox="0 0 28 28">
-                                             <path
-                                                d="M22 12c0 4.422-4.922 8-11 8-0.953 0-1.875-0.094-2.75-0.25-1.297 0.922-2.766 1.594-4.344 2-0.422 0.109-0.875 0.187-1.344 0.25h-0.047c-0.234 0-0.453-0.187-0.5-0.453v0c-0.063-0.297 0.141-0.484 0.313-0.688 0.609-0.688 1.297-1.297 1.828-2.594-2.531-1.469-4.156-3.734-4.156-6.266 0-4.422 4.922-8 11-8s11 3.578 11 8zM28 16c0 2.547-1.625 4.797-4.156 6.266 0.531 1.297 1.219 1.906 1.828 2.594 0.172 0.203 0.375 0.391 0.313 0.688v0c-0.063 0.281-0.297 0.484-0.547 0.453-0.469-0.063-0.922-0.141-1.344-0.25-1.578-0.406-3.047-1.078-4.344-2-0.875 0.156-1.797 0.25-2.75 0.25-2.828 0-5.422-0.781-7.375-2.063 0.453 0.031 0.922 0.063 1.375 0.063 3.359 0 6.531-0.969 8.953-2.719 2.609-1.906 4.047-4.484 4.047-7.281 0-0.812-0.125-1.609-0.359-2.375 2.641 1.453 4.359 3.766 4.359 6.375z">
-                                             </path>
-                                             </svg>
-                                             <h2> Help improve this page </h2>
-                                             </header>
-                                             <div class="box-i">
-                                                <p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived
-                                          list <a
-                                             href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D">public-agwg-comments@w3.org</a>
-                                          or via GitHub
-                                          </p>
-                                       <div class="button-group"><a
-                                             href="mailto:public-agwg-comments@w3.org?subject=%5BUnderstanding%20and%20Techniques%20Feedback%5D"
-                                             class="button"><span>E-mail</span></a><a href="https://github.com/w3c/wcag/issues/" class="button"><span>Fork
-                                                &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag/issues/new" class="button"><span>New GitHub
-                                                Issue</span></a></div>
-                                       </div>
-                                       </aside>
-                                       </div>
-                                       <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-                                          <div class="inner" style="grid-column: 2 / 8">
-                                       <p><strong>원문 갱신:</strong> Updated 2 May 2024.
-                                       </p>
-                                       <p><strong>Developed by</strong> <a href="https://www.w3.org/groups/wg/ag/participants">Accessibility
-                                             Guidelines Working Group (AG WG) Participants</a> (Co-Chairs: Alastair Campbell, Charles Adams, Rachael
-                                          Bradley Montgomery. W3C Staff
-                                          Contact: Kevin White).
-                                       </p>
-                                       <p>The content was developed as part of the <a href="https://www.w3.org/WAI/about/projects/#us">WAI-Core
-                                             projects</a> funded by U.S. Federal funds. The user interface was designed by the Education and
-                                          Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg/participants">EOWG</a>) with
-                                          contributions from Shadi Abou-Zahra, Steve Lee, and Shawn Lawton Henry as part
-                                          of the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> project, co-funded by the
-                                          European Commission.
-                                       </p>
-                                       </div>
-                                       </footer>
-                                       <footer class="site-footer grid-4q" aria-label="Site">
-                                          <div class="q1-start q3-end about">
-                                             <div>
-                                          <p><a class="largelink" href="https://www.w3.org/WAI/" dir="auto" translate="no" lang="en">W3C Web
-                                                Accessibility Initiative (WAI)</a></p>
-                                          <p>Strategies, standards, and supporting resources to make the Web accessible to people
-                                             with disabilities.
-                                          </p>
-                                          </div>
-                                          <div class="social" dir="auto" translate="no" lang="en">
-                                             <ul>
-                                                <li><a href="https://twitter.com/w3c_wai">
-                                                      <svg focusable="false" aria-hidden="true" class="icon-twitter " viewBox="0 0 32 32">
-                                                      <path
-                                                         d="M31.939 6.092c-1.18 0.519-2.44 0.872-3.767 1.033 1.352-0.815 2.392-2.099 2.884-3.631-1.268 0.74-2.673 1.279-4.169 1.579-1.195-1.279-2.897-2.079-4.788-2.079-3.623 0-6.56 2.937-6.56 6.556 0 0.52 0.060 1.020 0.169 1.499-5.453-0.257-10.287-2.876-13.521-6.835-0.569 0.963-0.888 2.081-0.888 3.3 0 2.28 1.16 4.284 2.917 5.461-1.076-0.035-2.088-0.331-2.971-0.821v0.081c0 3.18 2.257 5.832 5.261 6.436-0.551 0.148-1.132 0.228-1.728 0.228-0.419 0-0.82-0.040-1.221-0.115 0.841 2.604 3.26 4.503 6.139 4.556-2.24 1.759-5.079 2.807-8.136 2.807-0.52 0-1.039-0.031-1.56-0.089 2.919 1.859 6.357 2.945 10.076 2.945 12.072 0 18.665-9.995 18.665-18.648 0-0.279 0-0.56-0.020-0.84 1.281-0.919 2.4-2.080 3.28-3.397l-0.063-0.027z">
-                                                      </path>
-                                                      </svg> Twitter</a></li>
-                                                      <li><a href="https://www.w3.org/WAI/feed.xml">
-                                                            <svg focusable="false" aria-hidden="true" class="icon-rss " viewBox="0 0 32 32">
-                                                      <path
-                                                         d="M25.599 32c0-14.044-11.555-25.6-25.599-25.6v-6.4c17.553 0 32 14.447 32 32h-6.401zM4.388 23.22c2.419 0 4.391 1.972 4.391 4.393 0 2.417-1.98 4.387-4.401 4.387-2.417 0-4.377-1.965-4.377-4.387s1.967-4.392 4.388-4.393zM21.212 32h-6.22c0-8.225-6.767-14.993-14.992-14.993v-6.22c11.636 0 21.212 9.579 21.212 21.213z">
-                                                      </path>
-                                                      </svg> Feed</a></li>
-                                                      <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv">
-                                                            <svg focusable="false" aria-hidden="true" class="icon-youtube " viewBox="0 0 32 32">
-                                                      <path
-                                                         d="M31.327 8.273c-0.386-1.353-1.431-2.398-2.756-2.777l-0.028-0.007c-2.493-0.668-12.528-0.668-12.528-0.668s-10.009-0.013-12.528 0.668c-1.353 0.386-2.398 1.431-2.777 2.756l-0.007 0.028c-0.443 2.281-0.696 4.903-0.696 7.585 0 0.054 0 0.109 0 0.163l-0-0.008c-0 0.037-0 0.082-0 0.126 0 2.682 0.253 5.304 0.737 7.845l-0.041-0.26c0.386 1.353 1.431 2.398 2.756 2.777l0.028 0.007c2.491 0.669 12.528 0.669 12.528 0.669s10.008 0 12.528-0.669c1.353-0.386 2.398-1.431 2.777-2.756l0.007-0.028c0.425-2.233 0.668-4.803 0.668-7.429 0-0.099-0-0.198-0.001-0.297l0 0.015c0.001-0.092 0.001-0.201 0.001-0.31 0-2.626-0.243-5.196-0.708-7.687l0.040 0.258zM12.812 20.801v-9.591l8.352 4.803z">
-                                                      </path>
-                                                      </svg> YouTube</a></li>
-                                                      <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
-                                                      </ul>
-                                                      </div>
-                                                      <div dir="auto" translate="no" lang="en">
-                                             <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a
-                                                   href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.
-                                             </p>
-                                             </div>
-                                             </div>
-                                             <div dir="auto" translate="no" class="q4-start q4-end" lang="en">
-                                                <ul style="margin-bottom:0">
-                                             <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
-                                             <li><a href="/WAI/sitemap/">Site Map</a></li>
-                                             <li><a href="/WAI/news/">News</a></li>
-                                             <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
-                                             <li><a href="/WAI/translations/"> Translations</a></li>
-                                             <li><a href="/WAI/roles/">Resources for Roles</a></li>
-                                             </ul>
-                                             </div>
-                                    </footer>
-                                    <link rel="stylesheet" href="../a11y-light.css" />
-                                    <script src="../highlight.min.js"></script>
-                                    <script>
-                                       hljs.configure({
-                                          cssSelector: 'pre'
-                                       });
-                                       hljs.highlightAll();
-                                       var translationStrings = {}; /* fix WAI JS */
-</script>
-<script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
-<script>
-                                       var _paq    e "setCustomDimension" should be called before "     true]);
-                 ackPageView']);
-                                       _paq.push(['enableLinkTracking'])     (function () {
-                      3.org/analytics/piwik/";
-        aq.push(['setTrackerUrl', u + 'piwi                _p                                     var d = do       d.getElementsByTagName('script')[0];
-               'text/javascript'; g.async = true      s.parentNode.insertBefore(g, s);
-                                       })();
-</script><noscript>
-   <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
-</noscript>
-</body>
-
-</html>
+                              <a class="general" href="https://www.w3.org/WAI/WCAG22/Techniques/general/G201">G201: Giving users advanced warning when opening a new window</a>
+                           </li>
+                        </ul>
+                     </section>
+                     <section id="failure">
+                        <h3>오류</h3>
+                        <p>다음은 WCAG 실무 그룹에서 이 성공 기준의 실패로 간주하는 일반적인 실수이다.</p>
+                        <ul>
+                           <li>
+                              <a class="failure" href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F36">F36: Failure of Success Criterion 3.2.2 due to automatically submitting a form and given a value</a>
+                           </li>
+                           <li>
+                              <a class="failure" href="https://www.w3.org/WAI/WCAG22/Techniques/failures/F37">F37: Failure of Success Criterion 3.2.2 due to launching a new window without prior warning when the selection of a radio  button, check box or select list is changed</a>
+                           </li>
+                        </ul>
+                     </section>
+                  </section>
+                  <a class="button button-backtotop" href="#top"><span>
+                     <svg focusable="false" aria-hidden="true" class="icon-arrow-up " viewBox="0 0 26 28">
+                        <path
+                        d="M25.172 15.172c0 0.531-0.219 1.031-0.578 1.406l-1.172 1.172c-0.375 0.375-0.891 0.594-1.422 0.594s-1.047-0.219-1.406-0.594l-4.594-4.578v11c0 1.125-0.938 1.828-2 1.828h-2c-1.062 0-2-0.703-2-1.828v-11l-4.594 4.578c-0.359 0.375-0.875 0.594-1.406 0.594s-1.047-0.219-1.406-0.594l-1.172-1.172c-0.375-0.375-0.594-0.875-0.594-1.406s0.219-1.047 0.594-1.422l10.172-10.172c0.359-0.375 0.875-0.578 1.406-0.578s1.047 0.203 1.422 0.578l10.172 10.172c0.359 0.375 0.578 0.891 0.578 1.422z">
+                     </path>
+                  </svg> 맨 위로
+               </span></a>
+            </main>
+            
+         </div>
+         <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+            <div class="inner" style="grid-column: 2 / 8">
+               <p><strong>원문 갱신:</strong>  2 May 2024.
+               </p>
+               <p>이 문서는 <strong>비공식</strong> 번역본입니다. 부가적인 요소는 열람의 편의를 위해 삭제하였으니 <a href="https://www.w3.org/WAI/WCAG22/Understanding/">원문</a>을 참고하시기 바랍니다.</p>
+               <p>번역 작업에 참여하거나 수정을 원하시는 분은 <a href="https://github.com/a11ykr/wcag22-understanding/issues/new">Github 저장소에 의견</a>을 남겨주십시오.</p>
+            </div>
+         </footer>
+         
+         <link rel="stylesheet" href="../a11y-light.css" />
+         <script src="../highlight.min.js"></script>
+         <script>
+            hljs.configure({
+               cssSelector: 'pre'
+            });
+            hljs.highlightAll();
+            var translationStrings = {}; /* fix WAI JS */
+         </script>
+         <script src="https://www.w3.org/WAI/assets/scripts/main.js"></script>
+         <script>
+            var _paq = _paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(["setDoNotTrack", true]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+               var u = "//www.w3.org/analytics/piwik/";
+               _paq.push(['setTrackerUrl', u + 'piwik.php']);
+               _paq.push(['setSiteId', '328']);
+               var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+               g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+            })();
+         </script><noscript>
+            <p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&amp;rec=1" style="border:0;" alt="" /></p>
+         </noscript>
+      </body>
+      </html>
